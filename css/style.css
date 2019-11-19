@@ -8408,6 +8408,11 @@ ul:last-child {
   margin-bottom: 0;
 }
 
+.unpublished {
+  color: red;
+  text-align: center;
+}
+
 .page-header {
   margin-top: 0;
 }
@@ -8695,5 +8700,11 @@ p:last-child,
 
 #block-superfish-1 #superfish-1-accordion li a {
   color: #00728e;
+}
+
+/********************* MAINTENANCE *********************/
+.maintenance-page main {
+  text-align: center;
+  margin-top: 2em;
 }
 /*# sourceMappingURL=style.css.map */
