@@ -75,6 +75,14 @@ p:last-child,
 	}
 }
 
+#navbar-collapse .navbar-nav {
+    li.dropdown:hover {
+        > ul.dropdown-menu {
+            display: block;
+        }
+    }
+}
+
 .nav-tabs {
 	border-bottom: 0px;
 	display: inline-block;
