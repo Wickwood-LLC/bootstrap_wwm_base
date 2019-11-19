@@ -1,0 +1,313 @@
+@import "drupal-bootstrap/component/alert";
+@import "drupal-bootstrap/component/ajax";
+@import "drupal-bootstrap/component/field";
+@import "drupal-bootstrap/component/file";
+@import "drupal-bootstrap/component/filter";
+@import "drupal-bootstrap/component/form";
+@import "drupal-bootstrap/component/icon";
+@import "drupal-bootstrap/component/navbar";
+@import "drupal-bootstrap/component/node";
+@import "drupal-bootstrap/component/panel";
+@import "drupal-bootstrap/component/progress-bar";
+@import "drupal-bootstrap/component/table-drag";
+@import "drupal-bootstrap/component/tabs";
+@import "drupal-bootstrap/component/toolbar";
+
+// jQuery UI style overrides.
+@import "drupal-bootstrap/jquery-ui/autocomplete";
+
+ol,
+ul {
+	padding-left: 1.5em;
+
+	.popover &:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Page header.
+.page-header {
+  	margin-top: 0;
+}
+
+// Footer.
+.footer {
+	  margin-top: 45px;
+	  padding-top: 35px;
+	  padding-bottom: 36px;
+	  border-top: 1px solid #E5E5E5;
+}
+
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  	margin-bottom: 0;
+}
+
+// Help region.
+.region-help {
+	>.glyphicon {
+		font-size: $font-size-large;
+		float: left;
+		margin: -0.05em 0.5em 0 0;
+	}
+
+	.block {
+		overflow: hidden;
+	}
+}
+
+.help-block,
+.control-group .help-inline {
+	color: $gray-light;
+	font-size: 12px;
+	margin: 5px 0 10px;
+	padding: 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.nav-tabs {
+	border-bottom: 0px;
+	display: inline-block;
+	float: right;
+
+	> li {
+		float: left;
+		position: relative;
+		background: #eee;
+		margin-bottom: 10px;
+
+		&.active {
+			background-color: $brand-primary;
+
+			> a {
+				color: white;
+				background: transparent;
+				border: 1px solid transparent;
+			}
+		}
+		&:hover {
+			background-color: #f8f8f8;
+
+			a:hover {
+				background-color: transparent;
+				border-color: transparent;
+			}
+		}
+		> a {
+			color: $text-color;
+		}
+		&:first-child {
+			border-radius: 5px 0 0 5px;
+		}
+		&:last-child {
+			border-radius: 0 5px 5px 0;
+		}
+	}
+}
+
+.breadcrumb {
+	> li + li:before {
+	    padding: 0 5px;
+	    color: #777777;
+	    content: "» ";
+	}
+}
+
+.copyright {
+    text-align: center;
+}
+
+.pane-menu-menu-footer-links {
+    text-align: center;
+
+    .menu li {
+        display: inline-block;
+        margin-left: 0;
+    }
+}
+
+/****** MAIN MENU ******/
+
+#block-superfish-1 {
+    position: static;
+    margin-top: 1em;
+    text-align: center;
+    transition-property: background, padding;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+    @include breakpoint(718px) {
+        display: table;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+
+    &.sticky-menu {
+        position: fixed;
+        top: 0;
+        z-index: 500;
+        margin-top: 0;
+        background: white;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        box-shadow: 0 0px 10px #333;
+
+        @include breakpoint (718px) {
+            padding-bottom: 0;
+        }
+
+        .block-content {
+            display: inline-block;
+            width: 100%;
+            padding: 0 15px;
+            vertical-align: middle;
+
+            @include breakpoint (718px) {
+                width: auto;
+                padding: 0 0 0.5em 0;
+            }
+        }
+    }
+
+    .block-content,
+    &.sticky-menu .block-content {
+        display: inline-block;
+        width: 100%;
+
+        @include breakpoint (718px) {
+            width: auto;
+        }
+    }
+
+    #superfish-1 {
+        display: table;
+        margin: auto;
+
+        >li {
+            &:first-child {
+                border-radius: 5px 0px 0px 5px;
+            }
+
+            &:last-child {
+                border-radius: 0px 5px 5px 0px;
+            }
+        }
+
+        li {
+            border-bottom: 0;
+            float: left;
+            background: #eee url(images/bleeds.png) 50% 0px no-repeat;
+            padding: 0;
+
+            &:hover {
+                background: #f8f8f8;
+            }
+
+            a {
+                background-image: none;
+                color: #333;
+                text-shadow: #fff 0px 1px 0px;
+                min-width: 70px;
+                text-align: center;
+                padding: 5px 10px;
+                font-weight: bold;
+                line-height: 20px;
+
+                >.sf-sub-indicator {
+                    position: static;
+                    display: inline-block;
+                    margin-left: 0.5em;
+                }
+            }
+        }
+
+        .sf-sub-indicator {
+            filter: invert(70%);
+        }
+
+        .menuparent ul {
+            width: auto !important;
+            overflow: visible !important;
+
+            li {
+                white-space: nowrap !important;
+                background: #ebebeb;
+
+                &:hover {
+                    background: white;
+                }
+
+                a {
+                    text-align: left;
+                }
+            }
+        }
+
+        .active-trail {
+            background-color: #7bc !important;
+
+            >a {
+                color: white;
+                text-shadow: #38a 0px 1px 0px;
+            }
+        }
+    }
+
+    #superfish-1-toggle {
+        display: block;
+        text-align: center;
+        background-color: #008db0;
+        color: white;
+        border-radius: 10px;
+        line-height: 1.5;
+        padding: 0.5em 1em;
+        font-size: 18px;
+        font-weight: bold;
+
+        &.sf-expanded {
+            background-color: #7bc;
+            border-radius: 10px 10px 0 0;
+        }
+
+        &:hover {
+            background-color: #7bc;
+        }
+    }
+
+    #superfish-1-accordion {
+        li {
+            background-color: #e9eaec;
+            line-height: 1.5;
+            font-size: 16px;
+
+            &.active-trail {
+                background-color: #00728e;
+
+                >a {
+                    color: white;
+                }
+            }
+
+            &:last-child {
+                border-radius: 0 0 10px 10px;
+            }
+
+            &:hover {
+                background-color: #9ec5d0;
+
+                >a {
+                    color: white;
+                }
+            }
+
+            a {
+                color: #00728e;
+            }
+        }
+    }
+}
