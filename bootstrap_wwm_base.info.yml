@@ -20,4 +20,4 @@ regions:
 
 libraries-extend:
   bootstrap/framework:
-    - bootstrap_wwm/framework
+    - bootstrap_wwm_base/framework
