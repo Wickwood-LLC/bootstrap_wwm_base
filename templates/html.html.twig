@@ -63,7 +63,13 @@
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
     <script>
-      document.addEventListener("touchstart", function() {},false);
+      (function() {
+        $("*").on( 'touchstart', function() {
+          $(this).trigger('hover') ;
+        } ).on('touchend', function() {
+          $(this).trigger('hover') ;
+        } ) ;
+      })() ;
     </script>
   </head>
   <body{{ attributes.addClass(body_classes) }}>
