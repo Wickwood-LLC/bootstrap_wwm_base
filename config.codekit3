@@ -7,11 +7,12 @@
 		"uuidString": "08FCA907-A201-4433-ADB3-44DFFE0B9FD4"
 		}
 	],
-"creatorBuild": "28905",
+"creatorBuild": "31934",
 "files": {
 	"/bootstrap/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/.gitignore",
 		"oF": 0
@@ -19,6 +20,7 @@
 	"/bootstrap/.travis.yml": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/.travis.yml",
 		"oF": 0
@@ -26,6 +28,7 @@
 	"/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
 		"oF": 0
@@ -43,6 +46,7 @@
 	"/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
 		"oF": 0
@@ -50,6 +54,7 @@
 	"/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
 		"oF": 0
@@ -57,6 +62,7 @@
 	"/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2",
 		"oF": 0
@@ -64,11 +70,13 @@
 	"/bootstrap/assets/images/.keep": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/assets/images/.keep",
 		"oF": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap-sprockets.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -79,6 +87,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -89,6 +98,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -99,6 +109,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/affix.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -109,6 +120,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/alert.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -119,6 +131,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/button.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -129,6 +142,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/carousel.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -139,6 +153,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/collapse.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -149,6 +164,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/dropdown.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -159,6 +175,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/modal.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -169,6 +186,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/popover.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -179,6 +197,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/scrollspy.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -189,6 +208,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/tab.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -199,6 +219,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/tooltip.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -209,6 +230,7 @@
 		"tS": 0
 		},
 	"/bootstrap/assets/javascripts/bootstrap/transition.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1183,6 +1205,7 @@
 	"/bootstrap/bootstrap-sass.gemspec": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/bootstrap-sass.gemspec",
 		"oF": 0
@@ -1203,6 +1226,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/CHANGELOG.html",
 		"oF": 0,
@@ -1229,6 +1253,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/CONTRIBUTING.html",
 		"oF": 0,
@@ -1240,6 +1265,7 @@
 		"uCM": 0
 		},
 	"/bootstrap/eyeglass-exports.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1252,6 +1278,7 @@
 	"/bootstrap/Gemfile": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/Gemfile",
 		"oF": 0
@@ -1259,6 +1286,7 @@
 	"/bootstrap/lib/bootstrap-sass.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/lib/bootstrap-sass.rb",
 		"oF": 0
@@ -1266,6 +1294,7 @@
 	"/bootstrap/lib/bootstrap-sass/engine.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/lib/bootstrap-sass/engine.rb",
 		"oF": 0
@@ -1273,6 +1302,7 @@
 	"/bootstrap/lib/bootstrap-sass/version.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/lib/bootstrap-sass/version.rb",
 		"oF": 0
@@ -1280,6 +1310,7 @@
 	"/bootstrap/LICENSE": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/LICENSE",
 		"oF": 0
@@ -1303,6 +1334,7 @@
 	"/bootstrap/Rakefile": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/Rakefile",
 		"oF": 0
@@ -1315,6 +1347,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/README.html",
 		"oF": 0,
@@ -1336,6 +1369,7 @@
 	"/bootstrap/tasks/bower.rake": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/bower.rake",
 		"oF": 0
@@ -1343,6 +1377,7 @@
 	"/bootstrap/tasks/converter.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter.rb",
 		"oF": 0
@@ -1350,6 +1385,7 @@
 	"/bootstrap/tasks/converter/char_string_scanner.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter/char_string_scanner.rb",
 		"oF": 0
@@ -1357,6 +1393,7 @@
 	"/bootstrap/tasks/converter/fonts_conversion.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter/fonts_conversion.rb",
 		"oF": 0
@@ -1364,6 +1401,7 @@
 	"/bootstrap/tasks/converter/js_conversion.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter/js_conversion.rb",
 		"oF": 0
@@ -1371,6 +1409,7 @@
 	"/bootstrap/tasks/converter/less_conversion.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter/less_conversion.rb",
 		"oF": 0
@@ -1378,6 +1417,7 @@
 	"/bootstrap/tasks/converter/logger.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter/logger.rb",
 		"oF": 0
@@ -1385,6 +1425,7 @@
 	"/bootstrap/tasks/converter/network.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/tasks/converter/network.rb",
 		"oF": 0
@@ -1405,6 +1446,7 @@
 	"/bootstrap/templates/project/manifest.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/templates/project/manifest.rb",
 		"oF": 0
@@ -1425,6 +1467,7 @@
 	"/bootstrap/test/compilation_test.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/compilation_test.rb",
 		"oF": 0
@@ -1454,6 +1497,7 @@
 		"uL": 1
 		},
 	"/bootstrap/test/dummy_node_mincer/manifest.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1466,11 +1510,13 @@
 	"/bootstrap/test/dummy_rails/app/assets/images/.keep": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/app/assets/images/.keep",
 		"oF": 0
 		},
 	"/bootstrap/test/dummy_rails/app/assets/javascripts/application.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1496,6 +1542,7 @@
 	"/bootstrap/test/dummy_rails/app/controllers/application_controller.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/app/controllers/application_controller.rb",
 		"oF": 0
@@ -1503,6 +1550,7 @@
 	"/bootstrap/test/dummy_rails/app/controllers/pages_controller.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/app/controllers/pages_controller.rb",
 		"oF": 0
@@ -1510,6 +1558,7 @@
 	"/bootstrap/test/dummy_rails/app/helpers/application_helper.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/app/helpers/application_helper.rb",
 		"oF": 0
@@ -1517,6 +1566,7 @@
 	"/bootstrap/test/dummy_rails/app/views/layouts/application.html.erb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/app/views/layouts/application.html.erb",
 		"oF": 0
@@ -1525,6 +1575,7 @@
 		"cB": 0,
 		"cmO": 0,
 		"ft": 1024,
+		"hM": 0,
 		"llg": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/app/views/pages/root.html.html",
@@ -1536,6 +1587,7 @@
 	"/bootstrap/test/dummy_rails/config.ru": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config.ru",
 		"oF": 0
@@ -1543,6 +1595,7 @@
 	"/bootstrap/test/dummy_rails/config/application.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/application.rb",
 		"oF": 0
@@ -1550,6 +1603,7 @@
 	"/bootstrap/test/dummy_rails/config/boot.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/boot.rb",
 		"oF": 0
@@ -1557,6 +1611,7 @@
 	"/bootstrap/test/dummy_rails/config/environment.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/environment.rb",
 		"oF": 0
@@ -1564,6 +1619,7 @@
 	"/bootstrap/test/dummy_rails/config/environments/development.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/environments/development.rb",
 		"oF": 0
@@ -1571,6 +1627,7 @@
 	"/bootstrap/test/dummy_rails/config/environments/production.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/environments/production.rb",
 		"oF": 0
@@ -1578,6 +1635,7 @@
 	"/bootstrap/test/dummy_rails/config/environments/test.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/environments/test.rb",
 		"oF": 0
@@ -1585,6 +1643,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/backtrace_silencers.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/backtrace_silencers.rb",
 		"oF": 0
@@ -1592,6 +1651,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/filter_parameter_logging.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/filter_parameter_logging.rb",
 		"oF": 0
@@ -1599,6 +1659,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/inflections.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/inflections.rb",
 		"oF": 0
@@ -1606,6 +1667,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/mime_types.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/mime_types.rb",
 		"oF": 0
@@ -1613,6 +1675,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/secret_token.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/secret_token.rb",
 		"oF": 0
@@ -1620,6 +1683,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/session_store.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/session_store.rb",
 		"oF": 0
@@ -1627,6 +1691,7 @@
 	"/bootstrap/test/dummy_rails/config/initializers/wrap_parameters.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/initializers/wrap_parameters.rb",
 		"oF": 0
@@ -1634,6 +1699,7 @@
 	"/bootstrap/test/dummy_rails/config/locales/en.yml": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/locales/en.yml",
 		"oF": 0
@@ -1641,6 +1707,7 @@
 	"/bootstrap/test/dummy_rails/config/locales/es.yml": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/locales/es.yml",
 		"oF": 0
@@ -1648,6 +1715,7 @@
 	"/bootstrap/test/dummy_rails/config/routes.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/config/routes.rb",
 		"oF": 0
@@ -1661,6 +1729,7 @@
 	"/bootstrap/test/dummy_rails/Rakefile": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/Rakefile",
 		"oF": 0
@@ -1668,6 +1737,7 @@
 	"/bootstrap/test/dummy_rails/README.rdoc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_rails/README.rdoc",
 		"oF": 0
@@ -1675,6 +1745,7 @@
 	"/bootstrap/test/dummy_sass_only/compile.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_sass_only/compile.rb",
 		"oF": 0
@@ -1682,6 +1753,7 @@
 	"/bootstrap/test/dummy_sass_only/Gemfile": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/dummy_sass_only/Gemfile",
 		"oF": 0
@@ -1702,6 +1774,7 @@
 	"/bootstrap/test/gemfiles/default.gemfile": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/gemfiles/default.gemfile",
 		"oF": 0
@@ -1709,6 +1782,7 @@
 	"/bootstrap/test/node_mincer_test.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/node_mincer_test.rb",
 		"oF": 0
@@ -1716,6 +1790,7 @@
 	"/bootstrap/test/node_sass_compile_test.sh": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/node_sass_compile_test.sh",
 		"oF": 0
@@ -1723,6 +1798,7 @@
 	"/bootstrap/test/pages_test.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/pages_test.rb",
 		"oF": 0
@@ -1730,6 +1806,7 @@
 	"/bootstrap/test/sass_test.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/sass_test.rb",
 		"oF": 0
@@ -1737,6 +1814,7 @@
 	"/bootstrap/test/sprockets_rails_test.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/sprockets_rails_test.rb",
 		"oF": 0
@@ -1744,6 +1822,7 @@
 	"/bootstrap/test/support/dummy_rails_integration.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/support/dummy_rails_integration.rb",
 		"oF": 0
@@ -1751,6 +1830,7 @@
 	"/bootstrap/test/support/reporting.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/support/reporting.rb",
 		"oF": 0
@@ -1758,6 +1838,7 @@
 	"/bootstrap/test/test_helper.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/test_helper.rb",
 		"oF": 0
@@ -1765,43 +1846,584 @@
 	"/bootstrap/test/test_helper_rails.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/bootstrap/test/test_helper_rails.rb",
 		"oF": 0
 		},
-	"/bootstrap_rubik.info.yml": {
+	"/bootstrap_wwm_base.info.yml": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/bootstrap_rubik.info.yml",
+		"oAP": "/bootstrap_wwm_base.info.yml",
 		"oF": 0
 		},
-	"/bootstrap_rubik.libraries.yml": {
+	"/bootstrap_wwm_base.libraries.yml": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/bootstrap_rubik.libraries.yml",
+		"oAP": "/bootstrap_wwm_base.libraries.yml",
 		"oF": 0
 		},
-	"/bootstrap_rubik.theme": {
+	"/bootstrap_wwm_base.theme": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/bootstrap_rubik.theme",
+		"oAP": "/bootstrap_wwm_base.theme",
 		"oF": 0
 		},
-	"/config/install/bootstrap_rubik.settings.yml": {
+	"/bower_components/breakpoint-sass/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/breakpoint-sass/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/breakpoint-sass/CHANGELOG.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/CHANGELOG.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/bower_components/breakpoint-sass/CONTRIBUTING.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/CONTRIBUTING.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/bower_components/breakpoint-sass/eyeglass-exports.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/eyeglass-exports.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/bower_components/breakpoint-sass/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/breakpoint-sass/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/bower_components/breakpoint-sass/sache.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/breakpoint-sass/sache.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/_breakpoint.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_context.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_context.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_helpers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_helpers.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_legacy-settings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_legacy-settings.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_no-query.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_no-query.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_parsers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_parsers.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_respond-to.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_respond-to.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/_settings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/_settings.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_double.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_double.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_query.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_query.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_resolution.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_resolution.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_single.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_single.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_triple.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/_triple.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/double/_default-pair.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/double/_default-pair.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/double/_default.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/double/_default.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/double/_double-string.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/double/_double-string.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/resolution/_resolution.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/resolution/_resolution.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/single/_default.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/single/_default.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/triple/_default.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/breakpoint-sass/stylesheets/breakpoint/parsers/triple/_default.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/sassy-maps/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/sassy-maps/CONTRIBUTING.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/CONTRIBUTING.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/bower_components/sassy-maps/examples/example.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/examples/example.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/examples/index.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "/config/install/bootstrap_rubik.settings.yml",
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/examples/index.html",
 		"oF": 0
 		},
-	"/config/schema/bootstrap_rubik.schema.yml": {
+	"/bower_components/sassy-maps/lib/sassy-maps.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/lib/sassy-maps.rb",
+		"oF": 0
+		},
+	"/bower_components/sassy-maps/lib/sassy-maps/version.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/lib/sassy-maps/version.rb",
+		"oF": 0
+		},
+	"/bower_components/sassy-maps/lib/tapout/reporters/navigator_reporter.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/lib/tapout/reporters/navigator_reporter.rb",
+		"oF": 0
+		},
+	"/bower_components/sassy-maps/Rakefile": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/Rakefile",
+		"oF": 0
+		},
+	"/bower_components/sassy-maps/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/bower_components/sassy-maps/sache.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/sache.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/bower_components/sassy-maps/sass/_memo.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/sassy-maps/sass/_memo.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/sass/_sassy-maps.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/sassy-maps/sass/_sassy-maps.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/sass/sassy-maps/_map-get.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/sassy-maps/sass/sassy-maps/_map-get.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/sass/sassy-maps/_map-set.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/sassy-maps/sass/sassy-maps/_map-set.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/sass/sassy-maps/_map-to-string.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/bower_components/sassy-maps/sass/sassy-maps/_map-to-string.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/bower_components/sassy-maps/sassy-maps.gemspec": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/bower_components/sassy-maps/sassy-maps.gemspec",
+		"oF": 0
+		},
+	"/config/install/bootstrap_wwm_base.settings.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/config/schema/bootstrap_rubik.schema.yml",
+		"oAP": "/config/install/bootstrap_wwm_base.settings.yml",
+		"oF": 0
+		},
+	"/config/schema/bootstrap_wwm_base.schema.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/config/schema/bootstrap_wwm_base.schema.yml",
 		"oF": 0
 		},
 	"/css/style.css": {
@@ -1817,16 +2439,36 @@
 	"/css/style.css.map": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/css/style.css.map",
+		"oF": 0
+		},
+	"/drupal_8.sublime-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/drupal_8.sublime-workspace",
 		"oF": 0
 		},
 	"/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/favicon.ico",
 		"oF": 0
+		},
+	"/images/bleeds.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/bleeds.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/images/required.svg": {
 		"ft": 2097152,
@@ -1867,6 +2509,19 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/scss/_ckeditor-styles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_ckeditor-styles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/_default-variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1889,6 +2544,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_drupal-bootstrap.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2096,6 +2764,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/scss/README.html",
 		"oF": 0,
@@ -2127,6 +2796,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/src/README.html",
 		"oF": 0,
@@ -2137,6 +2807,30 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/templates/breadcrumb.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/breadcrumb.html.twig",
+		"oF": 0
+		},
+	"/templates/html.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/html.html.twig",
+		"oF": 0
+		},
+	"/templates/page.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/page.html.twig",
+		"oF": 0
+		},
 	"/templates/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2145,6 +2839,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/README.html",
 		"oF": 0,
@@ -2162,13 +2857,14 @@
 	},
 "projectAttributes": {
 	"creationDate": 581339948.13037002,
-	"displayValue": "bootstrap_rubik",
+	"displayValue": "bootstrap_wwm_base",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/bootstrap/test/dummy_node_mincer/apple-touch-icon-144-precomposed.png",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
@@ -2180,6 +2876,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -2250,6 +2947,12 @@
 		"function-sent": {
 			"active": 0
 			},
+		"inline-consecutive-adds": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
 		"instanceof": {
 			"active": 0
 			},
@@ -2271,6 +2974,36 @@
 		"minify-booleans": {
 			"active": 0
 			},
+		"minify-builtins": {
+			"active": 0
+			},
+		"minify-constant-folding": {
+			"active": 0
+			},
+		"minify-dead-code-elimination": {
+			"active": 0
+			},
+		"minify-flip-comparisons": {
+			"active": 0
+			},
+		"minify-guarded-expressions": {
+			"active": 0
+			},
+		"minify-infinity": {
+			"active": 0
+			},
+		"minify-mangle-names": {
+			"active": 0
+			},
+		"minify-numeric-literals": {
+			"active": 0
+			},
+		"minify-simplify": {
+			"active": 0
+			},
+		"minify-type-constructors": {
+			"active": 0
+			},
 		"modules-amd": {
 			"active": 0
 			},
@@ -2281,6 +3014,9 @@
 			"active": 0
 			},
 		"modules-umd": {
+			"active": 0
+			},
+		"named-capturing-groups-regex": {
 			"active": 0
 			},
 		"new-target": {
@@ -2316,7 +3052,13 @@
 		"parameters": {
 			"active": 0
 			},
+		"partial-application": {
+			"active": 0
+			},
 		"pipeline-operator": {
+			"active": 0
+			},
+		"private-methods": {
 			"active": 0
 			},
 		"property-literals": {
@@ -2352,10 +3094,16 @@
 		"regenerator": {
 			"active": 0
 			},
+		"regexp-constructors": {
+			"active": 0
+			},
 		"remove-console": {
 			"active": 0
 			},
 		"remove-debugger": {
+			"active": 0
+			},
+		"remove-undefined": {
 			"active": 0
 			},
 		"reserved-words": {
@@ -2399,11 +3147,10 @@
 			}
 		},
 	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
 	"bowerAbbreviatedPath": "bower_components",
-	"bowerAutoCreateInfoFile": 1,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 1,
-	"bowerSaveDevDependencies": 0,
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
@@ -2548,6 +3295,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -2649,6 +3397,10 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -3000,6 +3752,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-import-assign": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-inline-comments": {
 			"active": 0,
 			"optionString": ""
@@ -3304,6 +4060,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-useless-catch": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-useless-computed-key": {
 			"active": 0,
 			"optionString": ""
@@ -3404,6 +4164,10 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -3415,6 +4179,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -3966,6 +4734,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -3987,6 +4756,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"bundleFormat": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
@@ -4009,7 +4779,8 @@
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -4021,7 +4792,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -4048,6 +4818,7 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -4057,7 +4828,8 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -4078,7 +4850,8 @@
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
 		"outputStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -4107,7 +4880,8 @@
 		"outputFormat": 0,
 		"outputStyle": 1,
 		"railsCompatible": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -4150,8 +4924,16 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
@@ -4195,16 +4977,20 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"ascii_only": {
-			"active": 0,
+		"arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
-		"bare_returns": {
+		"ascii_only": {
 			"active": 0,
 			"flagValue": -1
 			},
 		"booleans": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"booleans_as_integers": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"braces": {
@@ -4223,7 +5009,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"compress": {
+		"computed_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4246,6 +5032,10 @@
 		"drop_debugger": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"ecma": {
+			"active": 1,
+			"flagValue": 5
 			},
 		"eval": {
 			"active": 0,
@@ -4271,10 +5061,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"html5_comments": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"ie8": {
 			"active": 0,
 			"flagValue": -1
@@ -4283,13 +5069,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"indent-start": {
-			"active": 0,
-			"flagValue": 0
-			},
 		"indent_level": {
 			"active": 0,
 			"flagValue": 4
+			},
+		"indent_start": {
+			"active": 0,
+			"flagValue": 0
 			},
 		"inline": {
 			"active": 1,
@@ -4301,6 +5087,10 @@
 			},
 		"join_vars": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"keep_classnames": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_fargs": {
@@ -4323,13 +5113,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"mangle": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"max_line_len": {
 			"active": 1,
 			"flagValue": 32000
+			},
+		"module": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"negate_iife": {
 			"active": 1,
@@ -4338,10 +5128,6 @@
 		"passes": {
 			"active": 1,
 			"flagValue": 1
-			},
-		"preserve_line": {
-			"active": 0,
-			"flagValue": -1
 			},
 		"properties": {
 			"active": 1,
@@ -4365,6 +5151,10 @@
 			},
 		"reduce_vars": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"safari10": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"semicolons": {
@@ -4399,6 +5189,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"unsafe_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"unsafe_comps": {
 			"active": 0,
 			"flagValue": -1
@@ -4408,6 +5202,10 @@
 			"flagValue": -1
 			},
 		"unsafe_math": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_methods": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -4435,15 +5233,12 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"width": {
-			"active": 1,
-			"flagValue": 80
-			},
 		"wrap_iife": {
 			"active": 0,
 			"flagValue": -1
 			}
 		},
+	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$,exports,require",
 	"websiteRelativeRoot": ""
 	},
