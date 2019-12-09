@@ -227,6 +227,7 @@ a.wt-button {
   padding: 1px 5px;
   line-height: 1.5;
   border-radius: 3px;
+  @include fluid-type(320px, 1250px, 16px, 20px); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 a.wt-button:hover {
   color: #fff;
