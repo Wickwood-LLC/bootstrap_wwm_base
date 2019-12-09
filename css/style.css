@@ -8776,7 +8776,7 @@ p:last-child,
 .wt-col-md-3,
 .wt-col-md-4,
 .wt-col-md-9 {
-  padding: 15px;
+  padding: 15px 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -8784,6 +8784,15 @@ p:last-child,
           flex-flow: column;
   -webkit-box-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-width: 850px) {
+  .wt-col-md-6,
+  .wt-col-md-3,
+  .wt-col-md-4,
+  .wt-col-md-9 {
+    padding: 15px;
+  }
 }
 
 .wt-col-md-6 img,
@@ -8843,7 +8852,7 @@ p:last-child,
   width: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 850px) {
   .wt-two-col.ltrb,
   .wt-two-col.lbrt,
   .wt-three-col.ltrb,
