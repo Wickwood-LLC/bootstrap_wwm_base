@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Render\Markup;
+
 /**
  * @file
  * Bootstrap sub-theme.
@@ -13,4 +15,8 @@ function bootstrap_wwm_base_preprocess_html(&$variables) {
 	  // You can get nid and anything else you need from the node object.
 	  $variables['is_published'] = $node->isPublished();
 	}
+}
+
+function bootstrap_wwm_base_preprocess_page(&$variables) {
+  $variables['site_name'] = Markup::create(strip_tags(html_entity_decode(\Drupal::config('system.site')->get('name'))));
 }
