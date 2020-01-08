@@ -8969,7 +8969,7 @@ p:last-child,
 a.wt-button {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -8985,7 +8985,7 @@ a.wt-button {
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
-  padding: 1px 5px;
+  padding: .3em .5em;
   line-height: 1.5;
   border-radius: 3px;
 }
