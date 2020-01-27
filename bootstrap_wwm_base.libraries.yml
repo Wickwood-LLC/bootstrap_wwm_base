@@ -2,6 +2,8 @@ framework:
   css:
     theme:
       css/style.css: {}
+    navigation:
+      css/navbar.css: {}
 
 # Uncomment for LESS source JavaScript files.
 #  js:
