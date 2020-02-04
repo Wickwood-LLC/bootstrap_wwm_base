@@ -25,6 +25,16 @@ ul {
 	}
 }
 
+.field--label:after {
+    content: ':';
+}
+.no_field_label_colon {
+    .field--label::after,
+    .field--label-inline .field--label::after {
+          content: '';
+    }
+}
+
 .unpublished {
     color: red;
     text-align: center;
