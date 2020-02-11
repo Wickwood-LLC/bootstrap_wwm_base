@@ -552,19 +552,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/bootstrap/assets/stylesheets/bootstrap/_navbar.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bootstrap/assets/stylesheets/bootstrap/_navbar.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/bootstrap/assets/stylesheets/bootstrap/_navs.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2426,6 +2413,24 @@
 		"oAP": "/config/schema/bootstrap_wwm_base.schema.yml",
 		"oF": 0
 		},
+	"/css/navbar.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/navbar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/navbar.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/css/navbar.css.map",
+		"oF": 0
+		},
 	"/css/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2754,6 +2759,19 @@
 		"oAP": "/scss/drupal-bootstrap/jquery-ui/_autocomplete.css",
 		"oF": 0,
 		"oS": 0,
+		"uL": 1
+		},
+	"/scss/navbar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/css/navbar.css",
+		"oF": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"/scss/README.md": {
