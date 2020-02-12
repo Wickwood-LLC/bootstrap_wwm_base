@@ -335,6 +335,21 @@ p:last-child,
     }
 }
 
+.field--label-inline {
+    .field--label, > .field--item, .field--items {
+        display: inline;
+        float: none;
+        padding-right: 0;
+    }
+
+    &.field-item-list .field--items {
+        ol, ul {
+            display: inline-block;
+            vertical-align: text-top;
+        }
+    }
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page {
     main {
