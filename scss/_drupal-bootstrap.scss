@@ -513,6 +513,14 @@ p:last-child,
     }
 }
 
+.g-recaptcha {
+  margin-bottom: 0.5em;
+  
+  > div {
+    margin: auto;
+  }
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page {
     main {

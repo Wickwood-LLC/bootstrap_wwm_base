@@ -8319,6 +8319,14 @@ p:last-child,
   height: 100%;
 }
 
+.g-recaptcha {
+  margin-bottom: 0.5em;
+}
+
+.g-recaptcha > div {
+  margin: auto;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page main {
   text-align: center;
