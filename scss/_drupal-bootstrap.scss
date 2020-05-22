@@ -141,6 +141,11 @@ p:last-child,
 	}
 }
 
+nav.tabs {
+    display: inline-block;
+    width: 100%;
+}
+
 .copyright {
     text-align: center;
 }
@@ -519,6 +524,10 @@ p:last-child,
   > div {
     margin: auto;
   }
+}
+
+#edit-actions {
+    text-align: center;
 }
 
 /********************* MAINTENANCE *********************/

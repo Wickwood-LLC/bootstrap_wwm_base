@@ -7923,6 +7923,11 @@ p:last-child,
   content: "» ";
 }
 
+nav.tabs {
+  display: inline-block;
+  width: 100%;
+}
+
 .copyright {
   text-align: center;
 }
