@@ -8332,6 +8332,10 @@ nav.tabs {
   margin: auto;
 }
 
+#edit-actions {
+  text-align: center;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page main {
   text-align: center;
