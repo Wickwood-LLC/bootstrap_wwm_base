@@ -1,0 +1,40 @@
+bootstrap_wwm_base.header_slidehow.phone_portrait:
+  label: phone_portrait
+  mediaQuery: '(max-width: 320px)'
+  weight: 0
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.header_slidehow
+
+bootstrap_wwm_base.header_slidehow.phone_landscape:
+  label: phone_landscape
+  mediaQuery: '(min-width: 321px) and (max-width: 480px)'
+  weight: 1
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.header_slidehow
+
+bootstrap_wwm_base.header_slidehow.tab_portrait:
+  label: tab_portrait
+  mediaQuery: '(min-width: 481px) and (max-width: 768px)'
+  weight: 2
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.header_slidehow
+
+bootstrap_wwm_base.header_slidehow.tab_landscape:
+  label: tab_landscape
+  mediaQuery: '(min-width: 769px) and (max-width: 1024px)'
+  weight: 3
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.header_slidehow
+
+bootstrap_wwm_base.header_slidehow.desktop:
+  label: desktop
+  mediaQuery: '(min-width: 1025px)'
+  weight: 4
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.header_slidehow
+  
