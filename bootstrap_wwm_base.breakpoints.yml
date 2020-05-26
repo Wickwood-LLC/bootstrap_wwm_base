@@ -1,5 +1,5 @@
 bootstrap_wwm_base.header_slidehow.phone_portrait:
-  label: phone_portrait
+  label: Phone Portrait
   mediaQuery: '(max-width: 320px)'
   weight: 0
   multipliers: 
@@ -7,7 +7,7 @@ bootstrap_wwm_base.header_slidehow.phone_portrait:
   group: bootstrap_wwm_base.header_slidehow
 
 bootstrap_wwm_base.header_slidehow.phone_landscape:
-  label: phone_landscape
+  label: Phone Landscape
   mediaQuery: '(min-width: 321px) and (max-width: 480px)'
   weight: 1
   multipliers: 
@@ -15,7 +15,7 @@ bootstrap_wwm_base.header_slidehow.phone_landscape:
   group: bootstrap_wwm_base.header_slidehow
 
 bootstrap_wwm_base.header_slidehow.tab_portrait:
-  label: tab_portrait
+  label: Tab Portrait
   mediaQuery: '(min-width: 481px) and (max-width: 768px)'
   weight: 2
   multipliers: 
@@ -23,7 +23,7 @@ bootstrap_wwm_base.header_slidehow.tab_portrait:
   group: bootstrap_wwm_base.header_slidehow
 
 bootstrap_wwm_base.header_slidehow.tab_landscape:
-  label: tab_landscape
+  label: Tab Landscape
   mediaQuery: '(min-width: 769px) and (max-width: 1024px)'
   weight: 3
   multipliers: 
@@ -31,10 +31,51 @@ bootstrap_wwm_base.header_slidehow.tab_landscape:
   group: bootstrap_wwm_base.header_slidehow
 
 bootstrap_wwm_base.header_slidehow.desktop:
-  label: desktop
+  label: Desktop
   mediaQuery: '(min-width: 1025px)'
   weight: 4
   multipliers: 
     - 1x
   group: bootstrap_wwm_base.header_slidehow
+  
+
+bootstrap_wwm_base.content_image_slidehow.phone_portrait:
+  label: Phone Portrait
+  mediaQuery: '(max-width: 320px)'
+  weight: 0
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow
+
+bootstrap_wwm_base.content_image_slidehow.phone_landscape:
+  label: Phone Landscape
+  mediaQuery: '(min-width: 321px) and (max-width: 480px)'
+  weight: 1
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow
+
+bootstrap_wwm_base.content_image_slidehow.tab_portrait:
+  label: Tab Portrait
+  mediaQuery: '(min-width: 481px) and (max-width: 768px)'
+  weight: 2
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow
+
+bootstrap_wwm_base.content_image_slidehow.tab_landscape:
+  label: Tab Landscape
+  mediaQuery: '(min-width: 769px) and (max-width: 1024px)'
+  weight: 3
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow
+
+bootstrap_wwm_base.content_image_slidehow.desktop:
+  label: Desktop
+  mediaQuery: '(min-width: 1025px)'
+  weight: 4
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow
   

@@ -8342,6 +8342,11 @@ nav.tabs {
   margin-top: 2em;
 }
 
+/* Fluid Typography */
+li {
+  margin-bottom: 0.5em;
+}
+
 .wt-row:before, .wt-row:after {
   content: " ";
   display: table;
