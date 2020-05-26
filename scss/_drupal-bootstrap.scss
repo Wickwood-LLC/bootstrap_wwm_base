@@ -530,6 +530,62 @@ nav.tabs {
     text-align: center;
 }
 
+#block-socialsharingblock {
+    position: fixed;
+    top: 150px;
+    left: -282px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background-color: white;
+    width: 282px;
+    transition: 0.5s;
+    z-index: 5;
+
+    @include breakpoint(980px) {
+        top: 200px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        left: 0;
+        box-shadow: 2px 3px 10px 0 #333;
+
+        &:before {
+            opacity: 0;
+            transition: 0.5s;
+        }
+    }
+
+    &:before {
+        display: table;
+        content: '\f1e0';
+        font-family: 'Font Awesome 5 Pro';
+        font-size: 24px;
+        position: absolute;
+        right: -36px;
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        top: -1px;
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 30px -3px #383838;
+        opacity: 1;
+        transition: all 1s ease 0.5s;
+    }
+
+    .block-title {
+        background-color: unset;
+        color: unset;
+        margin-top: 0;
+        text-align: center;
+        @include fluid-type(320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+    }
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page {
     main {
