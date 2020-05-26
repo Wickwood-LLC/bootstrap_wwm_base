@@ -21,3 +21,6 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - bootstrap_wwm_base/framework
+
+ckeditor_stylesheets:
+  - css/ckeditor-styles.css
