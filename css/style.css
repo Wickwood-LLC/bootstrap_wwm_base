@@ -8336,7 +8336,7 @@ nav.tabs {
   text-align: center;
 }
 
-#block-socialsharingblock {
+.block-social-sharing-block {
   position: fixed;
   top: 150px;
   left: -282px;
@@ -8350,22 +8350,22 @@ nav.tabs {
 }
 
 @media (min-width: 980px) {
-  #block-socialsharingblock {
+  .block-social-sharing-block {
     top: 200px;
   }
 }
 
-#block-socialsharingblock:hover, #block-socialsharingblock:focus, #block-socialsharingblock:active {
+.block-social-sharing-block:hover, .block-social-sharing-block:focus, .block-social-sharing-block:active {
   left: 0;
   box-shadow: 2px 3px 10px 0 #333;
 }
 
-#block-socialsharingblock:hover:before, #block-socialsharingblock:focus:before, #block-socialsharingblock:active:before {
+.block-social-sharing-block:hover:before, .block-social-sharing-block:focus:before, .block-social-sharing-block:active:before {
   opacity: 0;
   transition: 0.5s;
 }
 
-#block-socialsharingblock:before {
+.block-social-sharing-block:before {
   display: table;
   content: '\f1e0';
   font-family: 'Font Awesome 5 Pro';
@@ -8384,25 +8384,25 @@ nav.tabs {
   transition: all 1s ease 0.5s;
 }
 
-#block-socialsharingblock .block-title {
+.block-social-sharing-block .block-title {
   background-color: unset;
   color: unset;
   margin-top: 0;
   text-align: center;
 }
 
-#block-socialsharingblock .block-title {
+.block-social-sharing-block .block-title {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
-  #block-socialsharingblock .block-title {
+  .block-social-sharing-block .block-title {
     font-size: calc(18px + 12 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #block-socialsharingblock .block-title {
+  .block-social-sharing-block .block-title {
     font-size: 30px;
   }
 }
