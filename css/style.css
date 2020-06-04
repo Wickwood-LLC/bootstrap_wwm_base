@@ -8519,7 +8519,7 @@ nav.tabs {
 
 .block-social-sharing-block:before {
   display: table;
-  content: '\f1e0';
+  content: '\f1e0' !important;
   font-family: 'Font Awesome 5 Pro';
   font-size: 24px;
   position: absolute;
