@@ -8589,4 +8589,16 @@ nav.tabs {
   text-align: center;
   margin-top: 2em;
 }
+
+/********************* FORMS *********************/
+form#user-login-form,
+form#user-pass {
+  max-width: 500px;
+  margin: auto;
+}
+
+form#user-login-form #edit-actions,
+form#user-pass #edit-actions {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

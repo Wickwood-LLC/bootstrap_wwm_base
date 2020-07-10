@@ -651,3 +651,15 @@ nav.tabs {
         margin-top: 2em;
     }
 }
+
+
+/********************* FORMS *********************/
+form#user-login-form,
+form#user-pass {
+  max-width: 500px;
+  margin: auto;
+
+  #edit-actions {
+    text-align: center;
+  }
+}
