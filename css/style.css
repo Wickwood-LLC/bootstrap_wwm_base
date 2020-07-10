@@ -8406,6 +8406,31 @@ nav.tabs {
   }
 }
 
+.press-release.full .sutro-double {
+  max-width: 960px;
+  background: #FFF;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.press-release.full .sutro-double .row {
+  margin: 1em 0;
+}
+
+.press-release.full .sutro-double .row:first-child {
+  margin-top: 0;
+}
+
+.press-release.full .sutro-double .row:last-child {
+  margin-bottom: 0;
+}
+
+.press-release.full .sutro-double .field--name-field-pr-about {
+  margin: 3em 0;
+}
+
 /********************* BLOCKS *********************/
 .js-layout-builder-block {
   padding: 1em;
