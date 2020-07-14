@@ -7967,6 +7967,14 @@ ul:last-child {
   margin-bottom: 0;
 }
 
+.align-center {
+  text-align: center;
+}
+
+.align-center > * {
+  margin: auto;
+}
+
 .field--label:after {
   content: ':';
 }
