@@ -7971,7 +7971,7 @@ ul:last-child {
   text-align: center;
 }
 
-.align-center > * {
+.align-center img {
   margin: auto;
 }
 
