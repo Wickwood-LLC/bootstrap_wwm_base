@@ -8505,6 +8505,11 @@ nav.tabs {
   text-align: center;
 }
 
+.centered-content .field--label-inline .field--label, .centered-content .field--label-inline .field__label, .centered-content .field--label-inline > .field--item, .centered-content .field--label-inline .field--items {
+  float: none;
+  padding-right: 0;
+}
+
 .equal-height .layout__region > section:not(.js-layout-builder-block) {
   height: 100%;
 }

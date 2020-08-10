@@ -574,8 +574,14 @@ nav.tabs {
 .centered-title .block-title {
     text-align: center;
 }
-.centered-content .block-content{
-    text-align: center;
+.centered-content {
+    .block-content{
+        text-align: center;
+    }
+    .field--label-inline .field--label, .field--label-inline .field__label, .field--label-inline > .field--item, .field--label-inline .field--items {
+        float: none;
+        padding-right: 0;
+    }
 }
 
 .equal-height {
