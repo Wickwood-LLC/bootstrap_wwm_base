@@ -7994,6 +7994,10 @@ ul:last-child {
   text-align: center;
 }
 
+.page-title {
+  text-align: center;
+}
+
 .page-header {
   margin-top: 0;
 }
