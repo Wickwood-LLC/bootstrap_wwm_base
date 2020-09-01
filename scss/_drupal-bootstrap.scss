@@ -79,6 +79,15 @@ ul {
   }
 }
 
+span.fa-ext {
+  vertical-align: super;
+  font-size: 50%;
+}
+span.fa-envelope-o {
+  font-size: medium;
+  margin-left: 0.2em;
+}
+
 .field--label:after {
   content: ':';
 }
