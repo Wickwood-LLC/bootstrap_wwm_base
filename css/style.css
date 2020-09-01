@@ -7810,18 +7810,21 @@ body.toolbar-loading.toolbar {
   color: #fff;
 }
 
-html, body {
+html,
+body {
   font-size: 16px;
 }
 
 @media screen and (min-width: 320px) {
-  html, body {
+  html,
+  body {
     font-size: calc(16px + 4 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  html, body {
+  html,
+  body {
     font-size: 20px;
   }
 }
@@ -7977,7 +7980,8 @@ ul:last-child {
 }
 
 .align-center img {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .field--label:after {
@@ -8296,13 +8300,16 @@ nav.tabs {
   color: #00728e;
 }
 
-.field--label-inline .field--label, .field--label-inline > .field--item, .field--label-inline .field--items {
+.field--label-inline .field--label,
+.field--label-inline > .field--item,
+.field--label-inline .field--items {
   display: inline;
   float: none;
   padding-right: 0;
 }
 
-.field--label-inline.field-item-list .field--items ol, .field--label-inline.field-item-list .field--items ul {
+.field--label-inline.field-item-list .field--items ol,
+.field--label-inline.field-item-list .field--items ul {
   display: inline-block;
   vertical-align: text-top;
 }
@@ -8512,7 +8519,10 @@ nav.tabs {
   text-align: center;
 }
 
-.centered-content .field--label-inline .field--label, .centered-content .field--label-inline .field__label, .centered-content .field--label-inline > .field--item, .centered-content .field--label-inline .field--items {
+.centered-content .field--label-inline .field--label,
+.centered-content .field--label-inline .field__label,
+.centered-content .field--label-inline > .field--item,
+.centered-content .field--label-inline .field--items {
   float: none;
   padding-right: 0;
 }
