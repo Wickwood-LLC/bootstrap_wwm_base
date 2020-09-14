@@ -83,6 +83,7 @@ span.fa-ext {
   vertical-align: super;
   font-size: 50%;
 }
+
 span.fa-envelope-o {
   font-size: medium;
   margin-left: 0.2em;
@@ -94,15 +95,23 @@ span.fa-envelope-o {
 
 .no_field_label_colon {
 
-  .field--label::after,
-  .field--label-inline .field--label::after {
-    content: '';
+  .field--label,
+  .field__label,
+  .field--label-inline .field--label {
+    &:after {
+      content: '';
+    }
   }
 }
+
 .field_label_colon {
-  .field--label::after,
-  .field--label-inline .field--label::after {
-    content: ':';
+
+  .field--label,
+  .field__label,
+  .field--label-inline .field--label {
+    &:after {
+      content: ':';
+    }
   }
 }
 
