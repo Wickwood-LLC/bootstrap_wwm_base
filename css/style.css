@@ -8003,6 +8003,11 @@ span.fa-envelope-o {
   content: '';
 }
 
+.field_label_colon .field--label::after,
+.field_label_colon .field--label-inline .field--label::after {
+  content: ':';
+}
+
 .unpublished {
   color: red;
   text-align: center;
