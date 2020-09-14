@@ -7998,15 +7998,15 @@ span.fa-envelope-o {
   content: ':';
 }
 
-.no_field_label_colon .field--label:after,
-.no_field_label_colon .field__label:after,
-.no_field_label_colon .field--label-inline .field--label:after {
+.no-field-label-colon .field--label:after,
+.no-field-label-colon .field__label:after,
+.no-field-label-colon .field--label-inline .field--label:after {
   content: '';
 }
 
-.field_label_colon .field--label:after,
-.field_label_colon .field__label:after,
-.field_label_colon .field--label-inline .field--label:after {
+.field-label-colon .field--label:after,
+.field-label-colon .field__label:after,
+.field-label-colon .field--label-inline .field--label:after {
   content: ':';
 }
 
