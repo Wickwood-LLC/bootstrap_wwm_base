@@ -8544,10 +8544,6 @@ nav.tabs {
   padding-right: 0;
 }
 
-.equal-height .layout__region > section:not(.js-layout-builder-block) {
-  height: 100%;
-}
-
 .g-recaptcha {
   margin-bottom: 0.5em;
 }
