@@ -8528,7 +8528,7 @@ nav.tabs {
   color: #e24f4c;
 }
 
-.boxed-columns {
+.boxed-columns .layout__region {
   border: 1px solid #5c9630;
   border-radius: 8px;
   padding: 0.5em;
