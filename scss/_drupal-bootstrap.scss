@@ -611,7 +611,7 @@ nav.tabs {
   border-radius: 8px;
   margin-bottom: 1em;
 
-  .block-title {
+  > .block-title {
     background-color: #5c9630;
     border-radius: 5px 5px 0 0;
     padding: 16px 15px 13px;
@@ -619,12 +619,12 @@ nav.tabs {
     margin: 0;
   }
 
-  h3.block-title {
+  > h3.block-title {
     font-weight: bold;
     @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
   }
 
-  .block-content {
+  > .block-content {
     padding: 0.5em 1em 0 1em;
   }
 
