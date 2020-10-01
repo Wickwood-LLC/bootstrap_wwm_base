@@ -8331,6 +8331,11 @@ nav.tabs {
   vertical-align: text-top;
 }
 
+/********************* NODE *********************/
+.node.teaser .node-title {
+  text-align: center;
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   margin-bottom: 1em;
