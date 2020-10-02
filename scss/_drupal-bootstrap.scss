@@ -746,7 +746,7 @@ nav.tabs {
 
 /********************* VIEWS *********************/
 .views-exposed-form {
-  .form-item {
+  .form--inline > .form-item {
     float: none;
     display: inline-block;
   }
