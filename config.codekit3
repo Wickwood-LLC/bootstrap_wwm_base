@@ -2435,6 +2435,19 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/scss/_ckeditor-view.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_ckeditor-view.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/_default-variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2777,6 +2790,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/templates/html.html.twig",
+		"oF": 0
+		},
+	"/templates/node.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/templates/node.html.twig",
 		"oF": 0
 		},
 	"/templates/page-title.html.twig": {

@@ -83,6 +83,7 @@ span.fa-ext {
   vertical-align: super;
   font-size: 50%;
 }
+
 span.fa-envelope-o {
   font-size: medium;
   margin-left: 0.2em;
@@ -92,11 +93,25 @@ span.fa-envelope-o {
   content: ':';
 }
 
-.no_field_label_colon {
+.no-field-label-colon {
 
-  .field--label::after,
-  .field--label-inline .field--label::after {
-    content: '';
+  .field--label,
+  .field__label,
+  .field--label-inline .field--label {
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.field-label-colon {
+
+  .field--label,
+  .field__label,
+  .field--label-inline .field--label {
+    &:after {
+      content: ':';
+    }
   }
 }
 
@@ -219,11 +234,11 @@ nav.tabs {
   width: 100%;
 }
 
-.copyright {
+#block-copyrightblock {
   text-align: center;
 }
 
-.pane-menu-menu-footer-links {
+#block-footermenu {
   text-align: center;
 
   .menu li {
@@ -433,6 +448,13 @@ nav.tabs {
   }
 }
 
+/********************* NODE *********************/
+.node.teaser {
+  .node-title {
+    text-align: center;
+  }
+}
+
 /********************* LAYOUTS *********************/
 .layout {
   margin-bottom: 1em;
@@ -596,7 +618,7 @@ nav.tabs {
   border-radius: 8px;
   margin-bottom: 1em;
 
-  .block-title {
+  > .block-title {
     background-color: #5c9630;
     border-radius: 5px 5px 0 0;
     padding: 16px 15px 13px;
@@ -604,12 +626,12 @@ nav.tabs {
     margin: 0;
   }
 
-  h3.block-title {
+  > h3.block-title {
     font-weight: bold;
     @include fluid-type(320px, 1200px, 18px, 24px); // values inside are ($min_width,$max_width, $min_font, $max_font);
   }
 
-  .block-content {
+  > .block-content {
     padding: 0.5em 1em 0 1em;
   }
 
@@ -622,6 +644,12 @@ nav.tabs {
       color: #e24f4c;
     }
   }
+}
+
+.boxed-columns > .layout__region {
+  border: 1px solid #5c9630;
+  border-radius: 8px;
+  padding: 0.5em;
 }
 
 .centered-title .block-title {
@@ -642,11 +670,11 @@ nav.tabs {
   }
 }
 
-.equal-height {
-  .layout__region>section:not(.js-layout-builder-block) {
-    height: 100%;
-  }
-}
+// .equal-height {
+//   .layout__region>section:not(.js-layout-builder-block) {
+//     height: 100%;
+//   }
+// }
 
 .g-recaptcha {
   margin-bottom: 0.5em;
@@ -713,6 +741,14 @@ nav.tabs {
     margin-top: 0;
     text-align: center;
     @include fluid-type(320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
+  }
+}
+
+/********************* VIEWS *********************/
+.views-exposed-form {
+  .form--inline > .form-item {
+    float: none;
+    display: inline-block;
   }
 }
 
