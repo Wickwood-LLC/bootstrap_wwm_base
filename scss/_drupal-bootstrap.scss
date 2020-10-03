@@ -604,6 +604,15 @@ nav.tabs {
 }
 
 /********************* BLOCKS *********************/
+.js-layout-builder-block {
+  padding: 1em;
+  cursor: move;
+  background-color: #fff;
+  border: 1px solid #5c9630;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
 .block-social-sharing-block {
   position: fixed;
   top: 150px;
@@ -729,10 +738,18 @@ nav.tabs {
 
 .float-left {
   float: left;
+
+  &.js-layout-builder-block {
+  float: none;
+  }
 }
 
 .float-right {
   float: right;
+
+  &.js-layout-builder-block {
+  float: none;
+  }
 }
 
 .g-recaptcha {
@@ -742,25 +759,6 @@ nav.tabs {
     margin: auto;
   }
 }
-
-.js-layout-builder-block {
-  padding: 1em;
-  cursor: move;
-  background-color: #fff;
-  border: 1px solid #5c9630;
-  border-radius: 8px;
-  margin-bottom: 1em;
-
-  &.float-left {
-    float: none;
-  }
-
-  &.float-right {
-    float: none;
-  }
-
-}
-
 /********************* VIEWS *********************/
 .views-exposed-form {
   .form--inline > .form-item {
