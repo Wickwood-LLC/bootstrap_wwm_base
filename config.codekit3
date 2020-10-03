@@ -2792,13 +2792,6 @@
 		"oAP": "/templates/html.html.twig",
 		"oF": 0
 		},
-	"/templates/node.html.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/templates/node.html.twig",
-		"oF": 0
-		},
 	"/templates/page-title.html.twig": {
 		"cB": 0,
 		"ft": 8192,
