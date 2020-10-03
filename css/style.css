@@ -7984,13 +7984,18 @@ ul:last-child {
   margin-right: auto;
 }
 
-span.fa-ext {
-  vertical-align: super;
-  font-size: 50%;
+.extlink .svg-inline--fa.fa-w-16 {
+  width: 0.8em;
+  margin-left: 0.2em;
 }
 
-span.fa-envelope-o {
-  font-size: medium;
+.extlink span.fa-ext {
+  font-size: .8em;
+  margin-left: 0.2em;
+}
+
+.extlink span.fa-envelope-o {
+  font-size: .8em;
   margin-left: 0.2em;
 }
 
