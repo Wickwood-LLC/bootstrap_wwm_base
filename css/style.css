@@ -8485,6 +8485,14 @@ nav.tabs {
   margin-bottom: 1em;
 }
 
+.js-layout-builder-block .float-left {
+  float: none;
+}
+
+.js-layout-builder-block .float-right {
+  float: none;
+}
+
 .block-social-sharing-block {
   position: fixed;
   top: 150px;

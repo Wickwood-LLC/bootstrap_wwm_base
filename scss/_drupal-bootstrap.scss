@@ -611,6 +611,15 @@ nav.tabs {
   border: 1px solid #5c9630;
   border-radius: 8px;
   margin-bottom: 1em;
+
+  .float-left {
+    float: none;
+  }
+
+  .float-right {
+    float: none;
+  }
+
 }
 
 .block-social-sharing-block {
