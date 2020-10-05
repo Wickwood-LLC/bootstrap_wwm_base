@@ -8699,6 +8699,181 @@ form#user-pass #edit-actions {
   text-align: center;
 }
 
+form#user-register-form label[for] {
+  display: inline-block;
+}
+
+form#user-register-form label[for]:after {
+  content: ":\00a0";
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+form#user-register-form label[for].form-required:after {
+  width: 12px;
+  margin-right: 0.3em;
+  margin: 0;
+  background-position-x: right;
+}
+
+form#user-register-form .form-type-checkbox label:after {
+  content: "";
+}
+
+form#user-register-form .field--type-datetime .label:after {
+  content: ":\00a0";
+  display: inline;
+}
+
+form#user-register-form .form-type-textfield,
+form#user-register-form .form-type-select,
+form#user-register-form .form-type-email,
+form#user-register-form .form-type-password,
+form#user-register-form .field--type-datetime {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
+form#user-register-form .form-type-textfield .description,
+form#user-register-form .form-type-select .description,
+form#user-register-form .form-type-email .description,
+form#user-register-form .form-type-password .description,
+form#user-register-form .field--type-datetime .description {
+  flex: 1 100%;
+}
+
+form#user-register-form #edit-group-user .form-type-textfield label, form#user-register-form #edit-group-user .form-type-textfield .label,
+form#user-register-form #edit-group-user .form-type-select label,
+form#user-register-form #edit-group-user .form-type-select .label,
+form#user-register-form #edit-group-user .form-type-email label,
+form#user-register-form #edit-group-user .form-type-email .label,
+form#user-register-form #edit-group-user .form-type-password label,
+form#user-register-form #edit-group-user .form-type-password .label,
+form#user-register-form #edit-group-user .field--type-datetime label,
+form#user-register-form #edit-group-user .field--type-datetime .label {
+  flex: 0 0 91px;
+}
+
+form#user-register-form #edit-group-user .form-type-textfield input,
+form#user-register-form #edit-group-user .form-type-select input,
+form#user-register-form #edit-group-user .form-type-email input,
+form#user-register-form #edit-group-user .form-type-password input,
+form#user-register-form #edit-group-user .field--type-datetime input {
+  flex: 1 1 calc(100% - 91px);
+}
+
+form#user-register-form #edit-group-user-login-info .form-type-textfield label, form#user-register-form #edit-group-user-login-info .form-type-textfield .label,
+form#user-register-form #edit-group-user-login-info .form-type-select label,
+form#user-register-form #edit-group-user-login-info .form-type-select .label,
+form#user-register-form #edit-group-user-login-info .form-type-email label,
+form#user-register-form #edit-group-user-login-info .form-type-email .label,
+form#user-register-form #edit-group-user-login-info .form-type-password label,
+form#user-register-form #edit-group-user-login-info .form-type-password .label,
+form#user-register-form #edit-group-user-login-info .field--type-datetime label,
+form#user-register-form #edit-group-user-login-info .field--type-datetime .label {
+  flex: 0 0 122px;
+}
+
+form#user-register-form #edit-group-user-login-info .form-type-textfield input,
+form#user-register-form #edit-group-user-login-info .form-type-select input,
+form#user-register-form #edit-group-user-login-info .form-type-email input,
+form#user-register-form #edit-group-user-login-info .form-type-password input,
+form#user-register-form #edit-group-user-login-info .field--type-datetime input {
+  flex: 1 1 calc(100% - 122px);
+}
+
+form#user-register-form #edit-group-address div[class*="address-locality"] label, form#user-register-form #edit-group-address div[class*="address-locality"] .label,
+form#user-register-form #edit-group-address div[class*="address-administrative-area"] label,
+form#user-register-form #edit-group-address div[class*="address-administrative-area"] .label,
+form#user-register-form #edit-group-address div[class*="address-postal-code"] label,
+form#user-register-form #edit-group-address div[class*="address-postal-code"] .label {
+  flex: 0 0 60px;
+}
+
+form#user-register-form #edit-group-address div[class*="address-locality"] input,
+form#user-register-form #edit-group-address div[class*="address-administrative-area"] input,
+form#user-register-form #edit-group-address div[class*="address-postal-code"] input {
+  flex: 1 1 calc(100% - 60px);
+}
+
+form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] label, form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] .label,
+form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] label,
+form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] .label {
+  flex: 0 0 103px;
+}
+
+form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] input,
+form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] input {
+  flex: 1 1 calc(100% - 103px);
+}
+
+form#user-register-form #edit-group-source .form-item-field-source label, form#user-register-form #edit-group-source .form-item-field-source .label,
+form#user-register-form #edit-group-source .field--name-field-source-date label,
+form#user-register-form #edit-group-source .field--name-field-source-date .label {
+  flex: 0 0 83px;
+}
+
+form#user-register-form #edit-group-source .form-item-field-source input,
+form#user-register-form #edit-group-source .field--name-field-source-date input {
+  flex: 1 1 calc(100% - 83px);
+}
+
+form#user-register-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] label, form#user-register-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] .label,
+form#user-register-form #edit-group-source div[class*="inline-entity-form-field-amount"] div[class*="inline-entity-form-field-note-date-wrapper"] label,
+form#user-register-form #edit-group-source div[class*="inline-entity-form-field-amount"] div[class*="inline-entity-form-field-note-date-wrapper"] .label {
+  flex: 0 0 69px;
+}
+
+form#user-register-form #edit-group-source div[class*="inline-entity-form-field-gift-card"] input,
+form#user-register-form #edit-group-source div[class*="inline-entity-form-field-amount"] div[class*="inline-entity-form-field-note-date-wrapper"] input {
+  flex: 1 1 calc(100% - 69px);
+}
+
+form#user-register-form #edit-status {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form#user-register-form #edit-status .form-item {
+  margin-right: 2em;
+}
+
+form#user-register-form #edit-roles {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form#user-register-form #edit-roles .form-item {
+  margin-right: 1em;
+  flex: 0 0 140px;
+}
+
+form#user-register-form .field--name-user-picture .image-widget {
+  display: flex;
+}
+
+form#user-register-form .field--name-user-picture .image-widget .image-preview {
+  flex: 1 0 auto;
+}
+
+form#user-register-form .field--name-user-picture .image-widget .image-widget-data {
+  flex: 1 1 auto;
+}
+
+form#user-register-form .field--name-user-picture .image-widget .image-widget-data input.form-text {
+  width: 100%;
+}
+
+form#user-register-form #edit-group-phone,
+form#user-register-form #edit-group-address {
+  padding: 0 18px 18px;
+}
+
+form#user-register-form .paragraphs-add-wrapper {
+  text-align: center;
+}
+
 .wt-row:before, .wt-row:after {
   content: " ";
   display: table;

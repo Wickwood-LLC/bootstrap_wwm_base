@@ -812,3 +812,167 @@ form#user-pass {
     text-align: center;
   }
 }
+
+form#user-register-form {
+  label[for] {
+    display: inline-block;
+
+    &:after {
+      content: ":\00a0";
+      display: inline-block;
+      vertical-align: baseline;
+    }
+
+    &.form-required:after {
+      width: 12px;
+      margin-right: 0.3em;
+      margin: 0;
+      background-position-x: right;
+    }
+  }
+
+  .form-type-checkbox {
+    label:after {
+      content: "";
+    }
+  }
+
+  .field--type-datetime .label:after {
+    content: ":\00a0";
+    display: inline;
+  }
+
+  .form-type-textfield,
+  .form-type-select,
+  .form-type-email,
+  .form-type-password,
+  .field--type-datetime {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+
+    .description {
+      flex: 1 100%;
+    }
+  }
+
+  #edit-group-user {
+    .form-type-textfield,
+    .form-type-select,
+    .form-type-email,
+    .form-type-password,
+    .field--type-datetime {
+      label, .label {
+        flex: 0 0 91px;
+      }
+      input {
+        flex: 1 1 calc(100% - 91px);
+      }
+    }
+  }
+  #edit-group-user-login-info {
+    .form-type-textfield,
+    .form-type-select,
+    .form-type-email,
+    .form-type-password,
+    .field--type-datetime {
+      label, .label {
+        flex: 0 0 122px;
+      }
+      input {
+        flex: 1 1 calc(100% - 122px);
+      }
+    }
+  }
+  #edit-group-address {
+    div[class*="address-locality"],
+    div[class*="address-administrative-area"],
+    div[class*="address-postal-code"] {
+      label, .label {
+        flex: 0 0 60px;
+      }
+      input {
+        flex: 1 1 calc(100% - 60px);
+      }
+    }
+  }
+  #edit-group-phone {
+    div[class*="subform-field-phone-number"],
+    div[class*="subform-field-phone-type"] {
+      label, .label {
+        flex: 0 0 103px;
+      }
+      input {
+        flex: 1 1 calc(100% - 103px);
+      }
+    }
+  }
+  #edit-group-source {
+    .form-item-field-source,
+    .field--name-field-source-date {
+      label, .label {
+        flex: 0 0 83px;
+      }
+      input {
+        flex: 1 1 calc(100% - 83px);
+      }
+    }
+    div[class*="inline-entity-form-field-gift-card"],
+    div[class*="inline-entity-form-field-amount"]
+    div[class*="inline-entity-form-field-note-date-wrapper"] {
+      label, .label {
+        flex: 0 0 69px;
+      }
+      input {
+        flex: 1 1 calc(100% - 69px);
+      }
+    }
+  }
+
+  #edit-status {
+    display: flex;
+    flex-flow: row wrap;
+    
+    .form-item {
+      margin-right: 2em;
+    }
+  }
+  #edit-roles {
+    display: flex;
+    flex-flow: row wrap;
+
+    .form-item {
+      margin-right: 1em;
+      flex: 0 0 140px;
+    }
+  }
+
+  .field--name-user-picture {
+    .image-widget {
+      display: flex;
+
+      .image-preview {
+        flex: 1 0 auto;
+      }
+      .image-widget-data {
+        flex: 1 1 auto;
+
+        input.form-text {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #edit-group-phone,
+  #edit-group-address {
+    padding: 0 18px 18px;
+  }
+
+  .paragraphs-add-wrapper {
+    text-align: center;
+  }
+
+  .tabledrag-toggle-weight {
+    
+  }
+}
