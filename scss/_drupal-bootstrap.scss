@@ -829,7 +829,7 @@ form#user-register-form {
       margin: 0;
       background-position-x: right;
       background-repeat: no-repeat;
-      background-position-x: right;
+      background-size: contain;
 
     }
   }
@@ -869,7 +869,7 @@ form#user-register-form {
         flex: 0 0 136px;
       }
       input, .select-wrapper {
-        flex: 1 1 calc(100% - 136);
+        flex: 1 1 calc(100% - 136px);
       }
     }
   }
@@ -887,7 +887,7 @@ form#user-register-form {
       }
     }
   }
-  #edit-group-address {
+  #field-mailing-address-values {
     div[class*="field-address-type"],
     div[class*="address-locality"],
     div[class*="address-administrative-area"],
@@ -900,7 +900,7 @@ form#user-register-form {
       }
     }
   }
-  #edit-group-phone {
+  #field-phone-values {
     div[class*="subform-field-phone-number"],
     div[class*="subform-field-phone-type"] {
       label, .label {
@@ -927,10 +927,6 @@ form#user-register-form {
         }
       }
     }
-  }
-  #edit-group-phone,
-  #edit-group-address {
-    padding: 0 18px 18px;
   }
 
   .paragraphs-add-wrapper {
