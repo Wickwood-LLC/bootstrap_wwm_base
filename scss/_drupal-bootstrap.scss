@@ -439,7 +439,9 @@ nav.tabs {
 .field--label-inline {
 
   .field--label,
+  .field__label,
   >.field--item,
+  .field__item,
   .field--items {
     display: inline;
     float: none;

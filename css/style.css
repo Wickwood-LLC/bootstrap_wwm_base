@@ -8323,7 +8323,9 @@ nav.tabs {
 }
 
 .field--label-inline .field--label,
+.field--label-inline .field__label,
 .field--label-inline > .field--item,
+.field--label-inline .field__item,
 .field--label-inline .field--items {
   display: inline;
   float: none;
