@@ -828,6 +828,9 @@ form#user-register-form {
       margin-right: 0.3em;
       margin: 0;
       background-position-x: right;
+      background-repeat: no-repeat;
+      background-position-x: right;
+
     }
   }
 
@@ -863,10 +866,10 @@ form#user-register-form {
     .form-type-password,
     .field--type-datetime {
       label, .label {
-        flex: 0 0 91px;
+        flex: 0 0 136px;
       }
-      input {
-        flex: 1 1 calc(100% - 91px);
+      input, .select-wrapper {
+        flex: 1 1 calc(100% - 136);
       }
     }
   }
@@ -877,22 +880,23 @@ form#user-register-form {
     .form-type-password,
     .field--type-datetime {
       label, .label {
-        flex: 0 0 122px;
+        flex: 0 0 150px;
       }
       input {
-        flex: 1 1 calc(100% - 122px);
+        flex: 1 1 calc(100% - 150px);
       }
     }
   }
   #edit-group-address {
+    div[class*="field-address-type"],
     div[class*="address-locality"],
     div[class*="address-administrative-area"],
     div[class*="address-postal-code"] {
       label, .label {
-        flex: 0 0 60px;
+        flex: 0 0 143px;
       }
-      input {
-        flex: 1 1 calc(100% - 60px);
+      input, .select-wrapper {
+        flex: 1 1 calc(100% - 143px);
       }
     }
   }
@@ -900,50 +904,11 @@ form#user-register-form {
     div[class*="subform-field-phone-number"],
     div[class*="subform-field-phone-type"] {
       label, .label {
-        flex: 0 0 103px;
+        flex: 0 0 155px;
       }
-      input {
-        flex: 1 1 calc(100% - 103px);
+      input, .select-wrapper {
+        flex: 1 1 calc(100% - 155px);
       }
-    }
-  }
-  #edit-group-source {
-    .form-item-field-source,
-    .field--name-field-source-date {
-      label, .label {
-        flex: 0 0 83px;
-      }
-      input {
-        flex: 1 1 calc(100% - 83px);
-      }
-    }
-    div[class*="inline-entity-form-field-gift-card"],
-    div[class*="inline-entity-form-field-amount"]
-    div[class*="inline-entity-form-field-note-date-wrapper"] {
-      label, .label {
-        flex: 0 0 69px;
-      }
-      input {
-        flex: 1 1 calc(100% - 69px);
-      }
-    }
-  }
-
-  #edit-status {
-    display: flex;
-    flex-flow: row wrap;
-    
-    .form-item {
-      margin-right: 2em;
-    }
-  }
-  #edit-roles {
-    display: flex;
-    flex-flow: row wrap;
-
-    .form-item {
-      margin-right: 1em;
-      flex: 0 0 140px;
     }
   }
 
