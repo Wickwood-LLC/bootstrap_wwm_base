@@ -8447,7 +8447,7 @@ nav.tabs {
 @media (min-width: 40em) {
   .layout.layout--threecol-section--33-34-33 > .layout__region--first,
   .layout.layout--threecol-section--33-34-33 > .layout__region--third {
-    flex: 0 1 calc(33% - 1em);
+    flex: 0 1 calc(33% - 0.5em);
   }
 }
 
