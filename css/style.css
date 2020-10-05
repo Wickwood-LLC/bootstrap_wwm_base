@@ -8580,6 +8580,7 @@ nav.tabs {
   border: 1px solid #5c9630;
   border-radius: 8px;
   margin-bottom: 1em;
+  padding: 0.5em;
 }
 
 .boxed > .block-title {
