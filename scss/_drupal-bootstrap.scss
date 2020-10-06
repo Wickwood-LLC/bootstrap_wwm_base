@@ -953,4 +953,12 @@ form#user-register-form {
   .field--name-user-picture img {
     margin: auto;
   }
+
+  .field--label, .field__label {
+    font-weight: 500;
+  }
+
+  .block-field-blockparagraphphonefield-phone-type {
+      margin-right: 0.3em;
+  }
 }

@@ -8863,6 +8863,14 @@ form#user-register-form .captcha {
   margin: auto;
 }
 
+.path-user .field--label, .path-user .field__label {
+  font-weight: 500;
+}
+
+.path-user .block-field-blockparagraphphonefield-phone-type {
+  margin-right: 0.3em;
+}
+
 .wt-row:before, .wt-row:after {
   content: " ";
   display: table;
