@@ -8715,7 +8715,7 @@ form#user-register-form label[for].form-required:after {
   margin: 0;
   background-position-x: right;
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-size: contain;
 }
 
 form#user-register-form .form-type-checkbox label:after {
@@ -8766,7 +8766,7 @@ form#user-register-form #edit-group-user .form-type-password input,
 form#user-register-form #edit-group-user .form-type-password .select-wrapper,
 form#user-register-form #edit-group-user .field--type-datetime input,
 form#user-register-form #edit-group-user .field--type-datetime .select-wrapper {
-  flex: 1 1 calc(100% - 136);
+  flex: 1 1 calc(100% - 136px);
 }
 
 form#user-register-form #edit-group-user-login-info .form-type-textfield label, form#user-register-form #edit-group-user-login-info .form-type-textfield .label,
@@ -8789,35 +8789,35 @@ form#user-register-form #edit-group-user-login-info .field--type-datetime input 
   flex: 1 1 calc(100% - 150px);
 }
 
-form#user-register-form #edit-group-address div[class*="field-address-type"] label, form#user-register-form #edit-group-address div[class*="field-address-type"] .label,
-form#user-register-form #edit-group-address div[class*="address-locality"] label,
-form#user-register-form #edit-group-address div[class*="address-locality"] .label,
-form#user-register-form #edit-group-address div[class*="address-administrative-area"] label,
-form#user-register-form #edit-group-address div[class*="address-administrative-area"] .label,
-form#user-register-form #edit-group-address div[class*="address-postal-code"] label,
-form#user-register-form #edit-group-address div[class*="address-postal-code"] .label {
+form#user-register-form #field-mailing-address-values div[class*="field-address-type"] label, form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .label,
+form#user-register-form #field-mailing-address-values div[class*="address-locality"] label,
+form#user-register-form #field-mailing-address-values div[class*="address-locality"] .label,
+form#user-register-form #field-mailing-address-values div[class*="address-administrative-area"] label,
+form#user-register-form #field-mailing-address-values div[class*="address-administrative-area"] .label,
+form#user-register-form #field-mailing-address-values div[class*="address-postal-code"] label,
+form#user-register-form #field-mailing-address-values div[class*="address-postal-code"] .label {
   flex: 0 0 143px;
 }
 
-form#user-register-form #edit-group-address div[class*="field-address-type"] input, form#user-register-form #edit-group-address div[class*="field-address-type"] .select-wrapper,
-form#user-register-form #edit-group-address div[class*="address-locality"] input,
-form#user-register-form #edit-group-address div[class*="address-locality"] .select-wrapper,
-form#user-register-form #edit-group-address div[class*="address-administrative-area"] input,
-form#user-register-form #edit-group-address div[class*="address-administrative-area"] .select-wrapper,
-form#user-register-form #edit-group-address div[class*="address-postal-code"] input,
-form#user-register-form #edit-group-address div[class*="address-postal-code"] .select-wrapper {
+form#user-register-form #field-mailing-address-values div[class*="field-address-type"] input, form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .select-wrapper,
+form#user-register-form #field-mailing-address-values div[class*="address-locality"] input,
+form#user-register-form #field-mailing-address-values div[class*="address-locality"] .select-wrapper,
+form#user-register-form #field-mailing-address-values div[class*="address-administrative-area"] input,
+form#user-register-form #field-mailing-address-values div[class*="address-administrative-area"] .select-wrapper,
+form#user-register-form #field-mailing-address-values div[class*="address-postal-code"] input,
+form#user-register-form #field-mailing-address-values div[class*="address-postal-code"] .select-wrapper {
   flex: 1 1 calc(100% - 143px);
 }
 
-form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] label, form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] .label,
-form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] label,
-form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] .label {
+form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] label, form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] .label,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] label,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] .label {
   flex: 0 0 155px;
 }
 
-form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] input, form#user-register-form #edit-group-phone div[class*="subform-field-phone-number"] .select-wrapper,
-form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] input,
-form#user-register-form #edit-group-phone div[class*="subform-field-phone-type"] .select-wrapper {
+form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] input, form#user-register-form #field-phone-values div[class*="subform-field-phone-number"] .select-wrapper,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] input,
+form#user-register-form #field-phone-values div[class*="subform-field-phone-type"] .select-wrapper {
   flex: 1 1 calc(100% - 155px);
 }
 
@@ -8835,11 +8835,6 @@ form#user-register-form .field--name-user-picture .image-widget .image-widget-da
 
 form#user-register-form .field--name-user-picture .image-widget .image-widget-data input.form-text {
   width: 100%;
-}
-
-form#user-register-form #edit-group-phone,
-form#user-register-form #edit-group-address {
-  padding: 0 18px 18px;
 }
 
 form#user-register-form .paragraphs-add-wrapper {
