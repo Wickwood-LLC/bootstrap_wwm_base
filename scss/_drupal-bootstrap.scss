@@ -816,8 +816,12 @@ form#user-pass {
 form#user-register-form {
   .row {
     margin-bottom: 0.5em;
+
+    > div[class*="col"] {
+      margin-bottom: 0.5em;
+    }
   }
-  
+
   label[for] {
     display: inline-block;
 

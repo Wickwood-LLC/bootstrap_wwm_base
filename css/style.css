@@ -8703,6 +8703,10 @@ form#user-register-form .row {
   margin-bottom: 0.5em;
 }
 
+form#user-register-form .row > div[class*="col"] {
+  margin-bottom: 0.5em;
+}
+
 form#user-register-form label[for] {
   display: inline-block;
 }
