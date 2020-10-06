@@ -8699,6 +8699,10 @@ form#user-pass #edit-actions {
   text-align: center;
 }
 
+form#user-register-form .row {
+  margin-bottom: 0.5em;
+}
+
 form#user-register-form label[for] {
   display: inline-block;
 }
@@ -8843,6 +8847,16 @@ form#user-register-form .field--name-user-picture .image-widget .image-widget-da
 
 form#user-register-form .paragraphs-add-wrapper {
   text-align: center;
+}
+
+form#user-register-form .captcha {
+  max-width: 500px;
+  margin: 1em auto;
+  display: block;
+}
+
+.path-user .field--name-user-picture img {
+  margin: auto;
 }
 
 .wt-row:before, .wt-row:after {

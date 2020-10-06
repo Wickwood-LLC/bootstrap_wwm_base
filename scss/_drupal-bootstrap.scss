@@ -814,6 +814,10 @@ form#user-pass {
 }
 
 form#user-register-form {
+  .row {
+    margin-bottom: 0.5em;
+  }
+  
   label[for] {
     display: inline-block;
 
@@ -934,7 +938,15 @@ form#user-register-form {
     text-align: center;
   }
 
-  .tabledrag-toggle-weight {
-    
+  .captcha {
+    max-width: 500px;
+    margin: 1em auto;
+    display: block;
+  }
+}
+
+.path-user {
+  .field--name-user-picture img {
+    margin: auto;
   }
 }
