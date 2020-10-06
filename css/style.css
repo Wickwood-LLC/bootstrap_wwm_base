@@ -8734,7 +8734,7 @@ form#user-register-form .form-type-password,
 form#user-register-form .field--type-datetime {
   display: flex;
   flex-flow: row wrap;
-  align-items: baseline;
+  align-items: center;
 }
 
 form#user-register-form .form-type-textfield .description,
@@ -8790,6 +8790,8 @@ form#user-register-form #edit-group-user-login-info .field--type-datetime input 
 }
 
 form#user-register-form #field-mailing-address-values div[class*="field-address-type"] label, form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .label,
+form#user-register-form #field-mailing-address-values div[class*="address-country-code"] label,
+form#user-register-form #field-mailing-address-values div[class*="address-country-code"] .label,
 form#user-register-form #field-mailing-address-values div[class*="address-locality"] label,
 form#user-register-form #field-mailing-address-values div[class*="address-locality"] .label,
 form#user-register-form #field-mailing-address-values div[class*="address-administrative-area"] label,
@@ -8800,6 +8802,8 @@ form#user-register-form #field-mailing-address-values div[class*="address-postal
 }
 
 form#user-register-form #field-mailing-address-values div[class*="field-address-type"] input, form#user-register-form #field-mailing-address-values div[class*="field-address-type"] .select-wrapper,
+form#user-register-form #field-mailing-address-values div[class*="address-country-code"] input,
+form#user-register-form #field-mailing-address-values div[class*="address-country-code"] .select-wrapper,
 form#user-register-form #field-mailing-address-values div[class*="address-locality"] input,
 form#user-register-form #field-mailing-address-values div[class*="address-locality"] .select-wrapper,
 form#user-register-form #field-mailing-address-values div[class*="address-administrative-area"] input,

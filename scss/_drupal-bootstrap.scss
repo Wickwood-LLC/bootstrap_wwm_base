@@ -852,7 +852,7 @@ form#user-register-form {
   .field--type-datetime {
     display: flex;
     flex-flow: row wrap;
-    align-items: baseline;
+    align-items: center;
 
     .description {
       flex: 1 100%;
@@ -889,6 +889,7 @@ form#user-register-form {
   }
   #field-mailing-address-values {
     div[class*="field-address-type"],
+    div[class*="address-country-code"],
     div[class*="address-locality"],
     div[class*="address-administrative-area"],
     div[class*="address-postal-code"] {
