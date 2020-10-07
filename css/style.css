@@ -8739,16 +8739,28 @@ form#user-register-form .form-type-textfield,
 form#user-register-form .form-type-select,
 form#user-register-form .form-type-email,
 form#user-register-form .form-type-password,
+form#user-register-form .form-type-tel,
 form#user-register-form .field--type-datetime {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
 
+form#user-register-form .form-type-textfield input,
+form#user-register-form .form-type-select input,
+form#user-register-form .form-type-email input,
+form#user-register-form .form-type-password input,
+form#user-register-form .form-type-tel input,
+form#user-register-form .field--type-datetime input {
+  min-width: 195px;
+  max-width: 100%;
+}
+
 form#user-register-form .form-type-textfield .description,
 form#user-register-form .form-type-select .description,
 form#user-register-form .form-type-email .description,
 form#user-register-form .form-type-password .description,
+form#user-register-form .form-type-tel .description,
 form#user-register-form .field--type-datetime .description {
   flex: 1 100%;
 }
@@ -8851,6 +8863,10 @@ form#user-register-form .field--name-user-picture .image-widget .image-widget-da
 
 form#user-register-form .paragraphs-add-wrapper {
   text-align: center;
+}
+
+form#user-register-form .paragraphs-subform {
+  margin-left: -50px;
 }
 
 form#user-register-form .captcha {

@@ -857,10 +857,16 @@ form#user-register-form {
   .form-type-select,
   .form-type-email,
   .form-type-password,
+  .form-type-tel,
   .field--type-datetime {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+    input {
+      min-width: 195px;
+      max-width: 100%;
+    }
 
     .description {
       flex: 1 100%;
@@ -940,6 +946,10 @@ form#user-register-form {
 
   .paragraphs-add-wrapper {
     text-align: center;
+  }
+
+  .paragraphs-subform {
+    margin-left: -50px;
   }
 
   .captcha {
