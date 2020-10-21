@@ -35,7 +35,7 @@
  *   comment/reply/12345).
  *
  * Regions:
- * - page.header: Items for the header region.
+ * - page.topbar: Items for the Top Bar region.
  * - page.navigation: Items for the navigation region.
  * - page.navigation_collapsible: Items for the navigation (collapsible) region.
  * - page.highlighted: Items for the highlighted content region.
@@ -98,10 +98,10 @@
     <div class="row">
 
       {# Header #}
-      {% if page.header %}
-        {% block header %}
+      {% if page.topbar %}
+        {% block topbar %}
           <div class="col-sm-12" role="heading">
-            {{ page.header }}
+            {{ page.topbar }}
           </div>
         {% endblock %}
       {% endif %}
