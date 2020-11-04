@@ -37,4 +37,53 @@ bootstrap_wwm_base.content_image_slidehow.desktop:
   multipliers: 
     - 1x
   group: bootstrap_wwm_base.content_image_slidehow
+
+# Content Image Slideshow 6
+bootstrap_wwm_base.content_image_slidehow_6.phone_portrait:
+  label: Phone Portrait
+  mediaQuery: '(max-width: 320px)'
+  weight: 0
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow_6
+
+bootstrap_wwm_base.content_image_slidehow_6.phone_landscape:
+  label: Phone Landscape
+  mediaQuery: '(min-width: 321px) and (max-width: 480px)'
+  weight: 1
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow_6
+
+bootstrap_wwm_base.content_image_slidehow_6.tab_portrait:
+  label: Tab Portrait
+  mediaQuery: '(min-width: 481px) and (max-width: 768px)'
+  weight: 2
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow_6
+
+bootstrap_wwm_base.content_image_slidehow_6.tab_landscape:
+  label: Tab Landscape
+  mediaQuery: '(min-width: 769px) and (max-width: 1024px)'
+  weight: 3
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow_6
+
+bootstrap_wwm_base.content_image_slidehow_6.desktop:
+  label: Desktop
+  mediaQuery: '(min-width: 1025px) and (max-width: 1440px)'
+  weight: 4
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow_6
+
+bootstrap_wwm_base.content_image_slidehow_6.desktop_wide:
+  label: Desktop Wide
+  mediaQuery: '(min-width: 1441px)'
+  weight: 5
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.content_image_slidehow_6
   
