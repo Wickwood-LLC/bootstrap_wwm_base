@@ -7812,11 +7812,6 @@ body.toolbar-loading.toolbar {
 
 html,
 body {
-  background-color: #d9d9d9;
-}
-
-html,
-body {
   font-size: 16px;
 }
 
@@ -8650,6 +8645,14 @@ nav.tabs {
 
 .centered-title .block-title {
   text-align: center;
+}
+
+.no-top-margin-title .block-title {
+  margin-top: 0;
+}
+
+.no-bottom-margin-title .block-title {
+  margin-bottom: 0;
 }
 
 #edit-actions {
