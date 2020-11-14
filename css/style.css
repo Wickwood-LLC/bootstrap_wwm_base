@@ -9087,7 +9087,7 @@ form#user-register-form .captcha {
   margin-right: 0;
 }
 
-a.wt-button {
+.wt-button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: bold;
@@ -9111,7 +9111,7 @@ a.wt-button {
   border-radius: 3px;
 }
 
-a.wt-button:hover {
+.wt-button:hover {
   color: #fff;
   background-color: #449d44;
   border-color: #398439;
