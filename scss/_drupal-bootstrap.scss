@@ -759,6 +759,13 @@ nav.tabs {
 //   }
 // }
 
+.no-top-margin-title .block-title {
+  margin-top: 0;
+}
+.no-bottom-margin-title .block-title {
+  margin-bottom: 0;
+}
+
 #edit-actions {
   text-align: center;
 }
@@ -767,7 +774,7 @@ nav.tabs {
   float: left;
 
   &.js-layout-builder-block {
-  float: none;
+    float: none;
   }
 }
 
