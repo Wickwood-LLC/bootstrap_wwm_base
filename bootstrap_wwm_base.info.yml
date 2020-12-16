@@ -1,5 +1,6 @@
 name: 'Bootstrap WWM Base'
 description: 'A Drupal Bootstrap 3 based theme to be used as base for WWM websites. This is a sub-theme of the Bootstrap theme.'
+version: '8.x-2.x'
 package: 'Bootstrap'
 core: 8.x
 type: theme
