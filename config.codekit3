@@ -2424,6 +2424,13 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/prepros.config": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/prepros.config",
+		"oF": 0
+		},
 	"/screenshot.png": {
 		"ft": 32768,
 		"iS": 19493,
