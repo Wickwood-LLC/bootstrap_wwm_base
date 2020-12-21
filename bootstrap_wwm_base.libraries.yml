@@ -2,7 +2,7 @@ framework:
   css:
     theme:
       css/style.css: {}
-    navigation:
+    component:
       css/navbar.css: {}
 
 # Uncomment for LESS source JavaScript files.
