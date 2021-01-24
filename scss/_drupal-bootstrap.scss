@@ -793,6 +793,13 @@ nav.tabs {
     margin: auto;
   }
 }
+
+/********************* STYLES FOR BLOCKS AND/OR LAYOUTS *********************/
+.max-width-600px-centered {
+  max-width: 600px;
+  margin: auto;
+}
+
 /********************* VIEWS *********************/
 .views-exposed-form {
   .form--inline > .form-item {

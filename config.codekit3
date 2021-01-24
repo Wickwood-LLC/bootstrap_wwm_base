@@ -2846,7 +2846,7 @@
 "projectAttributes": {
 	"creationDate": 581339948.13037002,
 	"displayValue": "bootstrap_wwm_base",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "/bootstrap/test/dummy_node_mincer/apple-touch-icon-144-precomposed.png",
 	"iconImageWasSetByUser": 0
 	},
