@@ -7975,6 +7975,10 @@ ul:last-child {
   margin-bottom: 0;
 }
 
+.container-fluid {
+  max-width: 1200px;
+}
+
 .align-center {
   text-align: center;
 }
