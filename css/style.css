@@ -8448,11 +8448,9 @@ nav.tabs {
     display: block;
   }
   .rtlb:not(.layout-builder__layout) > .layout__region--first {
-    float: right;
     margin-left: 1em;
     margin-right: 0;
     margin-bottom: 1em;
-    width: 50%;
   }
   .rtlb:not(.layout-builder__layout) > .layout__region--second {
     margin: 0;
@@ -8464,11 +8462,9 @@ nav.tabs {
     display: block;
   }
   .ltrb:not(.layout-builder__layout) > .layout__region--first {
-    float: left;
     margin-left: 0;
     margin-right: 1em;
     margin-bottom: 1em;
-    width: 50%;
   }
   .ltrb:not(.layout-builder__layout) > .layout__region--second {
     margin: 0;
