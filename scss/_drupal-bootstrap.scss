@@ -558,15 +558,32 @@ nav.tabs {
       }
     }
 
+    >.layout__region--first {
+      margin-bottom: 1em;
+      
+      @include breakpoint(740px) {
+        margin-bottom: 0;
+      }
+    }
+
     &.rtlb:not(.layout-builder__layout) {
       display: flex;
       >.layout__region--first {
         order: 1;
         float: none;
+        margin-bottom: 0;
 
         @include breakpoint(740px) {
           order: 0;
           float: none;
+        }
+      }
+
+      >.layout__region--second {
+        margin-bottom: 1em;
+
+        @include breakpoint(740px) {
+          margin-bottom: 0;
         }
       }
     }
@@ -607,15 +624,31 @@ nav.tabs {
 
   &.layout--twocol-section--75-25,
   &.layout--twocol-section--25-75, {
+    >.layout__region--first {
+      margin-bottom: 1em;
+      
+      @include breakpoint(900px) {
+        margin-bottom: 0;
+      }
+    }
+
     &.rtlb:not(.layout-builder__layout) {
       display: flex;
       >.layout__region--first {
         order: 1;
         float: none;
+        margin-bottom: 0  ;
 
         @include breakpoint(900px) {
           order: 0;
           float: none;
+        }
+      }
+      >.layout__region--second {
+        margin-bottom: 1em;
+
+        @include breakpoint(900px) {
+          margin-bottom: 0;
         }
       }
     }
