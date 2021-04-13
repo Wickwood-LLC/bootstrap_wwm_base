@@ -8814,7 +8814,7 @@ nav.tabs {
   padding-right: 0;
 }
 
-.centered-title .block-title {
+.centered-title > .block-title {
   text-align: center;
 }
 
