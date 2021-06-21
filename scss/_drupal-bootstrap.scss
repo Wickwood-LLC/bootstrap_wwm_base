@@ -329,7 +329,7 @@ nav.tabs {
     li {
       border-bottom: 0;
       float: left;
-      background: #eee url(images/bleeds.png) 50% 0px no-repeat;
+      background: #eee url(../images/bleeds.svg) 50% 0 no-repeat;
       padding: 0;
 
       &:hover {
@@ -526,7 +526,8 @@ nav.tabs {
       }
     }
 
-    &.wlar {
+    &.wlar:not(.layout-builder__layout) {
+      display: block;
       >.layout__region--second {
         float: none;
 
@@ -536,7 +537,8 @@ nav.tabs {
       }
     }
 
-    &.wral {
+    &.wral:not(.layout-builder__layout) {
+      display: block;
       >.layout__region--first {
         float: none;
 
@@ -560,7 +562,7 @@ nav.tabs {
 
     >.layout__region--first {
       margin-bottom: 1em;
-      
+
       @include breakpoint(740px) {
         margin-bottom: 0;
       }
@@ -601,7 +603,8 @@ nav.tabs {
       }
     }
 
-    &.wlar {
+    &.wlar:not(.layout-builder__layout) {
+      display: block;
       >.layout__region--second {
         float: none;
 
@@ -611,7 +614,8 @@ nav.tabs {
       }
     }
 
-    &.wral {
+    &.wral:not(.layout-builder__layout) {
+      display: block;
       >.layout__region--first {
         float: none;
 
@@ -623,10 +627,10 @@ nav.tabs {
   }
 
   &.layout--twocol-section--75-25,
-  &.layout--twocol-section--25-75, {
+  &.layout--twocol-section--25-75 {
     >.layout__region--first {
       margin-bottom: 1em;
-      
+
       @include breakpoint(900px) {
         margin-bottom: 0;
       }
@@ -666,7 +670,8 @@ nav.tabs {
       }
     }
 
-    &.wlar {
+    &.wlar:not(.layout-builder__layout) {
+      display: block;
       >.layout__region--second {
         float: none;
 
@@ -676,7 +681,8 @@ nav.tabs {
       }
     }
 
-    &.wral {
+    &.wral:not(.layout-builder__layout) {
+      display: block;
       >.layout__region--first {
         float: none;
 

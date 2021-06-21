@@ -8218,7 +8218,7 @@ nav.tabs {
 #block-superfish-1 #superfish-1 li {
   border-bottom: 0;
   float: left;
-  background: #eee url(images/bleeds.png) 50% 0px no-repeat;
+  background: #eee url(../images/bleeds.svg) 50% 0 no-repeat;
   padding: 0;
 }
 
@@ -8410,22 +8410,30 @@ nav.tabs {
   }
 }
 
-.layout.layout--twocol-section.wlar > .layout__region--second {
+.layout.layout--twocol-section.wlar:not(.layout-builder__layout) {
+  display: block;
+}
+
+.layout.layout--twocol-section.wlar:not(.layout-builder__layout) > .layout__region--second {
   float: none;
 }
 
 @media (min-width: 740px) {
-  .layout.layout--twocol-section.wlar > .layout__region--second {
+  .layout.layout--twocol-section.wlar:not(.layout-builder__layout) > .layout__region--second {
     float: right;
   }
 }
 
-.layout.layout--twocol-section.wral > .layout__region--first {
+.layout.layout--twocol-section.wral:not(.layout-builder__layout) {
+  display: block;
+}
+
+.layout.layout--twocol-section.wral:not(.layout-builder__layout) > .layout__region--first {
   float: none;
 }
 
 @media (min-width: 740px) {
-  .layout.layout--twocol-section.wral > .layout__region--first {
+  .layout.layout--twocol-section.wral:not(.layout-builder__layout) > .layout__region--first {
     float: left;
   }
 }
@@ -8495,22 +8503,30 @@ nav.tabs {
   }
 }
 
-.layout.layout--twocol-section--50-50.wlar > .layout__region--second {
+.layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) {
+  display: block;
+}
+
+.layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--second {
   float: none;
 }
 
 @media (min-width: 740px) {
-  .layout.layout--twocol-section--50-50.wlar > .layout__region--second {
+  .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--second {
     float: right;
   }
 }
 
-.layout.layout--twocol-section--50-50.wral > .layout__region--first {
+.layout.layout--twocol-section--50-50.wral:not(.layout-builder__layout) {
+  display: block;
+}
+
+.layout.layout--twocol-section--50-50.wral:not(.layout-builder__layout) > .layout__region--first {
   float: none;
 }
 
 @media (min-width: 740px) {
-  .layout.layout--twocol-section--50-50.wral > .layout__region--first {
+  .layout.layout--twocol-section--50-50.wral:not(.layout-builder__layout) > .layout__region--first {
     float: left;
   }
 }
@@ -8568,22 +8584,30 @@ nav.tabs {
   }
 }
 
-.layout.layout--twocol-section--75-25.wlar > .layout__region--second, .layout.layout--twocol-section--25-75.wlar > .layout__region--second {
+.layout.layout--twocol-section--75-25.wlar:not(.layout-builder__layout), .layout.layout--twocol-section--25-75.wlar:not(.layout-builder__layout) {
+  display: block;
+}
+
+.layout.layout--twocol-section--75-25.wlar:not(.layout-builder__layout) > .layout__region--second, .layout.layout--twocol-section--25-75.wlar:not(.layout-builder__layout) > .layout__region--second {
   float: none;
 }
 
 @media (min-width: 900px) {
-  .layout.layout--twocol-section--75-25.wlar > .layout__region--second, .layout.layout--twocol-section--25-75.wlar > .layout__region--second {
+  .layout.layout--twocol-section--75-25.wlar:not(.layout-builder__layout) > .layout__region--second, .layout.layout--twocol-section--25-75.wlar:not(.layout-builder__layout) > .layout__region--second {
     float: right;
   }
 }
 
-.layout.layout--twocol-section--75-25.wral > .layout__region--first, .layout.layout--twocol-section--25-75.wral > .layout__region--first {
+.layout.layout--twocol-section--75-25.wral:not(.layout-builder__layout), .layout.layout--twocol-section--25-75.wral:not(.layout-builder__layout) {
+  display: block;
+}
+
+.layout.layout--twocol-section--75-25.wral:not(.layout-builder__layout) > .layout__region--first, .layout.layout--twocol-section--25-75.wral:not(.layout-builder__layout) > .layout__region--first {
   float: none;
 }
 
 @media (min-width: 900px) {
-  .layout.layout--twocol-section--75-25.wral > .layout__region--first, .layout.layout--twocol-section--25-75.wral > .layout__region--first {
+  .layout.layout--twocol-section--75-25.wral:not(.layout-builder__layout) > .layout__region--first, .layout.layout--twocol-section--25-75.wral:not(.layout-builder__layout) > .layout__region--first {
     float: left;
   }
 }
