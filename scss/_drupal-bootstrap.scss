@@ -501,7 +501,10 @@ nav.tabs {
 
   &.layout--twocol-section {
     &.rtlb:not(.layout-builder__layout) {
-      display: flex;
+      @include breakpoint(0px 899px) {
+        display: flex;
+      }
+
       >.layout__region--first {
         order: 1;
         float: none;
@@ -514,7 +517,10 @@ nav.tabs {
     }
 
     &.ltrb:not(.layout-builder__layout) {
-      display: flex;
+      @include breakpoint(0px 899px) {
+        display: flex;
+      }
+
       >.layout__region--first {
         order: 0;
         float: none;
@@ -528,6 +534,10 @@ nav.tabs {
 
     &.wlar:not(.layout-builder__layout) {
       display: block;
+
+      .layout__region {
+        display: inline-block;
+      }
       >.layout__region--second {
         float: none;
 
@@ -539,6 +549,10 @@ nav.tabs {
 
     &.wral:not(.layout-builder__layout) {
       display: block;
+
+      .layout__region {
+        display: inline-block;
+      }
       >.layout__region--first {
         float: none;
 
@@ -569,7 +583,10 @@ nav.tabs {
     }
 
     &.rtlb:not(.layout-builder__layout) {
-      display: flex;
+      @include breakpoint(0px 739px) {
+        display: flex;
+      }
+
       >.layout__region--first {
         order: 1;
         float: none;
@@ -591,7 +608,10 @@ nav.tabs {
     }
 
     &.ltrb:not(.layout-builder__layout) {
-      display: flex;
+      @include breakpoint(0px 739px) {
+        display: flex;
+      }
+
       >.layout__region--first {
         order: 0;
         float: none;
@@ -605,6 +625,11 @@ nav.tabs {
 
     &.wlar:not(.layout-builder__layout) {
       display: block;
+
+      .layout__region {
+        display: inline-block;
+      }
+
       >.layout__region--second {
         float: none;
 
@@ -616,6 +641,10 @@ nav.tabs {
 
     &.wral:not(.layout-builder__layout) {
       display: block;
+
+      .layout__region {
+        display: inline-block;
+      }
       >.layout__region--first {
         float: none;
 
@@ -637,7 +666,10 @@ nav.tabs {
     }
 
     &.rtlb:not(.layout-builder__layout) {
-      display: flex;
+      @include breakpoint(0px 899px) {
+        display: flex;
+      }
+
       >.layout__region--first {
         order: 1;
         float: none;
@@ -658,7 +690,10 @@ nav.tabs {
     }
 
     &.ltrb:not(.layout-builder__layout) {
-      display: flex;
+      @include breakpoint(0px 899px) {
+        display: flex;
+      }
+      
       >.layout__region--first {
         order: 0;
         float: none;
@@ -672,6 +707,10 @@ nav.tabs {
 
     &.wlar:not(.layout-builder__layout) {
       display: block;
+
+      .layout__region {
+        display: inline-block;
+      }
       >.layout__region--second {
         float: none;
 
@@ -683,6 +722,10 @@ nav.tabs {
 
     &.wral:not(.layout-builder__layout) {
       display: block;
+
+      .layout__region {
+        display: inline-block;
+      }
       >.layout__region--first {
         float: none;
 
