@@ -26,6 +26,7 @@ libraries-extend:
 
 ckeditor_stylesheets:
   - css/ckeditor-styles.css
+  - css/ckeditor-text-colors.css
 
 dependencies:
   - fdk:fdk

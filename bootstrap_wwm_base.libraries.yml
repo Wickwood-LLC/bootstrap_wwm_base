@@ -2,6 +2,7 @@ framework:
   css:
     theme:
       css/style.css: {}
+      css/ckeditor-text-colors.css: {}
     component:
       css/navbar.css: {}
 
