@@ -8273,6 +8273,16 @@ nav.tabs {
     font-size: 30px;
   }
 }
+.block-social-sharing-block .social-media-sharing > ul {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+.block-social-sharing-block .social-media-sharing > ul li {
+  margin: 10px;
+}
 
 .boxed {
   border: 1px solid #5c9630;

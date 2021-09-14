@@ -949,6 +949,18 @@ nav.tabs {
     text-align: center;
     @include fluid-type(320px, 1200px, 18px, 30px); // values inside are ($min_width,$max_width, $min_font, $max_font);
   }
+
+  .social-media-sharing > ul {
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+
+    li {
+      margin: 10px;
+    }
+  }
 }
 
 .boxed {
