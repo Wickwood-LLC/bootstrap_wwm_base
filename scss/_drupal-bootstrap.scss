@@ -548,18 +548,18 @@ nav.tabs {
   }
 
   &.layout--twocol-section--50-50 {
-    >.layout__region {
-      @include breakpoint(40em) {
-        flex: 1 1 100%;
-      }
-
-      @include breakpoint(740px) {
-        flex: 0 1 calc(50% - 0.5em);
-      }
-    }
-
     &.rtlb:not(.layout-builder__layout) {
       display: flex;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          flex: 1 1 100%;
+        }
+
+        @include breakpoint(740px) {
+          flex: 0 1 calc(50% - 0.5em);
+        }
+      }
       >.layout__region--first {
         order: 1;
         float: none;
@@ -573,6 +573,16 @@ nav.tabs {
 
     &.ltrb:not(.layout-builder__layout) {
       display: flex;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          flex: 1 1 100%;
+        }
+
+        @include breakpoint(740px) {
+          flex: 0 1 calc(50% - 0.5em);
+        }
+      }
       >.layout__region--first {
         order: 0;
         float: none;
@@ -584,22 +594,56 @@ nav.tabs {
       }
     }
 
-    &.wlar {
-      >.layout__region--second {
-        float: none;
+    &.wlar:not(.layout-builder__layout) {
+      display: block;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          width: 100%;
+        }
 
         @include breakpoint(740px) {
           float: right;
+          width: calc(50% - 0.5em);
+        }
+      }
+      >.layout__region--first {
+        @include breakpoint(740px) {
+          float: left;
+        }
+      }
+      >.layout__region--second {
+        @include breakpoint(740px) {
+          float: none;
+          margin: 0;
+          width: 100%;
         }
       }
     }
 
-    &.wral {
-      >.layout__region--first {
-        float: none;
+    &.wral:not(.layout-builder__layout) {
+      display: block;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          width: 100%;
+        }
 
         @include breakpoint(740px) {
           float: left;
+          width: calc(50% - 0.5em);
+        }
+      }
+      >.layout__region--first {
+        @include breakpoint(740px) {
+          float: none;
+          margin: 0;
+          width: 100%;
+        }
+      }
+      >.layout__region--second {
+        @include breakpoint(740px) {
+          float: right;
         }
       }
     }
@@ -649,6 +693,107 @@ nav.tabs {
 
         @include breakpoint(900px) {
           float: left;
+        }
+      }
+    }
+  }
+
+  &.layout--twocol-section--75-25 {
+    &.wlar:not(.layout-builder__layout) {
+      display: block;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          width: 100%;
+        }
+      }
+      >.layout__region--first {
+        @include breakpoint(740px) {
+          float: left;
+          width: calc(75% - 0.5em);
+        }
+      }
+      >.layout__region--second {
+        @include breakpoint(740px) {
+          float: none;
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    &.wral:not(.layout-builder__layout) {
+      display: block;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          width: 100%;
+        }
+
+        @include breakpoint(740px) {
+          float: left;
+          width: calc(50% - 0.5em);
+        }
+      }
+      >.layout__region--first {
+        @include breakpoint(740px) {
+          float: none;
+          margin: 0;
+          width: calc(75% - 0.5em);
+        }
+      }
+      >.layout__region--second {
+        @include breakpoint(740px) {
+          float: right;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.layout--twocol-section--25-75 {
+    &.wlar:not(.layout-builder__layout) {
+      display: block;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          width: 100%;
+        }
+      }
+      >.layout__region--first {
+        @include breakpoint(740px) {
+          float: left;
+          width: calc(25% - 0.5em);
+        }
+      }
+      >.layout__region--second {
+        @include breakpoint(740px) {
+          float: none;
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    &.wral:not(.layout-builder__layout) {
+      display: block;
+
+      >.layout__region {
+        @include breakpoint(40em) {
+          width: 100%;
+        }
+      }
+      >.layout__region--first {
+        @include breakpoint(740px) {
+          float: none;
+          margin: 0;
+          width: calc(25% - 0.5em);
+        }
+      }
+      >.layout__region--second {
+        @include breakpoint(740px) {
+          float: right;
+          width: 100%;
         }
       }
     }
