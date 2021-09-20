@@ -7525,11 +7525,13 @@ ul {
   margin-right: auto;
 }
 
-[data-entity-embed-display-settings*=rotate_left] img {
+[data-entity-embed-display-settings*=rotate_left] img,
+[data-entity-embed-display-settings*=rotated_left] img {
   transform: rotate(-7deg);
 }
 
-[data-entity-embed-display-settings*=rotate_right] img {
+[data-entity-embed-display-settings*=rotate_right] img,
+[data-entity-embed-display-settings*=rotated_right] img {
   transform: rotate(7deg);
 }
 
