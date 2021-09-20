@@ -7525,6 +7525,14 @@ ul {
   margin-right: auto;
 }
 
+[data-entity-embed-display-settings*=rotate_left] img {
+  transform: rotate(-7deg);
+}
+
+[data-entity-embed-display-settings*=rotate_right] img {
+  transform: rotate(7deg);
+}
+
 .extlink .svg-inline--fa.fa-w-16 {
   width: 0.8em;
   margin-left: 0.2em;
