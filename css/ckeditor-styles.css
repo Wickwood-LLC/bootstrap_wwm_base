@@ -54,12 +54,11 @@ li {
   flex-flow: column;
   justify-content: center;
 }
-
 @media only screen and (min-width: 850px) {
   .wt-col-md-6,
-  .wt-col-md-3,
-  .wt-col-md-4,
-  .wt-col-md-9 {
+.wt-col-md-3,
+.wt-col-md-4,
+.wt-col-md-9 {
     padding: 15px;
   }
 }
@@ -118,29 +117,32 @@ li {
 
 @media only screen and (min-width: 850px) {
   .wt-two-col.ltrb,
-  .wt-two-col.lbrt,
-  .wt-three-col.ltrb,
-  .wt-three-col.lbrt {
+.wt-two-col.lbrt,
+.wt-three-col.ltrb,
+.wt-three-col.lbrt {
     display: flex;
     flex-flow: row wrap;
   }
+
   .wt-two-col.lbrt .wt-col-1,
-  .wt-three-col.lbrt .wt-col-1 {
+.wt-three-col.lbrt .wt-col-1 {
     order: 0;
   }
+
   .wt-three-col.lbrt .wt-col-3 {
     order: 0;
   }
+
   .wt-two-col.ltrb .wt-col-md-6,
-  .wt-two-col.lbrt .wt-col-md-6 {
+.wt-two-col.lbrt .wt-col-md-6 {
     width: 50%;
   }
+
   .wt-three-col.ltrb .wt-col-md-4,
-  .wt-three-col.lbrt .wt-col-md-4 {
+.wt-three-col.lbrt .wt-col-md-4 {
     flex: 1 1 30%;
   }
 }
-
 .wt-three-col .wt-col-2 {
   padding-left: 7.5px;
   padding-right: 7.5px;
@@ -235,27 +237,22 @@ a.wt-button {
   border: 1px solid transparent;
   font-family: proxima-nova, sans-serif;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
-  padding: .3em .5em;
+  padding: 0.3em 0.5em;
   line-height: 1.5;
   border-radius: 3px;
 }
-
 a.wt-button {
   font-size: 16px;
 }
-
 @media screen and (min-width: 320px) {
   a.wt-button {
     font-size: calc(16px + 4 * ((100vw - 320px) / 930));
   }
 }
-
 @media screen and (min-width: 1250px) {
   a.wt-button {
     font-size: 20px;
@@ -409,5 +406,25 @@ a.wt-button:hover {
 .wt-four-col .wt-col-4 {
   margin-right: -5px;
   margin-left: 3px;
+}
+
+[data-entity-embed-display-settings*=rotate_left] picture,
+[data-entity-embed-display-settings*=rotated_left] picture {
+  display: inline-flex;
+}
+[data-entity-embed-display-settings*=rotate_left] img,
+[data-entity-embed-display-settings*=rotated_left] img {
+  transform: rotate(-7deg);
+  padding: 6%;
+}
+
+[data-entity-embed-display-settings*=rotate_right] picture,
+[data-entity-embed-display-settings*=rotated_right] picture {
+  display: inline-flex;
+}
+[data-entity-embed-display-settings*=rotate_right] img,
+[data-entity-embed-display-settings*=rotated_right] img {
+  transform: rotate(7deg);
+  padding: 6%;
 }
 /*# sourceMappingURL=ckeditor-styles.css.map */
