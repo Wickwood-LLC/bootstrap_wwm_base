@@ -401,3 +401,11 @@ a.wt-button:hover {
     padding: 6%;
   }
 }
+
+drupal-entity[data-align=center] {
+  display: block;
+}
+.align-center {
+  clear: both;
+  text-align: center;
+}

@@ -427,4 +427,13 @@ a.wt-button:hover {
   transform: rotate(7deg);
   padding: 6%;
 }
+
+drupal-entity[data-align=center] {
+  display: block;
+}
+
+.align-center {
+  clear: both;
+  text-align: center;
+}
 /*# sourceMappingURL=ckeditor-styles.css.map */
