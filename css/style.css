@@ -7513,6 +7513,11 @@ ul {
   margin-bottom: 0;
 }
 
+figure {
+  display: grid;
+  width: fit-content;
+}
+
 .container-fluid {
   max-width: 1200px;
 }
