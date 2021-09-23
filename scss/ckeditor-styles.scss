@@ -412,11 +412,9 @@ drupal-entity[data-align=center] {
 
 figure.align-left {
   float: left;
-  shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
-  shape-margin: 1em;
+  margin-right: 7%;
 }
 figure.align-right {
   float: right;
-  shape-outside: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 70%) border-box;
-  shape-margin: 1em;
+  margin-left: 7%;
 }
