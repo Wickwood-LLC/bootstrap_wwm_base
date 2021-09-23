@@ -7537,7 +7537,7 @@ figure.align-left {
   display: grid;
   width: min-content;
   shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
-  padding: 1em;
+  shape-margin: 1em;
 }
 
 figure.align-right {
@@ -7545,7 +7545,7 @@ figure.align-right {
   display: grid;
   width: min-content;
   shape-outside: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 70%) border-box;
-  padding: 1em;
+  shape-margin: 1em;
 }
 
 [data-entity-embed-display-settings*=rotate_left] picture,
