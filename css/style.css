@@ -7515,7 +7515,7 @@ ul {
 
 figure {
   display: grid;
-  width: fit-content;
+  width: min-content;
 }
 
 .container-fluid {
@@ -7531,24 +7531,42 @@ figure {
   margin-right: auto;
 }
 
+figure.align-left {
+  float: left;
+  display: grid;
+  width: min-content;
+  shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
+  padding: 1em;
+}
+
+figure.align-right {
+  float: right;
+  display: grid;
+  width: min-content;
+  shape-outside: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 70%) border-box;
+  padding: 1em;
+}
+
 [data-entity-embed-display-settings*=rotate_left] picture,
 [data-entity-embed-display-settings*=rotated_left] picture {
-  display: inline-flex;
+  display: grid;
+  width: max-content;
 }
 [data-entity-embed-display-settings*=rotate_left] img,
 [data-entity-embed-display-settings*=rotated_left] img {
   transform: rotate(-7deg);
-  padding: 6%;
+  padding: 6% 10% 6% 6%;
 }
 
 [data-entity-embed-display-settings*=rotate_right] picture,
 [data-entity-embed-display-settings*=rotated_right] picture {
-  display: inline-flex;
+  display: grid;
+  width: max-content;
 }
 [data-entity-embed-display-settings*=rotate_right] img,
 [data-entity-embed-display-settings*=rotated_right] img {
   transform: rotate(7deg);
-  padding: 6%;
+  padding: 6% 10% 6% 6%;
 }
 
 .extlink .svg-inline--fa.fa-w-16 {
