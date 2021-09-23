@@ -436,4 +436,14 @@ drupal-entity[data-align=center] {
   clear: both;
   text-align: center;
 }
+
+figure.align-left {
+  float: left;
+  margin-right: 7%;
+}
+
+figure.align-right {
+  float: right;
+  margin-left: 7%;
+}
 /*# sourceMappingURL=ckeditor-styles.css.map */
