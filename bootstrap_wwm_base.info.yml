@@ -19,9 +19,6 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
-libraries:
-  - bootstrap_wwm_base/global-scripts
-
 libraries-extend:
   bootstrap/framework:
     - bootstrap_wwm_base/framework
