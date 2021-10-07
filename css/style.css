@@ -7989,17 +7989,14 @@ nav.tabs {
     float: left;
     width: calc(50% - 0.5em);
   }
-}
-@media (min-width: 740px) {
   .layout.layout--twocol-section--50-50.wral:not(.layout-builder__layout) > .layout__region--first {
-    float: none;
+    float: left;
     margin: 0;
-    width: 100%;
+    width: auto;
   }
-}
-@media (min-width: 740px) {
   .layout.layout--twocol-section--50-50.wral:not(.layout-builder__layout) > .layout__region--second {
-    float: right;
+    float: none;
+    width: 100%;
   }
 }
 .layout.layout--twocol-section--75-25.rtlb:not(.layout-builder__layout), .layout.layout--twocol-section--25-75.rtlb:not(.layout-builder__layout) {
@@ -8081,14 +8078,12 @@ nav.tabs {
 }
 @media (min-width: 740px) {
   .layout.layout--twocol-section--75-25.wral:not(.layout-builder__layout) > .layout__region--first {
-    float: none;
+    float: left;
     margin: 0;
     width: calc(75% - 0.5em);
   }
-}
-@media (min-width: 740px) {
   .layout.layout--twocol-section--75-25.wral:not(.layout-builder__layout) > .layout__region--second {
-    float: right;
+    float: none;
     width: 100%;
   }
 }
@@ -8123,14 +8118,12 @@ nav.tabs {
 }
 @media (min-width: 740px) {
   .layout.layout--twocol-section--25-75.wral:not(.layout-builder__layout) > .layout__region--first {
-    float: none;
+    float: left;
     margin: 0;
     width: calc(25% - 0.5em);
   }
-}
-@media (min-width: 740px) {
   .layout.layout--twocol-section--25-75.wral:not(.layout-builder__layout) > .layout__region--second {
-    float: right;
+    float: none;
     width: 100%;
   }
 }
