@@ -673,22 +673,21 @@ nav.tabs {
         @include breakpoint(40em) {
           width: 100%;
         }
+      }
 
-        @include breakpoint(740px) {
+      @include breakpoint(740px) {
+        >.layout__region {
           float: left;
           width: calc(50% - 0.5em);
         }
-      }
-      >.layout__region--first {
-        @include breakpoint(740px) {
-          float: none;
+        >.layout__region--first {
+          float: left;
           margin: 0;
-          width: 100%;
+          width: auto;
         }
-      }
-      >.layout__region--second {
-        @include breakpoint(740px) {
-          float: right;
+        >.layout__region--second {
+          float: none;
+          width: 100%;
         }
       }
     }
@@ -780,16 +779,15 @@ nav.tabs {
           width: calc(50% - 0.5em);
         }
       }
-      >.layout__region--first {
-        @include breakpoint(740px) {
-          float: none;
+
+      @include breakpoint(740px) {
+        >.layout__region--first {
+          float: left;
           margin: 0;
           width: calc(75% - 0.5em);
         }
-      }
-      >.layout__region--second {
-        @include breakpoint(740px) {
-          float: right;
+        >.layout__region--second {
+          float: none;
           width: 100%;
         }
       }
@@ -828,16 +826,15 @@ nav.tabs {
           width: 100%;
         }
       }
-      >.layout__region--first {
-        @include breakpoint(740px) {
-          float: none;
+
+      @include breakpoint(740px) {
+        >.layout__region--first {
+          float: left;
           margin: 0;
           width: calc(25% - 0.5em);
         }
-      }
-      >.layout__region--second {
-        @include breakpoint(740px) {
-          float: right;
+        >.layout__region--second {
+          float: none;
           width: 100%;
         }
       }
