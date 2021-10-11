@@ -87,15 +87,11 @@ ul {
 
 figure.align-left {
   float: left;
-  display: grid;
-  width: min-content;
   shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
   shape-margin: 1em;
 }
 figure.align-right {
   float: right;
-  display: grid;
-  width: min-content;
   shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
   shape-margin: 1em;
 }
