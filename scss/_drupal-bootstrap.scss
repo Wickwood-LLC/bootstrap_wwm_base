@@ -85,15 +85,21 @@ ul {
   }
 }
 
+figure,
+figure[class] {
+  display: table !important;
+
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+  }
+}
+
 figure.align-left {
   float: left;
-  shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
-  shape-margin: 1em;
 }
 figure.align-right {
   float: right;
-  shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
-  shape-margin: 1em;
 }
 
 [data-entity-embed-display-settings*="rotate_left"],
