@@ -7545,28 +7545,6 @@ figure.align-right {
   float: right;
 }
 
-[data-entity-embed-display-settings*=rotate_left] picture,
-[data-entity-embed-display-settings*=rotated_left] picture {
-  display: grid;
-  width: max-content;
-}
-[data-entity-embed-display-settings*=rotate_left] img,
-[data-entity-embed-display-settings*=rotated_left] img {
-  transform: rotate(-7deg);
-  padding: 6% 10% 6% 6%;
-}
-
-[data-entity-embed-display-settings*=rotate_right] picture,
-[data-entity-embed-display-settings*=rotated_right] picture {
-  display: grid;
-  width: max-content;
-}
-[data-entity-embed-display-settings*=rotate_right] img,
-[data-entity-embed-display-settings*=rotated_right] img {
-  transform: rotate(7deg);
-  padding: 6% 10% 6% 6%;
-}
-
 .extlink .svg-inline--fa.fa-w-16 {
   width: 0.8em;
   margin-left: 0.2em;
