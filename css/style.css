@@ -7537,14 +7537,6 @@ figure[class] figcaption {
   caption-side: bottom;
 }
 
-figure.align-left {
-  float: left;
-}
-
-figure.align-right {
-  float: right;
-}
-
 .extlink .svg-inline--fa.fa-w-16 {
   width: 0.8em;
   margin-left: 0.2em;
