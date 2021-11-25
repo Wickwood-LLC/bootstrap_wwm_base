@@ -408,6 +408,7 @@ a.wt-button:hover {
   margin-left: 3px;
 }
 
+<<<<<<< HEAD
 [data-entity-embed-display-settings*=rotate_left] picture,
 [data-entity-embed-display-settings*=rotated_left] picture {
   display: inline-flex;
@@ -428,6 +429,8 @@ a.wt-button:hover {
   padding: 6%;
 }
 
+=======
+>>>>>>> origin/8.x-3.x-shape-outside-rotate-img
 drupal-entity[data-align=center] {
   display: block;
 }
