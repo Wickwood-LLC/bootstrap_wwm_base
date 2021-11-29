@@ -90,7 +90,6 @@ figure {
   }
 }
 
-<<<<<<< HEAD
 figure.align-left {
   float: left;
   display: grid;
@@ -126,7 +125,9 @@ figure.align-right {
   img {
     transform: rotate(7deg);
     padding: 6% 10% 6% 6%;
-=======
+  }
+}
+
 figure,
 figure[class] {
   display: table !important;
@@ -134,7 +135,6 @@ figure[class] {
   figcaption {
     display: table-caption;
     caption-side: bottom;
->>>>>>> origin/8.x-3.x-shape-outside-rotate-img
   }
 }
 
@@ -525,6 +525,11 @@ nav.tabs {
 }
 
 /********************* LAYOUTS *********************/
+#layout-builder {
+  .layout {
+    flex-wrap: nowrap;
+  }
+}
 .layout {
   position: relative;
   margin-bottom: 1em;
