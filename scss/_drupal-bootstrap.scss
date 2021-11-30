@@ -587,6 +587,9 @@ nav.tabs {
     }
 
     &.wlar {
+      @include breakpoint(740px) {
+        display: block;
+      }
       >.layout__region--second {
         float: none;
 
@@ -597,6 +600,9 @@ nav.tabs {
     }
 
     &.wral {
+      @include breakpoint(740px) {
+        display: block;
+      }
       >.layout__region--first {
         float: none;
 
@@ -655,8 +661,6 @@ nav.tabs {
     }
 
     &.wlar:not(.layout-builder__layout) {
-      display: block;
-
       >.layout__region {
         @include breakpoint(40em) {
           width: 100%;
@@ -667,13 +671,14 @@ nav.tabs {
           width: calc(50% - 0.5em);
         }
       }
-      >.layout__region--first {
-        @include breakpoint(740px) {
-          float: left;
+
+      @include breakpoint(740px) {
+        display: block;
+
+        >.layout__region--first {
+          float: left; 
         }
-      }
-      >.layout__region--second {
-        @include breakpoint(740px) {
+        >.layout__region--second {
           float: none;
           margin: 0;
           width: 100%;
@@ -682,8 +687,6 @@ nav.tabs {
     }
 
     &.wral:not(.layout-builder__layout) {
-      display: block;
-
       >.layout__region {
         @include breakpoint(40em) {
           width: 100%;
@@ -691,6 +694,8 @@ nav.tabs {
       }
 
       @include breakpoint(740px) {
+        display: block;
+
         >.layout__region {
           float: left;
           width: calc(50% - 0.5em);
