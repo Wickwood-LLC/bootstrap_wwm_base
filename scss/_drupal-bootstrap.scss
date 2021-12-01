@@ -597,6 +597,10 @@ nav.tabs {
           float: right;
         }
       }
+      .clearfix:before,
+      .clearfix:after {
+        display: none;
+      }
     }
 
     &.wral {
@@ -609,6 +613,10 @@ nav.tabs {
         @include breakpoint(740px) {
           float: left;
         }
+      }
+      .clearfix:before,
+      .clearfix:after {
+        display: none;
       }
     }
   }
