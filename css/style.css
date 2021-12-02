@@ -7895,6 +7895,14 @@ nav.tabs {
 #layout-builder .layout {
   flex-wrap: nowrap;
 }
+#layout-builder .layout.layout--twocol-section {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1rem;
+}
+#layout-builder .layout.layout--twocol-section .layout__region {
+  margin: 0;
+}
 
 .layout {
   position: relative;
