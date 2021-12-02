@@ -8044,7 +8044,6 @@ nav.tabs {
 }
 @media (min-width: 740px) {
   .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region {
-    float: right;
     width: calc(50% - 0.5em);
   }
 }
@@ -8053,12 +8052,20 @@ nav.tabs {
     display: block;
   }
   .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--first {
-    float: left;
+    float: none;
+    width: 100%;
+  }
+  .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--first:before {
+    content: "";
+    width: 50%;
+    height: var(--column-height);
+    display: block;
+    float: right;
   }
   .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--second {
-    float: none;
-    margin: 0;
-    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 @media (min-width: 40em) {

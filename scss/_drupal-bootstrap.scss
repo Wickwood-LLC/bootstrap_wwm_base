@@ -685,7 +685,6 @@ nav.tabs {
         }
 
         @include breakpoint(740px) {
-          float: right;
           width: calc(50% - 0.5em);
         }
       }
@@ -694,12 +693,21 @@ nav.tabs {
         display: block;
 
         >.layout__region--first {
-          float: left; 
+          float: none;
+          width: 100%;
+
+          &:before {
+            content: '';
+            width: 50%;
+            height: var(--column-height);
+            display: block;
+            float: right;
+          }
         }
         >.layout__region--second {
-          float: none;
-          margin: 0;
-          width: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
     }

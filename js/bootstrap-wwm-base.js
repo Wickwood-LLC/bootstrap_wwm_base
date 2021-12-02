@@ -29,4 +29,18 @@
       });
     }
   };
+
+
+  /**
+   * Add wrapped column height property
+   */
+  Drupal.behaviors.wrapColumnHeight = {
+    attach: function(context, settings) {
+      $column = $(".wlar > .layout__region--second");
+      $(window).on("resize", function() {
+        let columnHeight = $column.outerHeight() + "px";
+        $(":root").css("--column-height", columnHeight);
+      }).resize();
+    }
+  };
 })(jQuery, Drupal);
