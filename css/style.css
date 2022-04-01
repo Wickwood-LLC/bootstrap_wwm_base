@@ -7530,6 +7530,7 @@ figure {
 .align-center img {
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 figure.align-left {
