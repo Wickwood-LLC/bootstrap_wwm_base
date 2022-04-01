@@ -7893,6 +7893,7 @@ nav.tabs {
 }
 #layout-builder .layout.layout--twocol-section .layout__region {
   margin: 0;
+  max-width: unset;
 }
 #layout-builder .layout.layout--twocol-section--75-25 {
   grid-template-columns: 75% 25%;

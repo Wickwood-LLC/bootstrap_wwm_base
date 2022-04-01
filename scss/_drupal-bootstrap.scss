@@ -529,6 +529,7 @@ nav.tabs {
 
       .layout__region {
         margin: 0;
+        max-width: unset;
       }
     }
     &.layout--twocol-section--75-25 {
