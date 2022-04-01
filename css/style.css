@@ -7553,21 +7553,11 @@ figure.align-right {
   display: grid;
   width: max-content;
 }
-[data-entity-embed-display-settings*=rotate_left] img,
-[data-entity-embed-display-settings*=rotated_left] img {
-  transform: rotate(-7deg);
-  padding: 6% 10% 6% 6%;
-}
 
 [data-entity-embed-display-settings*=rotate_right] picture,
 [data-entity-embed-display-settings*=rotated_right] picture {
   display: grid;
   width: max-content;
-}
-[data-entity-embed-display-settings*=rotate_right] img,
-[data-entity-embed-display-settings*=rotated_right] img {
-  transform: rotate(7deg);
-  padding: 6% 10% 6% 6%;
 }
 
 figure,
