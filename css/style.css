@@ -8142,15 +8142,15 @@ nav.tabs {
 }
 @media (min-width: 740px) {
   .layout.layout--twocol-section--75-25.wlar:not(.layout-builder__layout) > .layout__region--first {
-    float: left;
-    width: calc(75% - 0.5em);
+    float: none;
+    max-width: unset;
   }
 }
 @media (min-width: 740px) {
   .layout.layout--twocol-section--75-25.wlar:not(.layout-builder__layout) > .layout__region--second {
-    float: none;
+    float: right;
     margin: 0;
-    width: 100%;
+    max-width: 25%;
   }
 }
 .layout.layout--twocol-section--75-25.wral:not(.layout-builder__layout) {

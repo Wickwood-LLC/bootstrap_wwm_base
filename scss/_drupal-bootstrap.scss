@@ -800,15 +800,15 @@ nav.tabs {
       }
       >.layout__region--first {
         @include breakpoint(740px) {
-          float: left;
-          width: calc(75% - 0.5em);
+          float: none;
+          max-width: unset;
         }
       }
       >.layout__region--second {
         @include breakpoint(740px) {
-          float: none;
+          float: right;
           margin: 0;
-          width: 100%;
+          max-width: 25%;
         }
       }
     }
