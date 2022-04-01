@@ -530,6 +530,12 @@ nav.tabs {
         margin: 0;
       }
     }
+    &.layout--twocol-section--75-25 {
+      grid-template-columns: 75% 25%;
+    }
+    &.layout--twocol-section--25-75 {
+      grid-template-columns: 25% 75%;
+    }
   }
 }
 .layout {
