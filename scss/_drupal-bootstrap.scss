@@ -694,19 +694,9 @@ nav.tabs {
         >.layout__region--first {
           float: none;
           width: 100%;
-
-          &:before {
-            content: '';
-            width: 50%;
-            height: var(--column-height);
-            display: block;
-            float: right;
-          }
         }
         >.layout__region--second {
-          position: absolute;
-          right: 0;
-          top: 0;
+          float: right;
         }
       }
     }

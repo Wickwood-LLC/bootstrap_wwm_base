@@ -8052,17 +8052,8 @@ nav.tabs {
     float: none;
     width: 100%;
   }
-  .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--first:before {
-    content: "";
-    width: 50%;
-    height: var(--column-height);
-    display: block;
-    float: right;
-  }
   .layout.layout--twocol-section--50-50.wlar:not(.layout-builder__layout) > .layout__region--second {
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
   }
 }
 @media (min-width: 40em) {
