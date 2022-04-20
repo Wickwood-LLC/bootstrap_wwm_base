@@ -103,3 +103,20 @@ bootstrap_wwm_base.desktop_mobile_breakpoints.desktop:
   multipliers:
     - 1x
   group: bootstrap_wwm_base.desktop_mobile_breakpoints
+
+  # Large Screen - Small Screen Breakpoints
+bootstrap_wwm_base.large_small_breakpoints.large_screen:
+  label:  Large Screen
+  mediaQuery: '(min-width: 573px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: bootstrap_wwm_base.large_small_breakpoints
+
+bootstrap_wwm_base.large_small_breakpoints.small_screen:
+  label: Small Screen
+  mediaQuery: '(max-width: 572px)'
+  weight: 0
+  multipliers:
+    - 1x
+  group: bootstrap_wwm_base.large_small_breakpoints
