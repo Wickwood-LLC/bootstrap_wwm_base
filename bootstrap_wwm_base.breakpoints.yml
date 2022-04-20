@@ -86,3 +86,20 @@ bootstrap_wwm_base.content_image_slidehow_6.desktop_wide:
   multipliers: 
     - 1x
   group: bootstrap_wwm_base.content_image_slidehow_6
+
+  # Desktop - Mobile Breakpoints
+bootstrap_wwm_base.desktop_mobile_breakpoints.mobile:
+  label: Mobile
+  mediaQuery: '(max-width: 692px)'
+  weight: 0
+  multipliers:
+    - 1x
+  group: bootstrap_wwm_base.desktop_mobile_breakpoints
+
+bootstrap_wwm_base.desktop_mobile_breakpoints.desktop:
+  label: Desktop
+  mediaQuery: '(min-width: 693px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: bootstrap_wwm_base.desktop_mobile_breakpoints
