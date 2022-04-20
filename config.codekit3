@@ -2338,6 +2338,16 @@
 		"oAP": "/css/ckeditor-styles.css.map",
 		"oF": 0
 		},
+	"/css/ckeditor-text-colors.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/ckeditor-text-colors-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/navbar.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2405,6 +2415,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/js/bootstrap-wwm-base.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/bootstrap-wwm-base-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/logo.svg": {
 		"ft": 2097152,
