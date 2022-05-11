@@ -8464,6 +8464,11 @@ nav.tabs {
   display: inline-block;
 }
 
+.view-articles.view-display-id-block_1 .views-row,
+.view-news.view-display-id-block_1 .views-row {
+  display: grid;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page main {
   text-align: center;

@@ -1153,6 +1153,13 @@ nav.tabs {
   }
 }
 
+.view-articles.view-display-id-block_1,
+.view-news.view-display-id-block_1 {
+  .views-row {
+    display: grid;
+  }
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page {
   main {
