@@ -6,7 +6,6 @@
     attach: function(context, settings) {
       $leftColumn = $(".wlar > .layout__region--second", context);
       $leftColumn.prependTo($leftColumn.parent());
-      console.log($(this));
     }
   };
 
