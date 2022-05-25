@@ -730,13 +730,18 @@ nav.tabs {
 
   &.layout--twocol-section--67-33,
   &.layout--twocol-section--33-67 {
+    .layout__region--first,
+    .layout__region--second {
+      flex: 1 100%;
+    }
+
     &.rtlb:not(.layout-builder__layout) {
       display: flex;
       >.layout__region--first {
         order: 1;
         float: none;
 
-        @include breakpoint(768px) {
+        @include breakpoint(850px) {
           order: 0;
           float: none;
         }
@@ -749,7 +754,7 @@ nav.tabs {
         order: 0;
         float: none;
 
-        @include breakpoint(768px) {
+        @include breakpoint(850px) {
           order: 0;
           float: none;
         }
@@ -760,7 +765,7 @@ nav.tabs {
       >.layout__region--second {
         float: none;
 
-        @include breakpoint(768px) {
+        @include breakpoint(850px) {
           float: right;
         }
       }
@@ -770,9 +775,29 @@ nav.tabs {
       >.layout__region--first {
         float: none;
 
-        @include breakpoint(768px) {
+        @include breakpoint(850px) {
           float: left;
         }
+      }
+    }
+  }
+  &.layout--twocol-section--67-33 {
+    @include breakpoint(850px) {
+      .layout__region--first {
+        flex: 1 1 67%;
+      }
+      .layout__region--second {
+        flex: 1 1 33%;
+      }
+    }
+  }
+  &.layout--twocol-section--33-67 {
+    @include breakpoint(850px) {
+      .layout__region--first {
+        flex: 1 1 33%;
+      }
+      .layout__region--second {
+        flex: 1 1 67%;
       }
     }
   }
@@ -825,7 +850,6 @@ nav.tabs {
       }
     }
   }
-
   &.layout--twocol-section--75-25 {
     &.wlar:not(.layout-builder__layout) {
       display: block;
@@ -877,7 +901,6 @@ nav.tabs {
       }
     }
   }
-
   &.layout--twocol-section--25-75 {
     &.wlar:not(.layout-builder__layout) {
       display: block;
