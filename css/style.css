@@ -8184,6 +8184,13 @@ nav.tabs {
     float: left;
   }
 }
+.layout.layout--twocol-section--75-25 .layout__region--first {
+  flex: 1 1 75%;
+  min-width: 75%;
+}
+.layout.layout--twocol-section--75-25 .layout__region--second {
+  flex: 0 1 25%;
+}
 .layout.layout--twocol-section--75-25.wlar:not(.layout-builder__layout) {
   display: block;
 }
@@ -8229,6 +8236,13 @@ nav.tabs {
     float: none;
     width: 100%;
   }
+}
+.layout.layout--twocol-section--25-75 .layout__region--first {
+  flex: 0 1 25%;
+}
+.layout.layout--twocol-section--25-75 .layout__region--second {
+  flex: 1 1 75%;
+  min-width: 75%;
 }
 .layout.layout--twocol-section--25-75.wlar:not(.layout-builder__layout) {
   display: block;
@@ -8605,7 +8619,8 @@ form#user-register-form .form-type-tel .description,
 form#user-register-form .field--type-datetime .description {
   flex: 1 100%;
 }
-form#user-register-form #edit-group-user .form-type-textfield label, form#user-register-form #edit-group-user .form-type-textfield .label,
+form#user-register-form #edit-group-user .form-type-textfield label,
+form#user-register-form #edit-group-user .form-type-textfield .label,
 form#user-register-form #edit-group-user .form-type-select label,
 form#user-register-form #edit-group-user .form-type-select .label,
 form#user-register-form #edit-group-user .form-type-email label,
@@ -8616,7 +8631,8 @@ form#user-register-form #edit-group-user .field--type-datetime label,
 form#user-register-form #edit-group-user .field--type-datetime .label {
   flex: 0 0 136px;
 }
-form#user-register-form #edit-group-user .form-type-textfield input, form#user-register-form #edit-group-user .form-type-textfield .select-wrapper,
+form#user-register-form #edit-group-user .form-type-textfield input,
+form#user-register-form #edit-group-user .form-type-textfield .select-wrapper,
 form#user-register-form #edit-group-user .form-type-select input,
 form#user-register-form #edit-group-user .form-type-select .select-wrapper,
 form#user-register-form #edit-group-user .form-type-email input,
@@ -8627,7 +8643,8 @@ form#user-register-form #edit-group-user .field--type-datetime input,
 form#user-register-form #edit-group-user .field--type-datetime .select-wrapper {
   flex: 1 1 calc(100% - 136px);
 }
-form#user-register-form #edit-group-user-login-info .form-type-textfield label, form#user-register-form #edit-group-user-login-info .form-type-textfield .label,
+form#user-register-form #edit-group-user-login-info .form-type-textfield label,
+form#user-register-form #edit-group-user-login-info .form-type-textfield .label,
 form#user-register-form #edit-group-user-login-info .form-type-select label,
 form#user-register-form #edit-group-user-login-info .form-type-select .label,
 form#user-register-form #edit-group-user-login-info .form-type-email label,
@@ -8645,7 +8662,8 @@ form#user-register-form #edit-group-user-login-info .form-type-password input,
 form#user-register-form #edit-group-user-login-info .field--type-datetime input {
   flex: 1 1 calc(100% - 150px);
 }
-form#user-register-form #field-mailing-address-values div[class*=field-address-type] label, form#user-register-form #field-mailing-address-values div[class*=field-address-type] .label,
+form#user-register-form #field-mailing-address-values div[class*=field-address-type] label,
+form#user-register-form #field-mailing-address-values div[class*=field-address-type] .label,
 form#user-register-form #field-mailing-address-values div[class*=address-country-code] label,
 form#user-register-form #field-mailing-address-values div[class*=address-country-code] .label,
 form#user-register-form #field-mailing-address-values div[class*=address-locality] label,
@@ -8656,7 +8674,8 @@ form#user-register-form #field-mailing-address-values div[class*=address-postal-
 form#user-register-form #field-mailing-address-values div[class*=address-postal-code] .label {
   flex: 0 0 143px;
 }
-form#user-register-form #field-mailing-address-values div[class*=field-address-type] input, form#user-register-form #field-mailing-address-values div[class*=field-address-type] .select-wrapper,
+form#user-register-form #field-mailing-address-values div[class*=field-address-type] input,
+form#user-register-form #field-mailing-address-values div[class*=field-address-type] .select-wrapper,
 form#user-register-form #field-mailing-address-values div[class*=address-country-code] input,
 form#user-register-form #field-mailing-address-values div[class*=address-country-code] .select-wrapper,
 form#user-register-form #field-mailing-address-values div[class*=address-locality] input,
@@ -8667,12 +8686,14 @@ form#user-register-form #field-mailing-address-values div[class*=address-postal-
 form#user-register-form #field-mailing-address-values div[class*=address-postal-code] .select-wrapper {
   flex: 1 1 calc(100% - 143px);
 }
-form#user-register-form #field-phone-values div[class*=subform-field-phone-number] label, form#user-register-form #field-phone-values div[class*=subform-field-phone-number] .label,
+form#user-register-form #field-phone-values div[class*=subform-field-phone-number] label,
+form#user-register-form #field-phone-values div[class*=subform-field-phone-number] .label,
 form#user-register-form #field-phone-values div[class*=subform-field-phone-type] label,
 form#user-register-form #field-phone-values div[class*=subform-field-phone-type] .label {
   flex: 0 0 155px;
 }
-form#user-register-form #field-phone-values div[class*=subform-field-phone-number] input, form#user-register-form #field-phone-values div[class*=subform-field-phone-number] .select-wrapper,
+form#user-register-form #field-phone-values div[class*=subform-field-phone-number] input,
+form#user-register-form #field-phone-values div[class*=subform-field-phone-number] .select-wrapper,
 form#user-register-form #field-phone-values div[class*=subform-field-phone-type] input,
 form#user-register-form #field-phone-values div[class*=subform-field-phone-type] .select-wrapper {
   flex: 1 1 calc(100% - 155px);
@@ -8704,7 +8725,8 @@ form#user-register-form .captcha {
 .path-user .field--name-user-picture img {
   margin: auto;
 }
-.path-user .field--label, .path-user .field__label {
+.path-user .field--label,
+.path-user .field__label {
   font-weight: 500;
 }
 .path-user .block-field-blockparagraphphonefield-phone-type {
