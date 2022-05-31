@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if content %}
+  <div{{ attributes }}>
+
+    {% set has_content_first = content.first|render|striptags|trim is not empty %}
+    {% if has_content_first %}
+      <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first') }}>
+        <h1>First region</h1>
+        {{ content.first }}
+      </div>
+    {% endif %}
+
+    {% set has_content_second = content.second|render|striptags|trim is not empty %}
+    {% if content.second %}
+      <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second') }}>
+        <h1>Second region</h1>
+        {{ content.second }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}
