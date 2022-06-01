@@ -72,6 +72,13 @@ figure {
     width: min-content;
 }
 
+table {
+    td,
+    td * {
+        vertical-align: top;
+    }
+}
+
 .container-fluid {
     max-width: 1200px;
 }
