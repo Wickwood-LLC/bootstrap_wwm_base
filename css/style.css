@@ -7504,6 +7504,10 @@ p {
   }
 }
 
+a {
+  word-break: break-word;
+}
+
 ol,
 ul {
   padding-left: 1.5em;
