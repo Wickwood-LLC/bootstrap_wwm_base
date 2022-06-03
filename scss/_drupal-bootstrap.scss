@@ -702,16 +702,22 @@ nav.tabs {
         }
     }
     &.layout--twocol-section--67-33 {
-        @include breakpoint(850px) {
-            .layout__region--first {
-                flex: 1 1 67%;
-            }
-            .layout__region--second {
-                flex: 1 1 33%;
-            }
+        .layout__region--first {
+            flex: 1 1 67%;
+            min-width: 67%;
+        }
+        .layout__region--second {
+            flex: 0 1 33%;
         }
     }
     &.layout--twocol-section--33-67 {
+        .layout__region--first {
+            flex: 1 1 33%;
+        }
+        .layout__region--second {
+            flex: 0 1 67%;
+            min-width: 67%;
+        }
         @include breakpoint(850px) {
             .layout__region--first {
                 flex: 1 1 33%;
