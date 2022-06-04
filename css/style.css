@@ -8565,6 +8565,12 @@ nav.tabs {
   display: grid;
 }
 
+.view-empty {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
 /********************* MAINTENANCE *********************/
 .maintenance-page main {
   text-align: center;
