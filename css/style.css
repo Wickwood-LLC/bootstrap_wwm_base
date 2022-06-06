@@ -7522,6 +7522,9 @@ figure {
   width: min-content;
 }
 
+table {
+  max-width: 100%;
+}
 table td,
 table td * {
   vertical-align: top;
