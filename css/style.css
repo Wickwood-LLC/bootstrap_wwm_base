@@ -7527,6 +7527,11 @@ table td * {
   vertical-align: top;
 }
 
+.responsive-table {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
 .container-fluid {
   max-width: 1200px;
 }
