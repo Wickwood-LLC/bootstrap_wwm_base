@@ -7532,7 +7532,7 @@ table td * {
 
 .responsive-table {
   max-width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .container-fluid {
