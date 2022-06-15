@@ -588,317 +588,376 @@ nav.tabs {
                 display: none;
             }
         }
-    }
-    &.layout--twocol-section--50-50 {
-        &.rtlb:not(.layout-builder__layout) {
-            display: flex;
-            >.layout__region {
-                @include breakpoint(40em) {
-                    flex: 1 1 100%;
-                }
-                @include breakpoint(740px) {
-                    flex: 0 1 calc(50% - 0.5em);
-                }
-            }
-            >.layout__region--first {
-                order: 1;
-                float: none;
-                @include breakpoint(740px) {
-                    order: 0;
-                    float: none;
-                }
-            }
-        }
-        &.ltrb:not(.layout-builder__layout) {
-            display: flex;
-            >.layout__region {
-                @include breakpoint(40em) {
-                    flex: 1 1 100%;
-                }
-                @include breakpoint(740px) {
-                    flex: 0 1 calc(50% - 0.5em);
-                }
-            }
-            >.layout__region--first {
-                order: 0;
-                float: none;
-                @include breakpoint(740px) {
-                    order: 0;
-                    float: none;
-                }
-            }
-        }
-        &.wlar:not(.layout-builder__layout) {
-            >.layout__region {
-                @include breakpoint(40em) {
-                    width: 100%;
-                }
-                @include breakpoint(740px) {
-                    width: calc(50% - 0.5em);
-                }
-            }
-            @include breakpoint(740px) {
-                display: block;
-                >.layout__region--first {
-                    float: none;
-                    width: 100%;
-                }
-                >.layout__region--second {
-                    float: right;
-                }
-            }
-        }
-        &.wral:not(.layout-builder__layout) {
-            >.layout__region {
-                @include breakpoint(40em) {
-                    width: 100%;
-                }
-            }
-            @include breakpoint(740px) {
-                display: block;
+        &.layout--twocol-section--50-50 {
+            &.rtlb:not(.layout-builder__layout) {
+                display: flex;
                 >.layout__region {
-                    float: left;
-                    width: calc(50% - 0.5em);
+                    @include breakpoint(40em) {
+                        flex: 1 1 100%;
+                    }
+                    @include breakpoint(740px) {
+                        flex: 0 1 calc(50% - 0.5em);
+                    }
                 }
                 >.layout__region--first {
-                    float: left;
-                    margin: 0;
-                    width: auto;
-                }
-                >.layout__region--second {
+                    order: 1;
                     float: none;
-                    width: 100%;
+                    @include breakpoint(740px) {
+                        order: 0;
+                        float: none;
+                    }
                 }
             }
-        }
-    }
-    &.layout--twocol-section--67-33,
-    &.layout--twocol-section--33-67 {
-        display: block;
-        @include breakpoint(850px) {
-            display: flex;
-        }
-        .layout__region--first,
-        .layout__region--second {
-            flex: 1 100%;
-        }
-        &.rtlb:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region--first {
-                order: 0;
-                float: none;
-            }
-            @include breakpoint(850px) {
+            &.ltrb:not(.layout-builder__layout) {
                 display: flex;
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        flex: 1 1 100%;
+                    }
+                    @include breakpoint(740px) {
+                        flex: 0 1 calc(50% - 0.5em);
+                    }
+                }
                 >.layout__region--first {
                     order: 0;
                     float: none;
+                    @include breakpoint(740px) {
+                        order: 0;
+                        float: none;
+                    }
+                }
+            }
+            &.wlar:not(.layout-builder__layout) {
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        width: 100%;
+                    }
+                    @include breakpoint(740px) {
+                        width: calc(50% - 0.5em);
+                    }
+                }
+                @include breakpoint(740px) {
+                    display: block;
+                    >.layout__region--first {
+                        float: none;
+                        width: 100%;
+                    }
+                    >.layout__region--second {
+                        float: right;
+                    }
+                }
+            }
+            &.wral:not(.layout-builder__layout) {
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        width: 100%;
+                    }
+                }
+                @include breakpoint(740px) {
+                    display: block;
+                    >.layout__region {
+                        float: left;
+                        width: calc(50% - 0.5em);
+                    }
+                    >.layout__region--first {
+                        float: left;
+                        margin: 0;
+                        width: auto;
+                    }
+                    >.layout__region--second {
+                        float: none;
+                        width: 100%;
+                    }
                 }
             }
         }
-        &.ltrb:not(.layout-builder__layout) {
+        &.layout--twocol-section--67-33,
+        &.layout--twocol-section--33-67 {
             display: block;
-            display: flex;
-            >.layout__region--first {
-                order: 0;
-                float: none;
-            }
             @include breakpoint(850px) {
                 display: flex;
             }
-        }
-        &.wlar {
-            >.layout__region--second {
-                float: none;
-                @include breakpoint(850px) {
-                    float: right;
+            .layout__region--first,
+            .layout__region--second {
+                flex: 1 100%;
+            }
+            &.wlar {
+                >.layout__region--second {
+                    float: none;
+                    @include breakpoint(850px) {
+                        float: right;
+                    }
+                }
+            }
+            &.wral {
+                >.layout__region--first {
+                    float: none;
+                    @include breakpoint(850px) {
+                        float: left;
+                    }
                 }
             }
         }
-        &.wral {
-            >.layout__region--first {
-                float: none;
-                @include breakpoint(850px) {
-                    float: left;
-                }
-            }
-        }
-    }
-    &.layout--twocol-section--67-33 {
-        .layout__region--first {
-            flex: 1 1 67%;
-            min-width: 67%;
-        }
-        .layout__region--second {
-            flex: 0 1 33%;
-            min-width: 33%;
-        }
-    }
-    &.layout--twocol-section--33-67 {
-        .layout__region--first {
-            flex: 1 1 33%;
-            min-width: 33%;
-        }
-        .layout__region--second {
-            flex: 0 1 67%;
-            min-width: 67%;
-        }
-        @include breakpoint(850px) {
+        &.layout--twocol-section--67-33 {
             .layout__region--first {
-                flex: 1 1 33%;
+                flex: 1 1 67%;
+                min-width: 67%;
             }
             .layout__region--second {
-                flex: 1 1 67%;
+                flex: 0 1 33%;
+                min-width: 33%;
             }
-        }
-    }
-    &.layout--twocol-section--75-25,
-    &.layout--twocol-section--25-75 {
-        display: block;
-        @include breakpoint(900px) {
-            display: flex;
-        }
-        &.rtlb:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region--first {
-                order: 1;
-                float: none;
-            }
-            @include breakpoint(900px) {
-                display: flex;
+            &.rtlb:not(.layout-builder__layout) {
+                @include breakpoint(0px 849px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 1;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
                 >.layout__region--first {
                     order: 0;
-                    float: none;
+                }
+            }
+            &.ltrb:not(.layout-builder__layout) {
+                @include breakpoint(0px 849px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 0;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
                 }
             }
         }
-        &.ltrb:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region--first {
-                order: 0;
-                float: none;
+        &.layout--twocol-section--33-67 {
+            .layout__region--first {
+                flex: 1 1 33%;
+                min-width: 33%;
             }
+            .layout__region--second {
+                flex: 0 1 67%;
+                min-width: 67%;
+            }
+            &.rtlb:not(.layout-builder__layout) {
+                @include breakpoint(0px 849px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 1;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
+                >.layout__region--first {
+                    order: 0;
+                }
+            }
+            &.ltrb:not(.layout-builder__layout) {
+                @include breakpoint(0px 849px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 0;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
+            }
+        }
+        &.layout--twocol-section--75-25,
+        &.layout--twocol-section--25-75 {
+            display: block;
             @include breakpoint(900px) {
                 display: flex;
             }
-        }
-        &.wlar {
-            >.layout__region--second {
-                float: none;
-                @include breakpoint(900px) {
-                    float: right;
-                }
-            }
-        }
-        &.wral {
-            >.layout__region--first {
-                float: none;
-                @include breakpoint(900px) {
-                    float: left;
-                }
-            }
-        }
-    }
-    &.layout--twocol-section--75-25 {
-        .layout__region--first {
-            flex: 1 1 75%;
-            min-width: 75%;
-        }
-        .layout__region--second {
-            flex: 0 1 25%;
-            min-width: 25%;
-        }
-        &.wlar:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region {
-                @include breakpoint(40em) {
-                    width: 100%;
-                }
-            }
-            >.layout__region--first {
-                @include breakpoint(740px) {
-                    float: none;
-                    max-width: unset;
-                }
-            }
-            >.layout__region--second {
-                @include breakpoint(740px) {
-                    float: right;
-                    margin: 0;
-                    max-width: 25%;
-                }
-            }
-        }
-        &.wral:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region {
-                @include breakpoint(40em) {
-                    width: 100%;
-                }
-                @include breakpoint(740px) {
-                    float: left;
-                    width: calc(50% - 0.5em);
-                }
-            }
-            @include breakpoint(740px) {
-                >.layout__region--first {
-                    float: left;
-                    margin: 0;
-                    width: calc(75% - 0.5em);
-                }
+            &.wlar {
                 >.layout__region--second {
                     float: none;
-                    width: 100%;
+                    @include breakpoint(900px) {
+                        float: right;
+                    }
                 }
             }
-        }
-    }
-    &.layout--twocol-section--25-75 {
-        .layout__region--first {
-            flex: 0 1 25%;
-            min-width: 25%;
-        }
-        .layout__region--second {
-            flex: 1 1 75%;
-            min-width: 75%;
-        }
-        &.wlar:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region {
-                @include breakpoint(40em) {
-                    width: 100%;
-                }
-            }
-            >.layout__region--first {
-                @include breakpoint(740px) {
-                    float: left;
-                    width: calc(25% - 0.5em);
-                }
-            }
-            >.layout__region--second {
-                @include breakpoint(740px) {
-                    float: none;
-                    margin: 0;
-                    width: 100%;
-                }
-            }
-        }
-        &.wral:not(.layout-builder__layout) {
-            display: block;
-            >.layout__region {
-                @include breakpoint(40em) {
-                    width: 100%;
-                }
-            }
-            @include breakpoint(740px) {
+            &.wral {
                 >.layout__region--first {
-                    float: left;
-                    margin: 0;
-                    width: calc(25% - 0.5em);
+                    float: none;
+                    @include breakpoint(900px) {
+                        float: left;
+                    }
+                }
+            }
+        }
+        &.layout--twocol-section--75-25 {
+            .layout__region--first {
+                flex: 1 1 75%;
+                min-width: 75%;
+            }
+            .layout__region--second {
+                flex: 0 1 25%;
+                min-width: 25%;
+            }
+            &.rtlb:not(.layout-builder__layout) {
+                @include breakpoint(0px 899px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 1;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
+                >.layout__region--first {
+                    order: 0;
+                }
+            }
+            &.ltrb:not(.layout-builder__layout) {
+                @include breakpoint(0px 899px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 0;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
+            }
+            &.wlar:not(.layout-builder__layout) {
+                display: block;
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        width: 100%;
+                    }
+                }
+                >.layout__region--first {
+                    @include breakpoint(740px) {
+                        float: none;
+                        max-width: unset;
+                    }
                 }
                 >.layout__region--second {
-                    float: none;
-                    width: 100%;
+                    @include breakpoint(740px) {
+                        float: right;
+                        margin: 0;
+                        max-width: 25%;
+                    }
+                }
+            }
+            &.wral:not(.layout-builder__layout) {
+                display: block;
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        width: 100%;
+                    }
+                    @include breakpoint(740px) {
+                        float: left;
+                        width: calc(50% - 0.5em);
+                    }
+                }
+                @include breakpoint(740px) {
+                    >.layout__region--first {
+                        float: left;
+                        margin: 0;
+                        width: calc(75% - 0.5em);
+                    }
+                    >.layout__region--second {
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &.layout--twocol-section--25-75 {
+            .layout__region--first {
+                flex: 0 1 25%;
+                min-width: 25%;
+            }
+            .layout__region--second {
+                flex: 1 1 75%;
+                min-width: 75%;
+            }
+            &.rtlb:not(.layout-builder__layout) {
+                @include breakpoint(0px 899px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 1;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
+                >.layout__region--first {
+                    order: 0;
+                }
+            }
+            &.ltrb:not(.layout-builder__layout) {
+                @include breakpoint(0px 899px) {
+                    display: flex;
+                    >.layout__region--first {
+                        order: 0;
+                        float: none;
+                        flex: 100%;
+                    }
+                    >.layout__region--second {
+                        flex: 100%;
+                    }
+                }
+            }
+            &.wlar:not(.layout-builder__layout) {
+                display: block;
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        width: 100%;
+                    }
+                }
+                >.layout__region--first {
+                    @include breakpoint(740px) {
+                        float: left;
+                        width: calc(25% - 0.5em);
+                    }
+                }
+                >.layout__region--second {
+                    @include breakpoint(740px) {
+                        float: none;
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+            }
+            &.wral:not(.layout-builder__layout) {
+                display: block;
+                >.layout__region {
+                    @include breakpoint(40em) {
+                        width: 100%;
+                    }
+                }
+                @include breakpoint(740px) {
+                    >.layout__region--first {
+                        float: left;
+                        margin: 0;
+                        width: calc(25% - 0.5em);
+                    }
+                    >.layout__region--second {
+                        float: none;
+                        width: 100%;
+                    }
                 }
             }
         }
