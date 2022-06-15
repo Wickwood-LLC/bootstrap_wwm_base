@@ -35,28 +35,18 @@
         {% endif %}
       </span>
     {% else %}
-      {% if icon_position == 'after' %}
-        <span class="file-link">{{ link }}</span>
-        {% if options.icon %}
-          <span class="file-icon">{{ icon }}</span>
-        {% endif %}
-        {% if file_type %}
-          <span class="file-type">({{ file_type }})</span>
-        {% endif %}
-        {% if file_size %}
-          <span class="file-size">({{ file_size }})</span>
-        {% endif %}
-      {% else %}
-        {% if options.icon %}
-          <span class="file-icon">{{ icon }}</span>
-        {% endif %}
-        <span class="file-link">{{ link }}</span>
-        {% if file_type %}
-          <span class="file-type">({{ file_type }})</span>
-        {% endif %}
-        {% if file_size %}
-          <span class="file-size">({{ file_size }})</span>
-        {% endif %}
+      {% if options.icon and icon_position == 'before' %}
+        <span class="file-icon">{{ icon }}</span>
+      {% endif %}
+      <span class="file-link">{{ link }}</span>
+      {% if options.icon and icon_position == 'after' %}
+        <span class="file-icon">{{ icon }}</span>
+      {% endif %}
+      {% if file_type %}
+        <span class="file-type">({{ file_type }})</span>
+      {% endif %}
+      {% if file_size %}
+        <span class="file-size">({{ file_size }})</span>
       {% endif %}
     {% endif %}
   </span>
