@@ -683,25 +683,28 @@ nav.tabs {
             flex: 1 100%;
         }
         &.rtlb:not(.layout-builder__layout) {
-            display: flex;
+            display: block;
             >.layout__region--first {
-                order: 1;
+                order: 0;
                 float: none;
-                @include breakpoint(850px) {
+            }
+            @include breakpoint(850px) {
+                display: flex;
+                >.layout__region--first {
                     order: 0;
                     float: none;
                 }
             }
         }
         &.ltrb:not(.layout-builder__layout) {
+            display: block;
             display: flex;
             >.layout__region--first {
                 order: 0;
                 float: none;
-                @include breakpoint(850px) {
-                    order: 0;
-                    float: none;
-                }
+            }
+            @include breakpoint(850px) {
+                display: flex;
             }
         }
         &.wlar {
@@ -756,25 +759,27 @@ nav.tabs {
             display: flex;
         }
         &.rtlb:not(.layout-builder__layout) {
-            display: flex;
+            display: block;
             >.layout__region--first {
                 order: 1;
                 float: none;
-                @include breakpoint(900px) {
+            }
+            @include breakpoint(900px) {
+                display: flex;
+                >.layout__region--first {
                     order: 0;
                     float: none;
                 }
             }
         }
         &.ltrb:not(.layout-builder__layout) {
-            display: flex;
+            display: block;
             >.layout__region--first {
                 order: 0;
                 float: none;
-                @include breakpoint(900px) {
-                    order: 0;
-                    float: none;
-                }
+            }
+            @include breakpoint(900px) {
+                display: flex;
             }
         }
         &.wlar {
