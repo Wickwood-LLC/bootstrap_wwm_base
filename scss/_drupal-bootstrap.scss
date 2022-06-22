@@ -839,33 +839,27 @@ nav.tabs {
         }
     }
     &.layout--threecol-section--33-34-33 {
-        >.layout__region--first,
-        >.layout__region--third {
-            @include breakpoint(40em) {
-                flex: 1 1 calc(33% - 0.5em);
-                min-width: calc(33% - 0.5em);
-            }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        >.layout__region {
+            margin: 0;
+            padding: 0;
         }
-        >.layout__region--second {
-            @include breakpoint(40em) {
-                flex: 1 1 calc(34% - 1em);
-                min-width: calc(34% - 1em);
-            }
+        @include breakpoint(40em) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     &.layout--threecol-section--25-50-25 {
-        >.layout__region--first,
-        >.layout__region--third {
-            @include breakpoint(40em) {
-                flex: 1 1 calc(25% - 0.5em);
-                min-width: calc(25% - 0.5em);
-            }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        >.layout__region {
+            margin: 0;
+            padding: 0;
         }
-        >.layout__region--second {
-            @include breakpoint(40em) {
-                flex: 1 1 calc(50% - 1em);
-                min-width: calc(50% - 1em);
-            }
+        @include breakpoint(40em) {
+            grid-template-columns: 1fr 2fr 1fr;
         }
     }
 }
