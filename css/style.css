@@ -7536,7 +7536,6 @@ table td * {
 }
 
 .align-center {
-  clear: both;
   display: inline;
   text-align: center;
 }
@@ -7547,7 +7546,6 @@ table td * {
 
 figure.align-left {
   float: left;
-  clear: left;
   display: grid;
   width: min-content;
   shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
@@ -7556,7 +7554,6 @@ figure.align-left {
 
 figure.align-right {
   float: right;
-  clear: right;
   display: grid;
   width: min-content;
   shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
