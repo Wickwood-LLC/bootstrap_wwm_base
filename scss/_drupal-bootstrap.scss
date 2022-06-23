@@ -102,20 +102,46 @@ table {
     }
 }
 
-figure.align-left {
-    float: left;
-    display: grid;
-    width: min-content;
-    shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
-    shape-margin: 1em;
-}
-
-figure.align-right {
-    float: right;
-    display: grid;
-    width: min-content;
-    shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
-    shape-margin: 1em;
+figure {
+    &.align-left {
+        float: left;
+        display: contents;
+        width: min-content;
+        shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
+        shape-margin: 1em;
+        figcaption {
+            float: left;
+            clear: left;
+            margin: 0.5em 1em;
+            width: calc(var(--imageWidth) * 1px);
+        }
+    }
+    &.align-right {
+        float: right;
+        display: contents;
+        width: min-content;
+        shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
+        shape-margin: 1em;
+        figcaption {
+            float: right;
+            clear: right;
+            margin: 0.5em 1em;
+            width: calc(var(--imageWidth) * 1px);
+        }
+    }
+    .rotate-left {
+        shape-margin: 1em;
+        float: left;
+        margin: 1em;
+    }
+    .rotate-right {
+        shape-margin: 1em;
+        float: right;
+        margin: 1em;
+    }
+    >.embedded-entity[class*="rotate"] {
+        shape-outside: var(--shapeUrl);
+    }
 }
 
 [data-entity-embed-display-settings*="rotate_left"],
@@ -136,7 +162,7 @@ figure.align-right {
 
 figure,
 figure[class] {
-    display: table !important;
+    // display: table;
     figcaption {
         display: table-caption;
         caption-side: bottom;

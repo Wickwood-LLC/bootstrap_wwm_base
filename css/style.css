@@ -7546,18 +7546,42 @@ table td * {
 
 figure.align-left {
   float: left;
-  display: grid;
+  display: contents;
   width: min-content;
   shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
   shape-margin: 1em;
 }
-
+figure.align-left figcaption {
+  float: left;
+  clear: left;
+  margin: 0.5em 1em;
+  width: calc(var(--imageWidth) * 1px);
+}
 figure.align-right {
   float: right;
-  display: grid;
+  display: contents;
   width: min-content;
   shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
   shape-margin: 1em;
+}
+figure.align-right figcaption {
+  float: right;
+  clear: right;
+  margin: 0.5em 1em;
+  width: calc(var(--imageWidth) * 1px);
+}
+figure .rotate-left {
+  shape-margin: 1em;
+  float: left;
+  margin: 1em;
+}
+figure .rotate-right {
+  shape-margin: 1em;
+  float: right;
+  margin: 1em;
+}
+figure > .embedded-entity[class*=rotate] {
+  shape-outside: var(--shapeUrl);
 }
 
 [data-entity-embed-display-settings*=rotate_left] picture,
@@ -7572,10 +7596,6 @@ figure.align-right {
   width: max-content;
 }
 
-figure,
-figure[class] {
-  display: table !important;
-}
 figure figcaption,
 figure[class] figcaption {
   display: table-caption;
