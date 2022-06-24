@@ -103,6 +103,11 @@ table {
 }
 
 figure {
+    display: table;
+    figcaption {
+        display: table-caption;
+        caption-side: bottom;
+    }
     &.align-left {
         float: left;
         display: contents;
@@ -113,6 +118,7 @@ figure {
             float: left;
             clear: left;
             margin: 0.5em 1em;
+            text-align: center;
             width: calc(var(--imageWidth) * 1px);
         }
     }
@@ -126,8 +132,12 @@ figure {
             float: right;
             clear: right;
             margin: 0.5em 1em;
+            text-align: center;
             width: calc(var(--imageWidth) * 1px);
         }
+    }
+    &.align-center {
+        display: table;
     }
     .rotate-left {
         shape-margin: 1em;
@@ -157,15 +167,6 @@ figure {
     picture {
         display: grid;
         width: max-content;
-    }
-}
-
-figure,
-figure[class] {
-    // display: table;
-    figcaption {
-        display: table-caption;
-        caption-side: bottom;
     }
 }
 

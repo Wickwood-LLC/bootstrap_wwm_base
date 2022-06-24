@@ -7544,6 +7544,13 @@ table td * {
   margin-right: auto;
 }
 
+figure {
+  display: table;
+}
+figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
 figure.align-left {
   float: left;
   display: contents;
@@ -7555,6 +7562,7 @@ figure.align-left figcaption {
   float: left;
   clear: left;
   margin: 0.5em 1em;
+  text-align: center;
   width: calc(var(--imageWidth) * 1px);
 }
 figure.align-right {
@@ -7568,7 +7576,11 @@ figure.align-right figcaption {
   float: right;
   clear: right;
   margin: 0.5em 1em;
+  text-align: center;
   width: calc(var(--imageWidth) * 1px);
+}
+figure.align-center {
+  display: table;
 }
 figure .rotate-left {
   shape-margin: 1em;
@@ -7594,12 +7606,6 @@ figure > .embedded-entity[class*=rotate] {
 [data-entity-embed-display-settings*=rotated_right] picture {
   display: grid;
   width: max-content;
-}
-
-figure figcaption,
-figure[class] figcaption {
-  display: table-caption;
-  caption-side: bottom;
 }
 
 .extlink .svg-inline--fa.fa-w-16 {
