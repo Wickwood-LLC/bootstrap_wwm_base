@@ -71,11 +71,6 @@ ul {
     }
 }
 
-figure {
-    display: grid;
-    width: min-content;
-}
-
 table {
     max-width: 100%;
     td,
@@ -94,11 +89,7 @@ table {
 }
 
 figure {
-    display: table;
-    figcaption {
-        display: table-caption;
-        caption-side: bottom;
-    }
+    display: block;
     &.align-left {
         float: left;
         display: contents;
@@ -129,6 +120,11 @@ figure {
     }
     &.align-center {
         display: table;
+        width: min-content;
+        figcaption {
+            display: table-caption;
+            caption-side: bottom;
+        }
     }
     .rotate-left {
         shape-margin: 1em;
@@ -142,6 +138,22 @@ figure {
     }
     >.embedded-entity[class*="rotate"] {
         shape-outside: var(--shapeUrl);
+    }
+    .file {
+        display: flex;
+        grid-gap: 0.5em;
+        align-items: center;
+        width: 100%;
+        .file-icon {
+            padding: 0;
+        }
+        .file-link a {
+            word-wrap: unset;
+            white-space: pre;
+        }
+        .file-size {
+            padding: 0;
+        }
     }
 }
 
@@ -158,14 +170,6 @@ figure {
     picture {
         display: grid;
         width: max-content;
-    }
-}
-
-figure {
-    display: table;
-    figcaption {
-        display: table-caption;
-        caption-side: bottom;
     }
 }
 

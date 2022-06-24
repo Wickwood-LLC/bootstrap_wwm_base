@@ -7513,11 +7513,6 @@ ul {
   margin-bottom: 0;
 }
 
-figure {
-  display: grid;
-  width: min-content;
-}
-
 table {
   max-width: 100%;
 }
@@ -7536,11 +7531,7 @@ table td * {
 }
 
 figure {
-  display: table;
-}
-figure figcaption {
-  display: table-caption;
-  caption-side: bottom;
+  display: block;
 }
 figure.align-left {
   float: left;
@@ -7572,6 +7563,11 @@ figure.align-right figcaption {
 }
 figure.align-center {
   display: table;
+  width: min-content;
+}
+figure.align-center figcaption {
+  display: table-caption;
+  caption-side: bottom;
 }
 figure .rotate-left {
   shape-margin: 1em;
@@ -7586,6 +7582,22 @@ figure .rotate-right {
 figure > .embedded-entity[class*=rotate] {
   shape-outside: var(--shapeUrl);
 }
+figure .file {
+  display: flex;
+  grid-gap: 0.5em;
+  align-items: center;
+  width: 100%;
+}
+figure .file .file-icon {
+  padding: 0;
+}
+figure .file .file-link a {
+  word-wrap: unset;
+  white-space: pre;
+}
+figure .file .file-size {
+  padding: 0;
+}
 
 [data-entity-embed-display-settings*=rotate_left] picture,
 [data-entity-embed-display-settings*=rotated_left] picture {
@@ -7597,14 +7609,6 @@ figure > .embedded-entity[class*=rotate] {
 [data-entity-embed-display-settings*=rotated_right] picture {
   display: grid;
   width: max-content;
-}
-
-figure {
-  display: table;
-}
-figure figcaption {
-  display: table-caption;
-  caption-side: bottom;
 }
 
 .extlink .svg-inline--fa.fa-w-16 {
