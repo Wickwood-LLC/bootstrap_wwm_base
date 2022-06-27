@@ -627,7 +627,7 @@ nav.tabs {
         }
         &.layout--twocol-section--67-33 {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-gap: 1rem;
             >.layout__region {
                 margin: 0;
@@ -660,7 +660,7 @@ nav.tabs {
                 }
             }
             @include breakpoint(850px) {
-                grid-template-columns: 2fr 1fr;
+                grid-template-columns: 67% 33%;
                 &.wlar {
                     display: block;
                     >.layout__region--first {
@@ -687,7 +687,7 @@ nav.tabs {
         }
         &.layout--twocol-section--33-67 {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-gap: 1rem;
             >.layout__region {
                 margin: 0;
@@ -720,7 +720,7 @@ nav.tabs {
                 }
             }
             @include breakpoint(850px) {
-                grid-template-columns: 1fr 2fr;
+                grid-template-columns: 33% 67%;
                 &.wlar {
                     display: block;
                     >.layout__region--first {
@@ -747,7 +747,7 @@ nav.tabs {
         }
         &.layout--twocol-section--75-25 {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-gap: 1rem;
             >.layout__region {
                 margin: 0;
@@ -780,7 +780,7 @@ nav.tabs {
                 }
             }
             @include breakpoint(900px) {
-                grid-template-columns: 3fr 1fr;
+                grid-template-columns: 75% 25%;
                 &.wlar {
                     display: block;
                     >.layout__region--first {
@@ -807,7 +807,7 @@ nav.tabs {
         }
         &.layout--twocol-section--25-75 {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-gap: 1rem;
             >.layout__region {
                 margin: 0;
@@ -840,7 +840,7 @@ nav.tabs {
                 }
             }
             @include breakpoint(900px) {
-                grid-template-columns: 1fr 3fr;
+                grid-template-columns: 25% 75%;
                 &.wlar {
                     display: block;
                     >.layout__region--first {
