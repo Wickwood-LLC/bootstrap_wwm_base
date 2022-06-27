@@ -7535,7 +7535,6 @@ figure {
 }
 figure.align-left {
   float: left;
-  display: contents;
   width: min-content;
   shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
   shape-margin: 1em;
@@ -7543,13 +7542,11 @@ figure.align-left {
 figure.align-left figcaption {
   float: left;
   clear: left;
-  margin: 0.5em 1em;
   text-align: center;
-  width: calc(var(--imageWidth) * 1px);
+  width: 100%;
 }
 figure.align-right {
   float: right;
-  display: contents;
   width: min-content;
   shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
   shape-margin: 1em;
@@ -7557,9 +7554,8 @@ figure.align-right {
 figure.align-right figcaption {
   float: right;
   clear: right;
-  margin: 0.5em 1em;
   text-align: center;
-  width: calc(var(--imageWidth) * 1px);
+  width: 100%;
 }
 figure.align-center {
   display: table;
@@ -7568,6 +7564,7 @@ figure.align-center {
 figure.align-center figcaption {
   display: table-caption;
   caption-side: bottom;
+  text-align: center;
 }
 figure .rotate-left {
   shape-margin: 1em;
