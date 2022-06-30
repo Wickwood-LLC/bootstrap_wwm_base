@@ -3,7 +3,8 @@ li {
   margin-bottom: 0.5em;
 }
 
-.wt-row:before, .wt-row:after {
+.wt-row:before,
+.wt-row:after {
   content: " ";
   display: table;
 }
@@ -20,7 +21,10 @@ li {
   padding-right: 0;
 }
 
-.wt-col-md-3, .wt-col-md-4, .wt-col-md-6, .wt-col-md-9 {
+.wt-col-md-3,
+.wt-col-md-4,
+.wt-col-md-6,
+.wt-col-md-9 {
   position: relative;
   min-height: 1px;
   float: left;
@@ -301,7 +305,8 @@ a.wt-button:hover {
   background-color: #eee;
 }
 
-.wt-row:before, .wt-row:after {
+.wt-row:before,
+.wt-row:after {
   content: " ";
   display: table;
 }
@@ -310,7 +315,10 @@ a.wt-button:hover {
   clear: both;
 }
 
-.wt-col-md-3, .wt-col-md-4, .wt-col-md-6, .wt-col-md-9 {
+.wt-col-md-3,
+.wt-col-md-4,
+.wt-col-md-6,
+.wt-col-md-9 {
   position: relative;
   min-height: 1px;
   float: left;
@@ -335,13 +343,21 @@ a.wt-button:hover {
   width: 33.3%;
 }
 
-.wt-col-md-6 img, .wt-col-md-3 img, .wt-col-md-4 img, .wt-col-md-9 img {
+.wt-col-md-6 img,
+.wt-col-md-3 img,
+.wt-col-md-4 img,
+.wt-col-md-9 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.wt-row, .wt-two-col, .wt-two-col-left, .wt-two-col-right, .wt-three-col, .wt-four-col {
+.wt-row,
+.wt-two-col,
+.wt-two-col-left,
+.wt-two-col-right,
+.wt-three-col,
+.wt-four-col {
   padding: 8px;
   margin: 10px auto;
   background: #eee;
@@ -350,7 +366,14 @@ a.wt-button:hover {
   box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset;
 }
 
-.wt-two-col .wt-col-md-6, .wt-two-col-left .wt-col-md-3, .wt-two-col-left .wt-col-md-9, .wt-two-col-right .wt-col-md-3, .wt-two-col-right .wt-col-md-9, .wt-three-col .wt-col-md-4, .wt-four-col .wt-col-md-3, .wt-col {
+.wt-two-col .wt-col-md-6,
+.wt-two-col-left .wt-col-md-3,
+.wt-two-col-left .wt-col-md-9,
+.wt-two-col-right .wt-col-md-3,
+.wt-two-col-right .wt-col-md-9,
+.wt-three-col .wt-col-md-4,
+.wt-four-col .wt-col-md-3,
+.wt-col {
   box-shadow: 0 1px 1px #ddd inset;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -358,11 +381,16 @@ a.wt-button:hover {
   min-height: 5em;
 }
 
-.wt-two-col .wt-col-md-6, .wt-two-col-left .wt-col-md-3, .wt-two-col-left .wt-col-md-9, .wt-two-col-right .wt-col-md-3, .wt-two-col-right .wt-col-md-9 {
+.wt-two-col .wt-col-md-6,
+.wt-two-col-left .wt-col-md-3,
+.wt-two-col-left .wt-col-md-9,
+.wt-two-col-right .wt-col-md-3,
+.wt-two-col-right .wt-col-md-9 {
   margin: -3px;
 }
 
-.wt-two-col-right .wt-col-sidebar, .wt-two-col-left .wt-col-sidebar {
+.wt-two-col-right .wt-col-sidebar,
+.wt-two-col-left .wt-col-sidebar {
   padding: 15px 0;
 }
 
@@ -408,35 +436,22 @@ a.wt-button:hover {
   margin-left: 3px;
 }
 
-<<<<<<< HEAD
-[data-entity-embed-display-settings*=rotate_left] picture,
-[data-entity-embed-display-settings*=rotated_left] picture {
-  display: inline-flex;
-}
-[data-entity-embed-display-settings*=rotate_left] img,
-[data-entity-embed-display-settings*=rotated_left] img {
-  transform: rotate(-7deg);
-  padding: 6%;
-}
-
-[data-entity-embed-display-settings*=rotate_right] picture,
-[data-entity-embed-display-settings*=rotated_right] picture {
-  display: inline-flex;
-}
-[data-entity-embed-display-settings*=rotate_right] img,
-[data-entity-embed-display-settings*=rotated_right] img {
-  transform: rotate(7deg);
-  padding: 6%;
-}
-
-=======
->>>>>>> origin/8.x-3.x-shape-outside-rotate-img
 drupal-entity[data-align=center] {
   display: block;
 }
 
 .align-center {
-  clear: both;
+  text-align: center;
+}
+
+figure,
+figure[class] {
+  display: table !important;
+}
+figure figcaption,
+figure[class] figcaption {
+  display: table-caption;
+  caption-side: bottom;
   text-align: center;
 }
 
@@ -448,5 +463,26 @@ figure.align-left {
 figure.align-right {
   float: right;
   margin-left: 7%;
+}
+
+[data-rotate=left] .embedded-entity {
+  transform: rotate(-7deg);
+}
+
+[data-rotate=right] .embedded-entity {
+  transform: rotate(7deg);
+}
+
+[data-rotate-caption="1"][data-rotate=left] .embedded-entity {
+  transform: rotate(0deg);
+}
+[data-rotate-caption="1"][data-rotate=left] figure {
+  transform: rotate(-7deg);
+}
+[data-rotate-caption="1"][data-rotate=right] .embedded-entity {
+  transform: rotate(0deg);
+}
+[data-rotate-caption="1"][data-rotate=right] figure {
+  transform: rotate(7deg);
 }
 /*# sourceMappingURL=ckeditor-styles.css.map */
