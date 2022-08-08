@@ -13,13 +13,13 @@
 {% if content %}
   <div{{ attributes }}>
 
-    {% if content.first|render|striptags('<drupal-render-placeholder>')|trim|length > 0 %}
+    {% if content.first|render|trim|length > 0 %}
       <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', settings.column_widths == '25-75' or settings.column_widths == '33-67' ? 'sidebar') }}>
         {{ content.first }}
       </div>
     {% endif %}
 
-    {% if content.second|render|striptags('<drupal-render-placeholder>')|trim|length > 0 %}
+    {% if content.second|render|trim|length > 0 %}
       <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', settings.column_widths == '75-25' or settings.column_widths == '67-33' ? 'sidebar') }}>
         {{ content.second }}
       </div>
