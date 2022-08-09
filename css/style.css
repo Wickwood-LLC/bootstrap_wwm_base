@@ -7945,6 +7945,11 @@ nav.tabs {
   grid-template-columns: 33% 67%;
 }
 
+/*
+    Please remember these layouts need to comply with RTLB (right top, left bottom) and LTRB (left top, right bottom),
+    and WRAL (wrap right around left) and WLAR (wrap left around right) requirements,
+    as well as be adaptive, ie., that the empty columns collapse and the filled columns expand to fill the available space.
+*/
 .layout {
   position: relative;
   margin-bottom: 1em;
@@ -8007,6 +8012,15 @@ nav.tabs {
   }
 }
 @media (min-width: 740px) {
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--50-50 {
+    display: flex;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--50-50 > .layout__region--first {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--50-50 > .layout__region--second {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--50-50.wlar {
     display: block;
   }
@@ -8067,7 +8081,15 @@ nav.tabs {
 }
 @media (min-width: 850px) {
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--67-33 {
+    display: flex;
     grid-template-columns: 67% 33%;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--67-33 > .layout__region--first {
+    flex: 1 1 calc(67% - 1em);
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--67-33 > .layout__region--second {
+    flex: 0 1 33%;
+    max-width: 33%;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--67-33.wlar {
     display: block;
@@ -8129,7 +8151,15 @@ nav.tabs {
 }
 @media (min-width: 850px) {
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--33-67 {
+    display: flex;
     grid-template-columns: 33% 67%;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--33-67 > .layout__region--first {
+    flex: 0 1 33%;
+    max-width: 33%;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--33-67 > .layout__region--second {
+    flex: 1 1 calc(67% - 1rem);
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--33-67.wlar {
     display: block;
@@ -8191,7 +8221,15 @@ nav.tabs {
 }
 @media (min-width: 900px) {
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--75-25 {
+    display: flex;
     grid-template-columns: 75% 25%;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--75-25 > .layout__region--first {
+    flex: 1 1 calc(75% - 1rem);
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--75-25 > .layout__region--second {
+    flex: 0 1 25%;
+    max-width: 25%;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--75-25.wlar {
     display: block;
@@ -8253,7 +8291,15 @@ nav.tabs {
 }
 @media (min-width: 900px) {
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--25-75 {
+    display: flex;
     grid-template-columns: 25% 75%;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--25-75 > .layout__region--first {
+    flex: 0 1 25%;
+    max-width: 25%;
+  }
+  .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--25-75 > .layout__region--second {
+    flex: 1 1 calc(75% - 1rem);
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--25-75.wlar {
     display: block;
