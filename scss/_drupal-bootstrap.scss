@@ -984,6 +984,22 @@ nav.tabs {
             }
         }
     }
+
+    &.layout--fourcol-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        >.layout__region {
+            margin: 0;
+            padding: 0;
+        }
+        @include breakpoint(40em) {
+            display: flex;
+            >.layout__region {
+                flex: 1 1 calc(25% - 0.5rem);
+            }
+        }
+    }
 }
 
 .press-release.full {

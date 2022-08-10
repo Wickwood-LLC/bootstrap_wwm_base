@@ -8400,6 +8400,23 @@ nav.tabs {
     flex: 1 1 calc(50% - 0.5rem);
   }
 }
+.layout.layout--fourcol-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+.layout.layout--fourcol-section > .layout__region {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 40em) {
+  .layout.layout--fourcol-section {
+    display: flex;
+  }
+  .layout.layout--fourcol-section > .layout__region {
+    flex: 1 1 calc(25% - 0.5rem);
+  }
+}
 
 .press-release.full .sutro-double {
   max-width: 960px;
