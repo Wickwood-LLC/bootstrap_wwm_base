@@ -921,7 +921,10 @@ nav.tabs {
             padding: 0;
         }
         @include breakpoint(40em) {
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+            >.layout__region {
+                flex: 1 1 calc(33% - 0.5rem);
+            }
         }
     }
     &.layout--threecol-section--25-50-25 {
@@ -933,7 +936,14 @@ nav.tabs {
             padding: 0;
         }
         @include breakpoint(40em) {
-            grid-template-columns: 1fr 2fr 1fr;
+            display: flex;
+            >.layout__region--first,
+            >.layout__region--third {
+                flex: 1 1 calc(25% - 0.5rem);
+            }
+            >.layout__region--second {
+                flex: 1 1 calc(50% - 0.5rem);
+            }
         }
     }
 }
