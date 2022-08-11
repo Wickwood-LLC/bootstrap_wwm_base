@@ -10,6 +10,15 @@
  * @ingroup themeable
  */
 #}
+
+{% set layout_classes = [
+  content.first|render|trim|length === 0 ? 'no-first-column',
+  content.second|render|trim|length === 0 ? 'no-second-column',
+  content.third|render|trim|length === 0 ? 'no-third-column',
+] %}
+
+{% set classes = classes|merge(layout_classes) %}
+
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
 
