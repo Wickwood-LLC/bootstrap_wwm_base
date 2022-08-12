@@ -1043,6 +1043,17 @@ nav.tabs {
             >.layout__region {
                 flex: 1 1 calc(25% - 1rem);
             }
+
+            &.third-column-empty.fourth-column-empty:not(.second-column-empty) {
+                >.layout__region--first {
+                    flex-grow: 0;
+                }
+            }
+            &.first-column-empty.second-column-empty:not(.third-column-empty) {
+                >.layout__region--fourth {
+                    flex-grow: 0;
+                }
+            }
         }
     }
 }

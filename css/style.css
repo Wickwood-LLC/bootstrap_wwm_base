@@ -8440,6 +8440,12 @@ nav.tabs {
   .layout.layout--fourcol-section > .layout__region {
     flex: 1 1 calc(25% - 1rem);
   }
+  .layout.layout--fourcol-section.third-column-empty.fourth-column-empty:not(.second-column-empty) > .layout__region--first {
+    flex-grow: 0;
+  }
+  .layout.layout--fourcol-section.first-column-empty.second-column-empty:not(.third-column-empty) > .layout__region--fourth {
+    flex-grow: 0;
+  }
 }
 
 .press-release.full .sutro-double {
