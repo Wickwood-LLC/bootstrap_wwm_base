@@ -927,12 +927,12 @@ nav.tabs {
                 flex: 1 1 calc(33% - 1rem);
             }
 
-            &.no-first-column:not(.no-second-column) {
+            &.first-column-empty:not(.second-column-empty) {
                 >.layout__region--third {
                     flex-grow: 0;
                 }
             }
-            &.no-third-column:not(.no-second-column) {
+            &.third-column-empty:not(.second-column-empty) {
                 >.layout__region--first {
                     flex-grow: 0;
                 }
@@ -957,12 +957,12 @@ nav.tabs {
                 flex: 1 1 calc(50% - 1rem);
             }
 
-            &.no-first-column:not(.no-second-column) {
+            &.first-column-empty:not(.second-column-empty) {
                 >.layout__region--third {
                     flex-grow: 0;
                 }
             }
-            &.no-third-column:not(.no-second-column) {
+            &.third-column-empty:not(.second-column-empty) {
                 >.layout__region--first {
                     flex-grow: 0;
                 }
@@ -987,12 +987,12 @@ nav.tabs {
                 flex: 1 1 calc(50% - 1rem);
             }
 
-            &.no-first-column:not(.no-third-column) {
+            &.first-column-empty:not(.third-column-empty) {
                 >.layout__region--second {
                     flex-grow: 0;
                 }
             }
-            &.no-second-column:not(.no-third-column) {
+            &.second-column-empty:not(.third-column-empty) {
                 >.layout__region--first {
                     flex-grow: 0;
                 }
@@ -1017,12 +1017,12 @@ nav.tabs {
                 flex: 1 1 calc(50% - 1rem);
             }
 
-            &.no-second-column:not(.no-first-column) {
+            &.second-column-empty:not(.first-column-empty) {
                 >.layout__region--third {
                     flex-grow: 0;
                 }
             }
-            &.no-third-column:not(.no-first-column) {
+            &.third-column-empty:not(.first-column-empty) {
                 >.layout__region--second {
                     flex-grow: 0;
                 }
