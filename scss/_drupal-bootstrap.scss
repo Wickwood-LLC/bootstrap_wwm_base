@@ -24,6 +24,10 @@ body {
 	); // values inside are ($min_width,$max_width, $min_font, $max_font);
 }
 
+img {
+	max-width: 100%;
+}
+
 h1,
 .h1 {
 	font-weight: bold;
