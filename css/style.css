@@ -7408,9 +7408,7 @@ figure.align-right figcaption {
 }
 figure.align-center {
   display: table;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: auto;
 }
 figure.align-center figcaption {
   display: table-caption;

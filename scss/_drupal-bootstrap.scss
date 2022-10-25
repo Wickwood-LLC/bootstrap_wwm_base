@@ -161,7 +161,7 @@ figure {
 	}
 	&.align-center {
 		display: table;
-		width: min-content;
+		width: auto;
 		figcaption {
 			display: table-caption;
 			caption-side: bottom;
