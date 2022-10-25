@@ -7380,9 +7380,7 @@ figure {
 }
 figure.align-left {
   float: left;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: auto;
   shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
   shape-margin: 1em;
 }
@@ -7394,9 +7392,7 @@ figure.align-left figcaption {
 }
 figure.align-right {
   float: right;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: auto;
   shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%) border-box;
   shape-margin: 1em;
 }

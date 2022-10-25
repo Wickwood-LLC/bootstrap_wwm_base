@@ -136,7 +136,7 @@ figure {
 	display: block;
 	&.align-left {
 		float: left;
-		width: min-content;
+		width: auto;
 		shape-outside: polygon(0 0, 84% 0, 97% 80%, 97% 100%, 0% 100%) border-box;
 		shape-margin: 1em;
 		figcaption {
@@ -148,7 +148,7 @@ figure {
 	}
 	&.align-right {
 		float: right;
-		width: min-content;
+		width: auto;
 		shape-outside: polygon(16% 0%, 100% 0%, 100% 100%, 0% 100%, -3% 88%)
 			border-box;
 		shape-margin: 1em;
