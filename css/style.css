@@ -7372,7 +7372,7 @@ table td * {
 }
 
 .container-fluid {
-  max-width: 1200px;
+  width: clamp(320px, 90%, 1200px);
 }
 
 figure {
