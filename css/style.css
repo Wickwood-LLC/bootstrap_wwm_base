@@ -7441,6 +7441,10 @@ figure .file .file-size {
   padding: 0;
 }
 
+.form-composite legend {
+  font-size: unset;
+}
+
 [data-entity-embed-display-settings*=rotate_left] picture,
 [data-entity-embed-display-settings*=rotated_left] picture {
   display: grid;
@@ -7504,6 +7508,10 @@ figure .file .file-size {
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+.footer .menu--footer li {
+  display: inline-block;
 }
 
 p:last-child,

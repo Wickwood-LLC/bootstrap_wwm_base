@@ -199,6 +199,10 @@ figure {
 	}
 }
 
+.form-composite legend {
+	font-size: unset;
+}
+
 [data-entity-embed-display-settings*="rotate_left"],
 [data-entity-embed-display-settings*="rotated_left"] {
 	picture {
@@ -274,6 +278,13 @@ figure {
 	padding-top: 35px;
 	padding-bottom: 36px;
 	border-top: 1px solid #e5e5e5;
+	text-align: center;
+
+	.menu--footer {
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 // Paragraphs.
