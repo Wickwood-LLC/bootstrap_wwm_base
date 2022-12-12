@@ -129,7 +129,7 @@ table {
 }
 
 .container-fluid {
-	max-width: 1200px;
+	width: clamp(320px, 90%, 1200px);
 }
 
 figure {
@@ -197,6 +197,10 @@ figure {
 			padding: 0;
 		}
 	}
+}
+
+.form-composite legend {
+	font-size: unset;
 }
 
 [data-entity-embed-display-settings*="rotate_left"],
@@ -274,6 +278,13 @@ figure {
 	padding-top: 35px;
 	padding-bottom: 36px;
 	border-top: 1px solid #e5e5e5;
+	text-align: center;
+
+	.menu--footer {
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 // Paragraphs.
