@@ -972,7 +972,6 @@ nav.tabs {
 		grid-gap: 1rem;
 		> .layout__region {
 			margin: 0;
-			padding: 0;
 		}
 		@include breakpoint(40em) {
 			display: flex;
