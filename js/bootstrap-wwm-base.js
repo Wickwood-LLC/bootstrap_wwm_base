@@ -70,4 +70,18 @@
 			}
 		},
 	};
+
+	/**
+	 * Make admin toolbar sticky on mobile
+	 */
+	Drupal.behaviors.stickyAdminToolbar = {
+		attach: function (context, settings) {
+			navBar = $("#navbar");
+			if (navBar) {
+				$("body").hasClass("toolbar-fixed")
+					? ""
+					: $("body").addClass("toolbar-fixed");
+			}
+		},
+	};
 })(jQuery, Drupal);
