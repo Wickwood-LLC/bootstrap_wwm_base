@@ -84,4 +84,66 @@
 			}
 		},
 	};
+
+	/**
+	 * set the shape-outside of rotated media
+	 */
+	Drupal.behaviors.shapeOutside = {
+		attach: function (context, settings) {
+			const figures = document.querySelectorAll(
+				".rotate-right.rotate-caption, .rotate-left.rotate-caption"
+			);
+			figures.forEach((figure) => {
+				// Get the center of rotation
+				const width = figure.offsetWidth;
+				const height = figure.offsetHeight;
+				const cx = width / 2;
+				const cy = height / 2;
+
+				const px1 = 0;
+				const py1 = 0;
+				const px2 = width;
+				const py2 = 0;
+				const px3 = width;
+				const py3 = height;
+				const px4 = 0;
+				const py4 = height;
+
+				// Get the angle of rotation in radians
+				let angle = 0;
+				if (figure.classList.contains("rotate-right")) {
+					angle = (7 * Math.PI) / 180;
+				} else if (figure.classList.contains("rotate-left")) {
+					angle = (-7 * Math.PI) / 180;
+				}
+
+				// Calculate the new bounding box coordinates
+				const x1 =
+					cx + (cx - px1) * Math.cos(angle) - (cy - py1) * Math.sin(angle);
+				const y1 =
+					cy + (cx - px1) * Math.sin(angle) - (cy - py1) * Math.cos(angle);
+				const x2 =
+					cx + (cx - px2) * Math.cos(angle) - (cy - py2) * Math.sin(angle);
+				const y2 =
+					cy + (cx - px2) * Math.sin(angle) - (cy - py2) * Math.cos(angle);
+				const x3 =
+					cx + (cx - px3) * Math.cos(angle) - (cy - py3) * Math.sin(angle);
+				const y3 =
+					cy + (cx - px3) * Math.sin(angle) - (cy - py3) * Math.cos(angle);
+				const x4 =
+					cx + (cx - px4) * Math.cos(angle) - (cy - py4) * Math.sin(angle);
+				const y4 =
+					cy + (cx - px4) * Math.sin(angle) - (cy - py4) * Math.cos(angle);
+
+				const shape = `polygon(
+					${x2}px ${y2}px,
+					${x1}px ${y1}px,
+					${x4}px ${y4}px,
+					${x3}px ${y3}px
+				)`;
+
+				figure.style.setProperty("shape-outside", shape);
+			});
+		},
+	};
 })(jQuery, Drupal);
