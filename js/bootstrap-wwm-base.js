@@ -93,57 +93,42 @@
 			const figures = document.querySelectorAll(
 				".rotate-right.rotate-caption, .rotate-left.rotate-caption"
 			);
-			figures.forEach((figure) => {
-				// Get the center of rotation
-				const width = figure.offsetWidth;
-				const height = figure.offsetHeight;
-				const cx = width / 2;
-				const cy = height / 2;
+			window.onload = calculateShape();
 
-				const px1 = 0;
-				const py1 = 0;
-				const px2 = width;
-				const py2 = 0;
-				const px3 = width;
-				const py3 = height;
-				const px4 = 0;
-				const py4 = height;
+			function calculateShape() {
+				figures.forEach(figure => {
+					// Get the center of rotation
+					console.log(figure.style.transform);
+					const angle = parseInt(figure.style.transform.split("rotate(")[1].split("deg")[0]) * Math.PI / 180;
+	
+					const width = figure.offsetWidth;
+					const height = figure.offsetHeight;
+	
+					const radius = Math.sqrt(
+						Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
+					);
+	
+					//calculate the new positions of each corner point after rotation
+					const topLeft = rotatePoint(0, 0, angle, radius, width, height);
+					const topRight = rotatePoint(width, 0, angle, radius, width, height);
+					const bottomRight = rotatePoint(width, height, angle,	radius, width, height);
+					const bottomLeft = rotatePoint(0, height, angle, radius, width, height);
+	
+					//create the shape value for the shape-outside property
+					const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
+	
+					figure.style.shapeOutside = shape;
+				});
+			}
 
-				// Get the angle of rotation in radians
-				let angle = 0;
-				if (figure.classList.contains("rotate-right")) {
-					angle = (7 * Math.PI) / 180;
-				} else if (figure.classList.contains("rotate-left")) {
-					angle = (-7 * Math.PI) / 180;
-				}
-
-				// Calculate the new bounding box coordinates
-				const x1 =
-					cx + (cx - px1) * Math.cos(angle) - (cy - py1) * Math.sin(angle);
-				const y1 =
-					cy + (cx - px1) * Math.sin(angle) - (cy - py1) * Math.cos(angle);
-				const x2 =
-					cx + (cx - px2) * Math.cos(angle) - (cy - py2) * Math.sin(angle);
-				const y2 =
-					cy + (cx - px2) * Math.sin(angle) - (cy - py2) * Math.cos(angle);
-				const x3 =
-					cx + (cx - px3) * Math.cos(angle) - (cy - py3) * Math.sin(angle);
-				const y3 =
-					cy + (cx - px3) * Math.sin(angle) - (cy - py3) * Math.cos(angle);
-				const x4 =
-					cx + (cx - px4) * Math.cos(angle) - (cy - py4) * Math.sin(angle);
-				const y4 =
-					cy + (cx - px4) * Math.sin(angle) - (cy - py4) * Math.cos(angle);
-
-				const shape = `polygon(
-					${x2}px ${y2}px,
-					${x1}px ${y1}px,
-					${x4}px ${y4}px,
-					${x3}px ${y3}px
-				)`;
-
-				figure.style.setProperty("shape-outside", shape);
-			});
+			function rotatePoint(x, y, angle,	radius, width, height) {
+				const origAngle = Math.atan2(y - height / 2, x - width / 2);
+				const finalAngle = origAngle + angle;
+				return {
+					x: radius * Math.cos(finalAngle) + width / 2,
+					y: radius * Math.sin(finalAngle) + height / 2,
+				};
+			}
 		},
 	};
 })(jQuery, Drupal);
