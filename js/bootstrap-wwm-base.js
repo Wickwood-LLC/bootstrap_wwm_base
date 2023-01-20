@@ -90,45 +90,43 @@
 	 */
 	Drupal.behaviors.shapeOutside = {
 		attach: function (context, settings) {
-			const figures = document.querySelectorAll(
-				".rotate-right.rotate-caption, .rotate-left.rotate-caption"
-			);
-			window.onload = calculateShape();
+			const figures = document.querySelectorAll(".rotate-right, .rotate-left");
 
-			function calculateShape() {
-				figures.forEach(figure => {
-					// Get the center of rotation
-					console.log(figure.style.transform);
-					const angle = parseInt(figure.style.transform.split("rotate(")[1].split("deg")[0]) * Math.PI / 180;
-	
-					const width = figure.offsetWidth;
-					const height = figure.offsetHeight;
-	
-					const radius = Math.sqrt(
-						Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
-					);
-	
-					//calculate the new positions of each corner point after rotation
-					const topLeft = rotatePoint(0, 0, angle, radius, width, height);
-					const topRight = rotatePoint(width, 0, angle, radius, width, height);
-					const bottomRight = rotatePoint(width, height, angle,	radius, width, height);
-					const bottomLeft = rotatePoint(0, height, angle, radius, width, height);
-	
-					//create the shape value for the shape-outside property
-					const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
-	
-					figure.style.shapeOutside = shape;
-				});
-			}
+			figures.forEach((figure) => {
+				console.log(figure);
+				const transform = figure.style.transform;
+				const angle =
+					(parseInt(transform.split("(")[1].split("deg")[0]) *
+						Math.PI) /
+					180;
 
-			function rotatePoint(x, y, angle,	radius, width, height) {
-				const origAngle = Math.atan2(y - height / 2, x - width / 2);
-				const finalAngle = origAngle + angle;
-				return {
-					x: radius * Math.cos(finalAngle) + width / 2,
-					y: radius * Math.sin(finalAngle) + height / 2,
-				};
-			}
+				const width = figure.offsetWidth;
+				const height = figure.offsetHeight;
+
+				const radius = Math.sqrt(
+					Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
+				);
+
+				//calculate the new positions of each corner point after rotation
+				const topLeft = rotatePoint(0, 0);
+				const topRight = rotatePoint(width, 0);
+				const bottomRight = rotatePoint(width, height);
+				const bottomLeft = rotatePoint(0, height);
+
+				//create the shape value for the shape-outside property
+				const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
+
+				figure.style.shapeOutside = shape;
+
+				function rotatePoint(x, y) {
+					const origAngle = Math.atan2(y - height / 2, x - width / 2);
+					const finalAngle = origAngle + angle;
+					return {
+						x: radius * Math.cos(finalAngle) + width / 2,
+						y: radius * Math.sin(finalAngle) + height / 2,
+					};
+				}
+			});
 		},
 	};
 })(jQuery, Drupal);
