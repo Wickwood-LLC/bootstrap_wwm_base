@@ -98,10 +98,6 @@
 				const values = transform.split("(")[1].split(")")[0].split(",");
 				const angle = Math.atan2(values[1], values[0]);
 
-				console.log(transform);
-				console.log(values);
-				console.log(angle);
-
 				const width = $(this).outerWidth();
 				const height = $(this).outerHeight();
 
@@ -123,8 +119,6 @@
 				function rotatePoint(x, y) {
 					const origAngle = Math.atan2(y - height / 2, x - width / 2);
 					const finalAngle = origAngle + angle;
-					console.log(`angle = ${angle}`);
-					console.log(`origAngle = ${origAngle}`);
 					return {
 						x: radius * Math.cos(finalAngle) + width / 2,
 						y: radius * Math.sin(finalAngle) + height / 2,
