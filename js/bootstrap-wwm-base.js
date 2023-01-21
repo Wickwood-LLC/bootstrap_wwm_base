@@ -90,18 +90,20 @@
 	 */
 	Drupal.behaviors.shapeOutside = {
 		attach: function (context, settings) {
-			const figures = document.querySelectorAll(".rotate-right, .rotate-left");
+			const figures = $(".rotate-right, .rotate-left");
 
-			figures.forEach((figure) => {
-				console.log(figure);
-				const transform = figure.style.transform;
-				const angle =
-					(parseInt(transform.split("(")[1].split("deg")[0]) *
-						Math.PI) /
-					180;
+			figures.each(function () {
+				const computedStyles = getComputedStyle(this);
+				const transform = computedStyles.getPropertyValue("transform");
+				const values = transform.split("(")[1].split(")")[0].split(",");
+				const angle = Math.atan2(values[1], values[0]);
 
-				const width = figure.offsetWidth;
-				const height = figure.offsetHeight;
+				console.log(transform);
+				console.log(values);
+				console.log(angle);
+
+				const width = $(this).outerWidth();
+				const height = $(this).outerHeight();
 
 				const radius = Math.sqrt(
 					Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
@@ -116,11 +118,13 @@
 				//create the shape value for the shape-outside property
 				const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
 
-				figure.style.shapeOutside = shape;
+				$(this).css("shape-outside", shape);
 
 				function rotatePoint(x, y) {
 					const origAngle = Math.atan2(y - height / 2, x - width / 2);
 					const finalAngle = origAngle + angle;
+					console.log(`angle = ${angle}`);
+					console.log(`origAngle = ${origAngle}`);
 					return {
 						x: radius * Math.cos(finalAngle) + width / 2,
 						y: radius * Math.sin(finalAngle) + height / 2,
