@@ -90,41 +90,62 @@
 	 */
 	Drupal.behaviors.shapeOutside = {
 		attach: function (context, settings) {
-			const figures = $(".rotate-right, .rotate-left");
+			figures = document.querySelectorAll(".rotate-right, .rotate-left");
 
-			figures.each(function () {
-				const computedStyles = getComputedStyle(this);
-				const transform = computedStyles.getPropertyValue("transform");
-				const values = transform.split("(")[1].split(")")[0].split(",");
-				const angle = Math.atan2(values[1], values[0]);
+			function updateShape() {
+				figures.forEach((figure) => {
+					const computedStyles = getComputedStyle(figure);
+					const transform = computedStyles.getPropertyValue("transform");
+					const values = transform.split("(")[1].split(")")[0].split(",");
+					const angle = Math.atan2(values[1], values[0]);
 
-				const width = $(this).outerWidth();
-				const height = $(this).outerHeight();
+					const width = figure.offsetWidth;
+					const height = figure.offsetHeight;
 
-				const radius = Math.sqrt(
-					Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
-				);
+					const radius = Math.sqrt(
+						Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
+					);
 
-				//calculate the new positions of each corner point after rotation
-				const topLeft = rotatePoint(0, 0);
-				const topRight = rotatePoint(width, 0);
-				const bottomRight = rotatePoint(width, height);
-				const bottomLeft = rotatePoint(0, height);
+					//calculate the new positions of each corner point after rotation
+					const topLeft = rotatePoint(0, 0, angle, radius, width, height);
+					const topRight = rotatePoint(width, 0, angle, radius, width, height);
+					const bottomRight = rotatePoint(
+						width,
+						height,
+						angle,
+						radius,
+						width,
+						height
+					);
+					const bottomLeft = rotatePoint(
+						0,
+						height,
+						angle,
+						radius,
+						width,
+						height
+					);
 
-				//create the shape value for the shape-outside property
-				const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
+					//create the shape value for the shape-outside property
+					const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
 
-				$(this).css("shape-outside", shape);
+					figure.style.shapeOutside = shape;
+				});
+			}
 
-				function rotatePoint(x, y) {
-					const origAngle = Math.atan2(y - height / 2, x - width / 2);
-					const finalAngle = origAngle + angle;
-					return {
-						x: radius * Math.cos(finalAngle) + width / 2,
-						y: radius * Math.sin(finalAngle) + height / 2,
-					};
-				}
-			});
+			function rotatePoint(x, y, angle, radius, width, height) {
+				const origAngle = Math.atan2(y - height / 2, x - width / 2);
+				const finalAngle = origAngle + angle;
+				return {
+					x: radius * Math.cos(finalAngle) + width / 2,
+					y: radius * Math.sin(finalAngle) + height / 2,
+				};
+			}
+
+			if (figures) {
+				window.addEventListener("load", updateShape);
+				window.addEventListener("resize", updateShape);
+			}
 		},
 	};
 })(jQuery, Drupal);
