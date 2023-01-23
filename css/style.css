@@ -7351,6 +7351,7 @@ a {
 
 ol,
 ul {
+  display: table;
   padding-left: 1.5em;
 }
 .popover ol:last-child,
