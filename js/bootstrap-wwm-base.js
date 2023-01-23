@@ -94,6 +94,9 @@
 
 			function updateShape() {
 				figures.forEach((figure) => {
+					if (!figure.classList.contains("rotate-caption")) {
+						return;
+					}
 					const computedStyles = getComputedStyle(figure);
 					const transform = computedStyles.getPropertyValue("transform");
 					const values = transform.split("(")[1].split(")")[0].split(",");
