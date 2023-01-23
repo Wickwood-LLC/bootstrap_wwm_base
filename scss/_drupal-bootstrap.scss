@@ -123,6 +123,14 @@ table {
 	}
 }
 
+figure {
+	display: table;
+	caption-side: bottom;
+}
+figcaption {
+	display: table-caption;
+}
+
 .responsive-table {
 	max-width: 100%;
 	overflow-x: auto;
