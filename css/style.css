@@ -7354,6 +7354,9 @@ figure {
   display: table;
   caption-side: bottom;
 }
+figure.align-center {
+  display: table;
+}
 
 figcaption {
   display: table-caption;
