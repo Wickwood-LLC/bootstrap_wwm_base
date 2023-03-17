@@ -84,4 +84,53 @@
 			}
 		},
 	};
+
+	/**
+	 * set the shape-outside of rotated media
+	 */
+	Drupal.behaviors.shapeOutside = {
+		attach: function (context, settings) {
+			const figures = document.querySelectorAll(".rotate-right, .rotate-left");
+
+			function updateShape() {
+				figures.forEach((figure) => {
+					if (!figure.classList.contains("rotate-caption")) {
+						return;
+					}
+					const computedStyles = getComputedStyle(figure);
+					const transform = computedStyles.getPropertyValue("transform");
+					const values = transform.split("(")[1].split(")")[0].split(",");
+					const angle = Math.atan2(values[1], values[0]);
+					const width = figure.offsetWidth;
+					const height = figure.offsetHeight;
+					const radius = Math.sqrt(
+						Math.pow(width / 2, 2) + Math.pow(height / 2, 2)
+					);
+
+					//calculate the new positions of each corner point after rotation
+					function rotatePoint(x, y) {
+						const origAngle = Math.atan2(y - height / 2, x - width / 2);
+						const finalAngle = origAngle + angle;
+						return {
+							x: radius * Math.cos(finalAngle) + width / 2,
+							y: radius * Math.sin(finalAngle) + height / 2,
+						};
+					}
+					const topLeft = rotatePoint(0, 0);
+					const topRight = rotatePoint(width, 0);
+					const bottomRight = rotatePoint(width, height);
+					const bottomLeft = rotatePoint(0, height);
+
+					//create the shape value for the shape-outside property
+					const shape = `polygon(${topLeft.x}px ${topLeft.y}px, ${topRight.x}px ${topRight.y}px, ${bottomRight.x}px ${bottomRight.y}px, ${bottomLeft.x}px ${bottomLeft.y}px) border-box`;
+					figure.style.shapeOutside = shape;
+				});
+			}
+
+			if (figures) {
+				window.onload = updateShape;
+				window.onresize = updateShape;
+			}
+		},
+	};
 })(jQuery, Drupal);
