@@ -7818,6 +7818,8 @@ nav.tabs {
     float: right;
     width: 50%;
     margin: 0 0 0.5em 0.5em;
+    z-index: 1;
+    position: relative;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--50-50.wral {
     display: block;
@@ -7887,6 +7889,8 @@ nav.tabs {
     float: right;
     width: 33%;
     margin: 0 0 0.5em 0.5em;
+    z-index: 1;
+    position: relative;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--67-33.wral {
     display: block;
@@ -7956,6 +7960,8 @@ nav.tabs {
     float: right;
     width: 67%;
     margin: 0 0 0.5em 0.5em;
+    z-index: 1;
+    position: relative;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--33-67.wral {
     display: block;
@@ -8025,6 +8031,8 @@ nav.tabs {
     float: right;
     width: 25%;
     margin: 0 0 0.5em 0.5em;
+    z-index: 1;
+    position: relative;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--75-25.wral {
     display: block;
@@ -8094,6 +8102,8 @@ nav.tabs {
     float: right;
     width: 75%;
     margin: 0 0 0.5em 0.5em;
+    z-index: 1;
+    position: relative;
   }
   .layout.layout--twocol-section:not(.layout-builder__layout).layout--twocol-section--25-75.wral {
     display: block;
