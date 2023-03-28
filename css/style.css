@@ -7470,6 +7470,11 @@ p:last-child,
   margin-top: 0;
 }
 
+.dropup,
+.dropdown {
+  z-index: 2;
+}
+
 #navbar-collapse .navbar-nav li.dropdown:hover > ul.dropdown-menu {
   display: block;
 }
