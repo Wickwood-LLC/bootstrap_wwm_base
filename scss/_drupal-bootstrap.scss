@@ -1480,6 +1480,18 @@ nav.tabs {
 	color: red;
 }
 
+.view-websites {
+	.website-title {
+		font-weight: bold;
+	}
+
+	.website-comment p {
+		font-size: 0.8em;
+		mix-blend-mode: difference;
+		color: gray;
+	}
+}
+
 /********************* MAINTENANCE *********************/
 
 .maintenance-page {
