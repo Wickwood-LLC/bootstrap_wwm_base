@@ -7331,14 +7331,14 @@ a {
   word-break: break-word;
 }
 
-ol,
-ul {
-  display: table;
-  padding-left: 1.5em;
-}
 .popover ol:last-child,
 .popover ul:last-child {
   margin-bottom: 0;
+}
+
+.region-content :is(ol, ul, dl) {
+  display: table;
+  padding-left: 1.5em;
 }
 
 table {
