@@ -7336,9 +7336,13 @@ a {
   margin-bottom: 0;
 }
 
-.region-content :is(ol, ul, dl) {
+.field :is(ol, ul, dl) {
   display: table;
   padding-left: 1.5em;
+}
+
+ul.contextual-links[hidden] {
+  display: none;
 }
 
 table {
