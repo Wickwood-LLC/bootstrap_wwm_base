@@ -120,3 +120,25 @@ bootstrap_wwm_base.large_small_breakpoints.small_screen:
   multipliers:
     - 1x
   group: bootstrap_wwm_base.large_small_breakpoints
+
+bootstrap_wwm_base.photo_gallery.small:
+  label: Small
+  mediaQuery: 'all and (max-width: 559px)'
+  weight: 0
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.photo_gallery
+bootstrap_wwm_base.photo_gallery.medium:
+  label: Medium
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 709px)'
+  weight: 1
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.photo_gallery
+bootstrap_wwm_base.photo_gallery.large:
+  label: Large
+  mediaQuery: 'all and (min-width: 710px)'
+  weight: 2
+  multipliers: 
+    - 1x
+  group: bootstrap_wwm_base.photo_gallery
