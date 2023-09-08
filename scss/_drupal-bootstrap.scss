@@ -130,9 +130,18 @@ table {
 figure {
 	display: table;
 	caption-side: bottom;
+	margin: 1em;
 
 	&.align-center {
 		display: table;
+	}
+
+	&.align-left {
+		margin-left: 0;
+	}
+
+	&.align-right {
+		margin-right: 0;
 	}
 }
 
