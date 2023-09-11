@@ -140,7 +140,7 @@
 	Drupal.behaviors.imageCenter = {
 		attach: function (context, settings) {
 			const figures = document.querySelectorAll(
-				".region.region-content figure, .region.region-content picture:not(figure picture), .region.region-content img:not(figure img):not(picture > img)"
+				".region.region-content figure, .region.region-content .embedded-entity:not(figure .embedded-entity), .region.region-content img:not(figure img):not(picture > img)"
 			);
 			function handleResize() {
 				if (figures) {
