@@ -133,4 +133,37 @@
 			}
 		},
 	};
+
+	/**
+	 * center images when text is too thin
+	 */
+	Drupal.behaviors.imageCenter = {
+		attach: function (context, settings) {
+			const figures = document.querySelectorAll(
+				".region.region-content figure, .region.region-content picture:not(figure picture), .region.region-content img:not(figure img):not(picture > img)"
+			);
+			function handleResize() {
+				if (figures) {
+					const pageWidth = document.querySelector(".page-wrapper").offsetWidth;
+					console.log(`Page width: ${pageWidth}`);
+
+					figures.forEach((figure) => {
+						console.log(figures);
+						const figureWidth = figure.offsetWidth;
+						if (pageWidth - figureWidth <= 200) {
+							console.log(figure);
+							console.log(`figureWidth: ${figureWidth}`);
+							figure.style.float = "none";
+							figure.style.margin = "0 auto";
+						} else {
+							figure.style.float = "";
+							figure.style.margin = "";
+						}
+					});
+				}
+			}
+			window.onload = handleResize;
+			window.addEventListener("resize", handleResize);
+		},
+	};
 })(jQuery, Drupal);
