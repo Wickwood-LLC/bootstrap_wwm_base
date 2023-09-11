@@ -93,6 +93,9 @@
 			const figures = document.querySelectorAll(".rotate-right, .rotate-left");
 
 			function updateShape() {
+				if (!figures) {
+					return;
+				}
 				figures.forEach((figure) => {
 					if (!figure.classList.contains("rotate-caption")) {
 						return;
@@ -127,10 +130,7 @@
 				});
 			}
 
-			if (figures) {
-				window.onload = updateShape;
-				window.onresize = updateShape;
-			}
+			Drupal.behaviors.shapeOutside.updateShape = updateShape;
 		},
 	};
 
@@ -144,17 +144,15 @@
 			);
 			function handleResize() {
 				if (figures) {
-					const pageWidth = document.querySelector(".page-wrapper").offsetWidth;
-					console.log(`Page width: ${pageWidth}`);
+					const pageWidth = document.querySelector(
+						".region.region-content"
+					).offsetWidth;
 
 					figures.forEach((figure) => {
-						console.log(figures);
 						const figureWidth = figure.offsetWidth;
-						if (pageWidth - figureWidth <= 200) {
-							console.log(figure);
-							console.log(`figureWidth: ${figureWidth}`);
+						if (pageWidth - figureWidth <= 250) {
 							figure.style.float = "none";
-							figure.style.margin = "0 auto";
+							figure.style.margin = "1em auto";
 						} else {
 							figure.style.float = "";
 							figure.style.margin = "";
@@ -162,8 +160,18 @@
 					});
 				}
 			}
-			window.onload = handleResize;
-			window.addEventListener("resize", handleResize);
+			Drupal.behaviors.imageCenter.handleResize = handleResize;
 		},
 	};
+
+	$(window).on("load resize", function () {
+		clearTimeout($(this).data("resizeTimer"));
+		$(this).data(
+			"resizeTimer",
+			setTimeout(function () {
+				Drupal.behaviors.shapeOutside.updateShape();
+				Drupal.behaviors.imageCenter.handleResize();
+			}, 250)
+		);
+	});
 })(jQuery, Drupal);
