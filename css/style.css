@@ -7181,11 +7181,15 @@ img {
   max-width: 100%;
 }
 
+.embedded-entity {
+  display: table;
+  margin: 1em;
+}
 .embedded-entity.align-left {
-  margin-right: 0.5em;
+  margin-left: 0;
 }
 .embedded-entity.align-right {
-  margin-left: 0.5em;
+  margin-right: 0;
 }
 
 h1,
