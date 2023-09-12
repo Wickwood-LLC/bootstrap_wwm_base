@@ -146,11 +146,93 @@ figure {
 	&.align-right {
 		margin-right: 0;
 	}
+
+	&[class*="image-style--polaroid"] {
+		position: relative;
+
+		figcaption {
+			position: absolute;
+			width: 100%;
+		}
+	}
+
+	&.rotate-caption {
+		&[class*="image-style--polaroid-landscape-large"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 75.5%;
+				height: 13.5%;
+			}
+		}
+
+		&[class*="image-style--polaroid-landscape-medium"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 74%;
+				height: 13.5%;
+				font-size: 0.7em;
+			}
+		}
+
+		&[class*="image-style--polaroid-landscape-small"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 72%;
+				height: 13.5%;
+				font-size: 0.6em;
+			}
+		}
+
+		&[class*="image-style--polaroid-landscape-responsive"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 75.5%;
+				height: 13.5%;
+			}
+		}
+
+		&[class*="image-style--polaroid-portrait-large"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 79%;
+				height: 11.5%;
+			}
+		}
+
+		&[class*="image-style--polaroid-portrait-medium"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 78%;
+				height: 11.5%;
+				font-size: 0.7em;
+			}
+		}
+
+		&[class*="image-style--polaroid-portrait-small"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 75%;
+				height: 11.5%;
+				font-size: 0.6em;
+			}
+		}
+
+		&[class*="image-style--polaroid-portrait-responsive"] {
+			figcaption {
+				padding: 0.5em 1.5em;
+				top: 78%;
+				height: 11.5%;
+			}
+		}
+
+	}
+
 }
 
 figcaption {
 	display: table-caption;
 	text-align: center;
+	font-size: 0.8rem;
 }
 
 .responsive-table {
