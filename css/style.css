@@ -7181,14 +7181,21 @@ img {
   max-width: 100%;
 }
 
-.embedded-entity {
+figure,
+.embedded-entity:not(figure > .embedded-entity) {
   display: table;
   margin: 1em;
 }
-.embedded-entity.align-left {
+figure.align-left,
+.embedded-entity:not(figure > .embedded-entity).align-left {
+  float: left;
+  clear: left;
   margin-left: 0;
 }
-.embedded-entity.align-right {
+figure.align-right,
+.embedded-entity:not(figure > .embedded-entity).align-right {
+  float: right;
+  clear: right;
   margin-right: 0;
 }
 
@@ -7365,12 +7372,6 @@ figure {
 }
 figure.align-center {
   display: table;
-}
-figure.align-left {
-  margin-left: 0;
-}
-figure.align-right {
-  margin-right: 0;
 }
 figure[class*=image-style--polaroid] {
   position: relative;

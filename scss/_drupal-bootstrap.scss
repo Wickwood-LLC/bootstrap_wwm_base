@@ -27,15 +27,20 @@ img {
 	max-width: 100%;
 }
 
-.embedded-entity {
+figure,
+.embedded-entity:not(figure > .embedded-entity) {
 	display: table;
 	margin: 1em;
 
 	&.align-left {
+		float: left;
+		clear: left;
 		margin-left: 0;
 	}
 
 	&.align-right {
+		float: right;
+		clear: right;
 		margin-right: 0;
 	}
 }
@@ -137,14 +142,6 @@ figure {
 
 	&.align-center {
 		display: table;
-	}
-
-	&.align-left {
-		margin-left: 0;
-	}
-
-	&.align-right {
-		margin-right: 0;
 	}
 
 	&[class*="image-style--polaroid"] {
