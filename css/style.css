@@ -7377,14 +7377,16 @@ figure[class*=image-style--polaroid] {
   position: relative;
 }
 figure[class*=image-style--polaroid] figcaption {
-  position: absolute;
   width: 100%;
   line-height: 1;
 }
-@inlcude breakpoint(573px) {
+@media (min-width: 573px) {
   figure[class*=image-style--polaroid] figcaption {
     line-height: normal;
   }
+}
+figure[class*=image-style--polaroid]:is(.rotate-left, .rotate-right).rotate-caption figcaption {
+  position: absolute;
 }
 figure[class*=image-style--polaroid-landscape-large] figcaption {
   padding: 0.5em 1.5em;

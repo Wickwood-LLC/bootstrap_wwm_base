@@ -148,14 +148,16 @@ figure {
 		position: relative;
 
 		figcaption {
-			position: absolute;
 			width: 100%;
 			line-height: 1;
 
-			@inlcude breakpoint(573px) {
+			@include breakpoint(573px) {
 				line-height: normal;
 			}
+		}
 
+		&:is(.rotate-left, .rotate-right).rotate-caption figcaption {
+			position: absolute;
 		}
 	}
 
