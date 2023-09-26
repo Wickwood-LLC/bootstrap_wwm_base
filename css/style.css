@@ -7379,47 +7379,53 @@ figure[class*=image-style--polaroid] {
 figure[class*=image-style--polaroid] figcaption {
   position: absolute;
   width: 100%;
+  line-height: 1;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-landscape-large] figcaption {
+@inlcude breakpoint(573px) {
+  figure[class*=image-style--polaroid] figcaption {
+    line-height: normal;
+  }
+}
+figure[class*=image-style--polaroid-landscape-large] figcaption {
   padding: 0.5em 1.5em;
   top: 77.5%;
   height: 14.5%;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-landscape-medium] figcaption {
+figure[class*=image-style--polaroid-landscape-medium] figcaption {
   padding: 0.5em 1.5em;
   top: 77.5%;
   height: 14.5%;
   font-size: 0.7em;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-landscape-small] figcaption {
+figure[class*=image-style--polaroid-landscape-small] figcaption {
   padding: 0.5em 1.5em;
   top: 77.5%;
   height: 14.5%;
-  font-size: 0.6em;
+  font-size: 0.4em;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-landscape-responsive] figcaption {
+figure[class*=image-style--polaroid-landscape-responsive] figcaption {
   padding: 0.5em 1.5em;
   top: 77.5%;
   height: 14.5%;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-portrait-large] figcaption {
+figure[class*=image-style--polaroid-portrait-large] figcaption {
   padding: 0.5em 1.5em;
   top: 81%;
   height: 12.5%;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-portrait-medium] figcaption {
+figure[class*=image-style--polaroid-portrait-medium] figcaption {
   padding: 0.5em 1.5em;
   top: 81%;
   height: 12.5%;
   font-size: 0.7em;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-portrait-small] figcaption {
+figure[class*=image-style--polaroid-portrait-small] figcaption {
   padding: 0.5em 1.5em;
   top: 81%;
   height: 12.5%;
-  font-size: 0.6em;
+  font-size: 0.4em;
 }
-figure[class*=image-style--polaroid][class*=image-style--polaroid-portrait-responsive] figcaption {
+figure[class*=image-style--polaroid-portrait-responsive] figcaption {
   padding: 0.5em 1.5em;
   top: 81%;
   height: 12.5%;
