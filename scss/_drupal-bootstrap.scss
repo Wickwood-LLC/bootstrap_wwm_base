@@ -152,7 +152,7 @@ figure {
 			line-height: 1;
 
 			@include breakpoint(573px) {
-				line-height: normal;
+				line-height: 1.2;
 			}
 		}
 
@@ -192,6 +192,19 @@ figure {
 			padding: 0.5em 1.5em;
 			top: 77.5%;
 			height: 14.5%;
+			font-size: 0.4em;
+
+			@include breakpoint(481px) {
+				font-size: 0.6em;
+			}
+
+			@include breakpoint(1441px) {
+				font-size: 0.7em;
+			}
+
+			@include breakpoint(1441px) {
+				font-size: 0.8em;
+			}
 		}
 	}
 
@@ -226,6 +239,19 @@ figure {
 			padding: 0.5em 1.5em;
 			top: 81%;
 			height: 12.5%;
+			font-size: 0.4em;
+
+			@include breakpoint(481px) {
+				font-size: 0.6em;
+			}
+
+			@include breakpoint(1441px) {
+				font-size: 0.7em;
+			}
+
+			@include breakpoint(1441px) {
+				font-size: 0.8em;
+			}
 		}
 	}
 
