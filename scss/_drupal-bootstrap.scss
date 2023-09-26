@@ -156,8 +156,13 @@ figure {
 			}
 		}
 
-		&:is(.rotate-left, .rotate-right).rotate-caption figcaption {
+		&:is(.rotate-left, .rotate-right).rotate-caption figcaption,
+		&:not(.rotate-left, .rotate-right) figcaption {
 			position: absolute;
+		}
+
+		&:is(.rotate-left, .rotate-right):not(.rotate-caption) figcaption {
+			font-size: 0.8em;
 		}
 	}
 
@@ -198,7 +203,7 @@ figure {
 				font-size: 0.6em;
 			}
 
-			@include breakpoint(1441px) {
+			@include breakpoint(1025px) {
 				font-size: 0.7em;
 			}
 
@@ -245,7 +250,7 @@ figure {
 				font-size: 0.6em;
 			}
 
-			@include breakpoint(1441px) {
+			@include breakpoint(1025px) {
 				font-size: 0.7em;
 			}
 
