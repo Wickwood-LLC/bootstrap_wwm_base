@@ -27,13 +27,21 @@ img {
 	max-width: 100%;
 }
 
-.embedded-entity {
+figure,
+.embedded-entity:not(figure > .embedded-entity) {
+	display: table;
+	margin: 1em;
+
 	&.align-left {
-		margin-right: 0.5em;
+		float: left;
+		clear: left;
+		margin-left: 0;
 	}
 
 	&.align-right {
-		margin-left: 0.5em;
+		float: right;
+		clear: right;
+		margin-right: 0;
 	}
 }
 
@@ -136,18 +144,128 @@ figure {
 		display: table;
 	}
 
-	&.align-left {
-		margin-left: 0;
+	&[class*="image-style--polaroid"] {
+		position: relative;
+
+		figcaption {
+			width: 100%;
+			line-height: 1;
+
+			@include breakpoint(573px) {
+				line-height: 1.2;
+			}
+		}
+
+		&:is(.rotate-left, .rotate-right).rotate-caption figcaption,
+		&:not(.rotate-left, .rotate-right) figcaption {
+			position: absolute;
+		}
+
+		&:is(.rotate-left, .rotate-right):not(.rotate-caption) figcaption {
+			font-size: 0.8em;
+		}
 	}
 
-	&.align-right {
-		margin-right: 0;
+	&[class*="image-style--polaroid-landscape-large"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 77.5%;
+			height: 14.5%;
+		}
 	}
+
+	&[class*="image-style--polaroid-landscape-medium"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 77.5%;
+			height: 14.5%;
+			font-size: 0.7em;
+		}
+	}
+
+	&[class*="image-style--polaroid-landscape-small"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 77.5%;
+			height: 14.5%;
+			font-size: 0.4em;
+		}
+	}
+
+	&[class*="image-style--polaroid-landscape-responsive"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 77.5%;
+			height: 14.5%;
+			font-size: 0.4em;
+
+			@include breakpoint(481px) {
+				font-size: 0.6em;
+			}
+
+			@include breakpoint(1025px) {
+				font-size: 0.7em;
+			}
+
+			@include breakpoint(1441px) {
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	&[class*="image-style--polaroid-portrait-large"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 81%;
+			height: 12.5%;
+		}
+	}
+
+	&[class*="image-style--polaroid-portrait-medium"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 81%;
+			height: 12.5%;
+			font-size: 0.7em;
+		}
+	}
+
+	&[class*="image-style--polaroid-portrait-small"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 81%;
+			height: 12.5%;
+			font-size: 0.4em;
+		}
+	}
+
+	&[class*="image-style--polaroid-portrait-responsive"] {
+		figcaption {
+			padding: 0.5em 1.5em;
+			top: 81%;
+			height: 12.5%;
+			font-size: 0.4em;
+
+			@include breakpoint(481px) {
+				font-size: 0.6em;
+			}
+
+			@include breakpoint(1025px) {
+				font-size: 0.7em;
+			}
+
+			@include breakpoint(1441px) {
+				font-size: 0.8em;
+			}
+		}
+	}
+
 }
 
 figcaption {
 	display: table-caption;
 	text-align: center;
+	font-size: 0.8rem;
 }
 
 .responsive-table {

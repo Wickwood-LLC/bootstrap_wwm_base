@@ -93,6 +93,9 @@
 			const figures = document.querySelectorAll(".rotate-right, .rotate-left");
 
 			function updateShape() {
+				if (!figures) {
+					return;
+				}
 				figures.forEach((figure) => {
 					if (!figure.classList.contains("rotate-caption")) {
 						return;
@@ -127,10 +130,48 @@
 				});
 			}
 
-			if (figures) {
-				window.onload = updateShape;
-				window.onresize = updateShape;
-			}
+			Drupal.behaviors.shapeOutside.updateShape = updateShape;
 		},
 	};
+
+	/**
+	 * center images when text is too thin
+	 */
+	Drupal.behaviors.imageCenter = {
+		attach: function (context, settings) {
+			const figures = document.querySelectorAll(
+				".region.region-content figure, .region.region-content .embedded-entity:not(figure .embedded-entity), .region.region-content img:not(figure img):not(picture > img)"
+			);
+			function handleResize() {
+				if (figures) {
+					const pageWidth = document.querySelector(
+						".region.region-content"
+					).offsetWidth;
+
+					figures.forEach((figure) => {
+						const figureWidth = figure.offsetWidth;
+						if (pageWidth - figureWidth <= 250) {
+							figure.style.float = "none";
+							figure.style.margin = "1em auto";
+						} else {
+							figure.style.float = "";
+							figure.style.margin = "";
+						}
+					});
+				}
+			}
+			Drupal.behaviors.imageCenter.handleResize = handleResize;
+		},
+	};
+
+	$(window).on("load resize", function () {
+		clearTimeout($(this).data("resizeTimer"));
+		$(this).data(
+			"resizeTimer",
+			setTimeout(function () {
+				Drupal.behaviors.shapeOutside.updateShape();
+				Drupal.behaviors.imageCenter.handleResize();
+			}, 250)
+		);
+	});
 })(jQuery, Drupal);
